@@ -1,3 +1,6 @@
+<!-- 一切使っていません -->
+
+
 @extends('layouts.app')
 
 @section('content')
@@ -13,7 +16,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
+                    test {{ Auth::user()->name }} 
                     You are logged in!
                 </div>
             </div>

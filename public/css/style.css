@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/* 
+   welcome.blade用のｃｓｓです。 
+*/
+
+    /* 背景動画用の加工 */
+    video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    }
+    
+    /* 動画の上にテキストが表示されるためのｃｓｓ */
+    .title {
+    position: relative; /*必ず必要*/
+    z-index: 2; /*必ず必要*/
+    text-align:center;
+    width:50%;
+    padding:20px;
+    margin: 0 auto;
+    color: white;
+    margin-top: 130px;
+    }
+    
+    
+    /*smoky doukiesの文字編集 */
+    h1{
+        font-weight:bolder;
+        font-size: 150px;
+    }
+    
+    /*ボタンのｃｓｓ　*/
+    .buttons {
+        width:200px;
+        font-size:24px;
+        font-weight:bold;
+        text-decoration:none;
+        display:block;
+        padding:8px 0 10px;
+        color:#fff;
+        background-color:#49a9d4;
+        border-radius:25px;
+        display: inline-block;
+        margin: 20px;
+    }
+
+
+/* 終わり */
