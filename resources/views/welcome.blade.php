@@ -22,18 +22,8 @@ TODO list
     
     <!-- ログイン後表示画面(仮) -->
     @if(Auth::check())
-    test
-    <a href="{{ route('logout') }}"
-        onclick="event.preventDefault();
-                 document.getElementById('logout-form').submit();">
-        Logout
-    </a>
-    
-    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-        {{ csrf_field() }}
-    </form>
-    
-    
+        <h1>test</h1>
+
     
     
     <!--　ログイン前の登録画面 -->
