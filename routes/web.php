@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('index');
 });
+
+Auth::routes();
+
+/* 未使用 */
+Route::get('/home', 'HomeController@index')->name('home');
