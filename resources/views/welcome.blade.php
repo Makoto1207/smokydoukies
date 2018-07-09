@@ -6,6 +6,7 @@ TODO list
     x サインイン・ログインボタンを左右にサービス名のしたに表示する
     x レイアウトを作成する
     x ボタンの加工
+    x ログイン後の画面表示
     
     終わってないこと
     携帯画面でのアスペクト
@@ -18,7 +19,26 @@ TODO list
 
 @section('content')
     
-    <!-- welcome blade の表示するプログラム --> 
+    
+    <!-- ログイン後表示画面(仮) -->
+    @if(Auth::check())
+    test
+    <a href="{{ route('logout') }}"
+        onclick="event.preventDefault();
+                 document.getElementById('logout-form').submit();">
+        Logout
+    </a>
+    
+    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+        {{ csrf_field() }}
+    </form>
+    
+    
+    
+    
+    <!--　ログイン前の登録画面 -->
+    @else
+    
     
     
     
@@ -41,7 +61,7 @@ TODO list
     
 
     
-    
+    @endif
     
     
     
