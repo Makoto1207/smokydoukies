@@ -58,6 +58,7 @@
                     <li><a href="#box2" id="link2">timeline</a></li>
                     <li><a href="#box3" id="link3">user</a></li>
                     <li><a href="#box4" id="link4">map</a></li>
+                    
                 </ul>
             </div>
         </div>
@@ -68,7 +69,10 @@
             <img src ="{{secure_asset('/images/user.jpg')}}" id="box3">
             <img src ="{{secure_asset('/images/map.jpg')}}" id="box4">
         </div>
-
+            
+            
+            
+        
     </body>
     
     

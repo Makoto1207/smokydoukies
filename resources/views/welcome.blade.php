@@ -22,7 +22,6 @@ TODO list
     
     <!-- ログイン後表示画面(仮) -->
     @if(Auth::check())
-    test
     <a href="{{ route('logout') }}"
         onclick="event.preventDefault();
                  document.getElementById('logout-form').submit();">
