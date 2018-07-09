@@ -33,6 +33,10 @@ TODO list
         {{ csrf_field() }}
     </form>
     
+    <!--micropost,test-->
+    <li>{!! link_to_route('users.index', 'Users') !!}</li>
+    <li>{!! link_to_route('users.show', 'My profile', ['id' => Auth::id()]) !!}</li>
+    <!--test-->
     
     
     
