@@ -36,9 +36,6 @@
         <!-- navbar のブレード -->
         @include('commons.navbar')
         
-        
-        
-        
         <div>
             @yield('content')    
         </div>

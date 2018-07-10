@@ -1,53 +1,9 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        
-        <title>Smoky Doukies</title>
+@extends('layouts.app')
 
 
-        <!-- Styles -->
-        <style>
-            body{
-                margin: 0px;
-                padding: 0px;
-            }
-            
-            #box1,#box2,#box3,#box4{
-                height: 100vh;
-                width: 100%;
-            }
-            
-            #menu{
-                position: fixed;
-                top: 0px;
-                width: 100%;
-            }
-            
-            #leftoptions{
-                height: 10000px;
-                width: 10%;
-                background-color: pink;
-                float: left;
-            }
-            
-            a{
-                font-family: Courier;
-                font-size: 20px;
-                color: white;
-                text-decoration: none;
-                margin-left: 10px;
-            }
-            
-            li{
-                margin-bottom:30px;
-            }
-            
-            
-            
-            
-        </style>
-    </head>
+@section('content')
+
+      
         
     <body>
         <div id="menu">
@@ -68,11 +24,7 @@
             <img src ="{{secure_asset('/images/map.jpg')}}" id="box4">
         </div>
             
-            
-            
-        
+
     </body>
     
-    
-
-</html>
+@endsection
