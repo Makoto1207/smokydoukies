@@ -61,8 +61,8 @@
     
     .introduction {
       position: relative;
-      width: 600px;
-      height: 400px;
+      width: 900px;
+      height: 600px;
       margin: 20px auto;
     }
     
@@ -99,24 +99,9 @@
       height: 50%;
     }
     
-    .map4{
-        width: 70%;
-    height: 550px;
-    margin: 60px auto;
-	border: solid 5px #C9DCB3;
-	background-image:url(../img/kumataro.png),
-					 url(../img/wanta.png),
-					 url(../img/usako.png),
-					 url(../img/nyanko.png),
-					 url(../img/nohara.png);
-	background-repeat:no-repeat,
-					  no-repeat,
-					  no-repeat,
-					  no-repeat,
-					  repeat;
-	background-position:left 50px,
-						left bottom,
-						right top,
-						right bottom;
+    .maplarge{
+        text-align:center;
     }
+    
+    
 /* ここまで */
