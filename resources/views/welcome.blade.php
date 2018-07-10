@@ -42,6 +42,7 @@ TODO list
             <img src ="{{secure_asset('/images/map.jpg')}}" id="box4">
         </div>
 
+
     <!--　ログイン前の登録画面 -->
     @else
     
@@ -58,6 +59,8 @@ TODO list
             </div>
         
     </div>
+    
+   
     
     
     <!--- srcのところに動画を入れるだけで変更可能 -->
