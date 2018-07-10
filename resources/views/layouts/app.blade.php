@@ -1,4 +1,10 @@
-<!-- ナブバーやエラーはまだ作ってません　つばさ　-->
+<!-- 
+    TODO LIST
+    
+    ナブバーへのリンクを設定する
+    
+
+-->
 
 
 
@@ -27,6 +33,15 @@
     </head>
 
     <body>
-        @yield('content')
+        <!-- navbar のブレード -->
+        @include('commons.navbar')
+        
+        
+        
+        
+        <div>
+            @yield('content')    
+        </div>
+    
     </body>
 </html>
