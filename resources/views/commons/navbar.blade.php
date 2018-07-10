@@ -33,7 +33,7 @@
                 <li>{!! link_to_route('users.show', 'Profile', ['id' => Auth::id()]) !!}</li>
                 <li>{!! link_to_route('users.index', 'Smokers') !!}</li>
                 <li><a href="#">Timeline</a></li>
-                <li><a href="#">Maps</a></li>
+                <li><a href="{{ route('map')}}">Maps</a></li>
                 <li><a href="#">Store</a></li>
                 
                 <li role="separator" class="divider"></li>

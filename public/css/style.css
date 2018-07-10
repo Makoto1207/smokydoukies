@@ -52,3 +52,56 @@
 
 
 /* 終わり */
+
+/* map.blade.php用のCSSです */
+/* ここから */
+    .center{
+        text-align:center
+    }
+    
+    .introduction {
+      position: relative;
+      width: 900px;
+      height: 600px;
+      margin: 20px auto;
+    }
+    
+    .member-frame {
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      background-position: center center;
+      background-size: cover;
+      text-indent: -9999px;
+    }
+    
+    #A{
+      top: 0;
+      left: 0;
+      height: 50%;
+    }
+    
+    #B{
+      top: 0;
+      right: 0;
+      height: 50%;
+    }
+    
+    #C{
+      bottom: 0;
+      left: 0;
+      height: 50%;
+    }
+    
+    #D{
+      bottom: 0;
+      right: 0;
+      height: 50%;
+    }
+    
+    .maplarge{
+        text-align:center;
+    }
+    
+    
+/* ここまで */
