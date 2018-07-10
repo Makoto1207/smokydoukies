@@ -24,12 +24,6 @@ TODO list
     @if(Auth::check())
 
         
-        
-        
-        
-        
-        
-        
         <div id="menu">
             <div id="leftoptions">
                 <ul style="list-style:none;">
