@@ -19,3 +19,7 @@ Auth::routes();
 
 /* 未使用 */
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/map', function () {
+    return view('contents/map');
+})->name('map');

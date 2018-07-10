@@ -28,11 +28,11 @@
             
             <!--　ドロップしたら表示するページ　-->
             <ul class="dropdown-menu">
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Smokers</a></li>
-                <li><a href="#">Timeline</a></li>
-                <li><a href="#">Maps</a></li>
-                <li><a href="#">Store</a></li>
+                <li><a href="contents/profile">Profile</a></li>
+                <li><a href="contents/smokers">Smokers</a></li>
+                <li><a href="contents/timeline">Timeline</a></li>
+                <li><a href="{{ route('map')}}">Maps</a></li>
+                <li><a href="contents/store">Store</a></li>
                 
                 <li role="separator" class="divider"></li>
                 
