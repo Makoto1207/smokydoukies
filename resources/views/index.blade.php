@@ -2,7 +2,6 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <script src="jquery-1.10.2.min.js"></script>
         
         <title>Smoky Doukies</title>
 
@@ -58,7 +57,6 @@
                     <li><a href="#box2" id="link2">timeline</a></li>
                     <li><a href="#box3" id="link3">user</a></li>
                     <li><a href="#box4" id="link4">map</a></li>
-                    
                 </ul>
             </div>
         </div>
