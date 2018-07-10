@@ -22,25 +22,11 @@ TODO list
     
     <!-- ログイン後表示画面(仮) -->
     @if(Auth::check())
-        <h1>test</h1>
+        
+    
 
-    test
-    <a href="{{ route('logout') }}"
-        onclick="event.preventDefault();
-                 document.getElementById('logout-form').submit();">
-        Logout
-    </a>
-    
-    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-        {{ csrf_field() }}
-    </form>
-    
-    <!--micropost,test-->
-    <li>{!! link_to_route('users.index', 'Users') !!}</li>
-    <li>{!! link_to_route('users.show', 'My profile', ['id' => Auth::id()]) !!}</li>
-    <!--test-->
-    
-    
+        
+    <h1>TEST</h1>
     
     <!--　ログイン前の登録画面 -->
     @else
@@ -58,6 +44,8 @@ TODO list
             </div>
         
     </div>
+    
+   
     
     
     <!--- srcのところに動画を入れるだけで変更可能 -->
