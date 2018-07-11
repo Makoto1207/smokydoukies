@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 /* 
    welcome.blade用のｃｓｓです。 
 */
@@ -59,18 +58,24 @@
     height: auto!important;
     padding-bottom: 0px;
     overflow: visible!important;
-    background-color: lightgreen;
 }
 
+a.dropdown-toggle{
+    margin-right: 10px;
+}
 
-/* index navbar横 用のｃｓｓ　*/
+.homebtn{
+    margin-right: 50px;
+}
+
+/* index用のｃｓｓ　*/
 
             body{
                 margin-top: 0px;
                 padding:0px;
             }
             
-            #box1,#box2,#box3,#box4{
+            #box1,#box2,#box3,#box4,#box5{
                 height: 100vh;
                 width: 100%;
             }
@@ -79,8 +84,8 @@
             
             #menu{
                 position: fixed;
-                top: 131.33px;
-                width: 100%;
+                top: 82.4px;
+
             }
             
             
@@ -101,11 +106,7 @@
                 margin-left: -15px;
             }
             
-            
-            li{
-                margin-bottom:30px;
-            
-            }
+       
 
 /* map.blade.php用のCSSです */
 /* ここから */

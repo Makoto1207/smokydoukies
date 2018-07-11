@@ -27,19 +27,22 @@ TODO list
         <div id="menu">
             <div id="leftoptions">
                 <ul style="list-style:none;">
-                    <li><a href="#box1" id="link1">profile</a></li>
-                    <li><a href="#box2" id="link2">timeline</a></li>
-                    <li><a href="#box3" id="link3">user</a></li>
-                    <li><a href="#box4" id="link4">map</a></li>
+                    <li><a href="#box1" id="link1">Profile</a></li>
+                    <li><a href="#box2" id="link2">Smokers</a></li>
+                    <li><a href="#box3" id="link3">Timeline</a></li>
+                    <li><a href="#box4" id="link4">Maps</a></li>
+                    <li><a href="#box5" id="link5">Store</a></li>
+                    
                 </ul>
             </div>
         </div>
         
         <div>
-            <img src ="{{secure_asset('/images/profile.jpg')}}" alt="profile" id="box1">
-            <img src ="{{secure_asset('/images/timeline.jpg')}}" id="box2">
-            <img src ="{{secure_asset('/images/user.jpg')}}" id="box3">
-            <img src ="{{secure_asset('/images/map.jpg')}}" id="box4">
+            <a href="{{URL::to('/users')}}"><img src ="{{secure_asset('/images/profile.jpg')}}" id="box1"></a>
+            <a href="{{URL::to('/users')}}"><img src ="{{secure_asset('/images/smokers.jpg')}}" id="box2">
+            <img src ="{{secure_asset('/images/timeline.jpg')}}" id="box3">
+            <a href="{{ route('map')}}"><img src ="{{secure_asset('/images/map.jpg')}}" id="box4"></a>
+            <img src ="{{secure_asset('/images/store.jpg')}}" id="box5">
         </div>
 
 
