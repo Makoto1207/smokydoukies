@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Controllers\Controller;
 
+use App\Micropost;
+
 class MicropostsController extends Controller
 {
     /**
@@ -16,6 +18,8 @@ class MicropostsController extends Controller
     public function index()
     {
         $data = [];
+        
+        
         if (\Auth::check()) {
             $user = \Auth::user();
             $microposts = $user->microposts()->orderBy('created_at', 'desc')->paginate(10);
@@ -25,8 +29,14 @@ class MicropostsController extends Controller
                 'microposts' => $microposts,
             ];
             $data += $this->counts($user);
+            
+            /*　送信先を指定してる　 */
             return view('users.show', $data);
+            
+            
         }else {
+            
+            
             return view('welcome',$data);
         }
     }
@@ -55,4 +65,14 @@ class MicropostsController extends Controller
 
         return redirect()->back();
     }
+    
+        public function timeline()
+    {
+        $microposts = Micropost::paginate(10);
+        
+        return view('contents.timeline', [
+            'microposts' => $microposts,
+        ]);
+        }
+    
 }
