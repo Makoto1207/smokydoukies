@@ -1,14 +1,18 @@
 <?php
-
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\DB;
+use View;
+use App\Http\Controllers\Controller;
 
-use Illuminate\Http\Request;
+// Add this line
+use App\Model;
+
 
 class RestaurantsController extends Controller
 {
      public function index()
     {
-        $restaurants = Restaurants::all();
+        $restaurants = \App\Restaurants::all();
 
         return view('contents.store', [
             'restaurants' => $restaurants,

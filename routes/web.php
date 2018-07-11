@@ -31,6 +31,6 @@ Route::group(['middleware' => ['auth']], function () {
 });
 
 
-
-Route::get('/restaurants', 'RestaurantsController@index');
+//store.bladeにつなげるリンクを作成
+Route::get('/restaurants', 'RestaurantsController@index')->name('store');
 

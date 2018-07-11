@@ -34,8 +34,7 @@
                 <li>{!! link_to_route('users.index', 'Smokers') !!}</li>
                 <li><a href="#">Timeline</a></li>
                 <li><a href="{{ route('map')}}">Maps</a></li>
-                
-                <li><a href="#">Store</a></li>
+                <li><a href="{{ route('store')}}">store</a></li>
                 
                 <li role="separator" class="divider"></li>
                 
