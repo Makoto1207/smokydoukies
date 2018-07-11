@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Controllers\Controller;
 
+
+// ツイートを表示するため追加
 use App\Micropost;
 
 class MicropostsController extends Controller
@@ -65,6 +67,11 @@ class MicropostsController extends Controller
 
         return redirect()->back();
     }
+    
+    
+    
+    //タイムラインにツイートを表示するコントローラー
+    
     
         public function timeline()
     {
