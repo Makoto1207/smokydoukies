@@ -22,14 +22,31 @@ TODO list
     
     <!-- ログイン後表示画面(仮) -->
     @if(Auth::check())
-    
-    
 
-    
 
         
-    <h1>TEST</h1>
-    
+        <div id="menu">
+            <div id="leftoptions">
+                <ul style="list-style:none;">
+                    <li><a href="#box1" id="link1">Profile</a></li>
+                    <li><a href="#box2" id="link2">Smokers</a></li>
+                    <li><a href="#box3" id="link3">Timeline</a></li>
+                    <li><a href="#box4" id="link4">Maps</a></li>
+                    <li><a href="#box5" id="link5">Store</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+        <div>
+            <a href="{{route('users.show', Auth::id())}}"><img src ="{{secure_asset('/images/profile.jpg')}}" id="box1"></a>
+            <a href="{{route('users.index')}}"><img src ="{{secure_asset('/images/smokers.jpg')}}" id="box2"></a>
+                                                <img src ="{{secure_asset('/images/timeline.jpg')}}" id="box3">
+            <a href="{{ route('map')}}"><img src ="{{secure_asset('/images/map.jpg')}}" id="box4"></a>
+            <img src ="{{secure_asset('/images/store.jpg')}}" id="box5">
+        </div>
+
+
     <!--　ログイン前の登録画面 -->
     @else
     
