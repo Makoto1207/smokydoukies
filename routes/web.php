@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-/* 未使用 */
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/map', function () {
@@ -35,3 +35,7 @@ Route::group(['middleware' => ['auth']], function () {
 Route::get('/restaurants', 'RestaurantsController@index')->name('store');
 
 Route::get('/','RestaurantsController@getIndex');
+
+
+//timeline用
+Route::get('/timeline', 'MicropostsController@timeline')->name('timeline');
