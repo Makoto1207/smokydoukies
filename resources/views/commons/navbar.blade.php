@@ -34,7 +34,7 @@
             <ul class="dropdown-menu">
                 <li>{!! link_to_route('users.show', 'Profile', ['id' => Auth::id()]) !!}</li>
                 <li>{!! link_to_route('users.index', 'Smokers') !!}</li>
-                <li><a href="#">Timeline</a></li>
+                <li><a href="{{ route('timeline')}}">Timeline</a></li>
                 <li><a href="{{ route('map')}}">Maps</a></li>
                 <li><a href="#">Store</a></li>
                 

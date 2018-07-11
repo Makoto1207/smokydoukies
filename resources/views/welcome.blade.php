@@ -23,6 +23,7 @@ TODO list
     <!-- ログイン後表示画面(仮) -->
     @if(Auth::check())
 
+
         
         <div id="menu">
             <div id="leftoptions">
@@ -40,7 +41,7 @@ TODO list
         <div>
             <a href="{{route('users.show', Auth::id())}}"><img src ="{{secure_asset('/images/profile.jpg')}}" id="box1"></a>
             <a href="{{route('users.index')}}"><img src ="{{secure_asset('/images/smokers.jpg')}}" id="box2"></a>
-                                                <img src ="{{secure_asset('/images/timeline.jpg')}}" id="box3">
+            <a href="{{route('timeline')}}"><img src ="{{secure_asset('/images/timeline.jpg')}}" id="box3"></a>
             <a href="{{ route('map')}}"><img src ="{{secure_asset('/images/map.jpg')}}" id="box4"></a>
             <img src ="{{secure_asset('/images/store.jpg')}}" id="box5">
         </div>

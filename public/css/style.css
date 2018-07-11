@@ -1,4 +1,8 @@
 @charset "utf-8";
+
+
+
+
 /* 
    welcome.blade用のｃｓｓです。 
 */
@@ -71,7 +75,8 @@ a.dropdown-toggle{
 /* index用のｃｓｓ　*/
 
             body{
-                margin-top: 0px;
+                /* margin-top でナブバーに重ならないように変更*/
+                margin-top: 70px;
                 padding:0px;
             }
             
@@ -84,7 +89,7 @@ a.dropdown-toggle{
             
             #menu{
                 position: fixed;
-                top: 82.4px;
+                top: 51.33px;
 
             }
             
@@ -96,6 +101,7 @@ a.dropdown-toggle{
                 width: 135px;
                 background-color: pink;
                 float: left;
+                opacity: 0.8;
             }
             
             
