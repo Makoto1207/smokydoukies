@@ -30,14 +30,33 @@
        
         <!-- CSSに必要 -->
         <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
+        
+        
+        
+        
+        
+        <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <!-- ＃リンクのスムーズスクロール -->
+        <script>
+          $(function(){
+            // #で始まるリンクをクリックしたら実行されます
+            $('a[href^="#"]').click(function() {
+              // スクロールの速度
+              var speed = 400; // ミリ秒で記述
+              var href= $(this).attr("href");
+              var target = $(href == "#" || href == "" ? 'html' : href);
+              var position = target.offset().top;
+              $('body,html').animate({scrollTop:position}, speed, 'swing');
+              return false;
+            });
+          });
+        </script>
+        
     </head>
 
     <body>
         <!-- navbar のブレード -->
         @include('commons.navbar')
-        
-        
-        
         
         <div>
             @yield('content')    
