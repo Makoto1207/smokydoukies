@@ -39,8 +39,8 @@ TODO list
         <h1 clsss="headings">Smoky Doukies</h1>
         
             <div>
-                <a href= "{{ route('register') }}" class="buttons">Sign up</a>
-                <a href= "{{ route('login') }}" class="buttons">Log in</a>
+                <a href= "{{ route('register') }}" class="buttons"><span>Sign up</span></a>
+                <a href= "{{ route('login') }}" class="buttons"><span>Log in</span></a>
             </div>
         
     </div>
