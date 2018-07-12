@@ -22,10 +22,31 @@ TODO list
     
     <!-- ログイン後表示画面(仮) -->
     @if(Auth::check())
-        <h1>test</h1>
 
-    
-    
+
+        
+        <div id="menu">
+            <div id="leftoptions">
+                <ul style="list-style:none;">
+                    <li><a href="#box1" id="link1">Profile</a></li>
+                    <li><a href="#box2" id="link2">Smokers</a></li>
+                    <li><a href="#box3" id="link3">Timeline</a></li>
+                    <li><a href="#box4" id="link4">Maps</a></li>
+                    <li><a href="#box5" id="link5">Store</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+        <div>
+            <a href="{{route('users.show', Auth::id())}}"><img src ="{{secure_asset('/images/profile.jpg')}}" id="box1"></a>
+            <a href="{{route('users.index')}}"><img src ="{{secure_asset('/images/smokers.jpg')}}" id="box2"></a>
+            <a href="{{route('timeline')}}"><img src ="{{secure_asset('/images/timeline.jpg')}}" id="box3"></a>
+            <a href="{{ route('map')}}"><img src ="{{secure_asset('/images/map.jpg')}}" id="box4"></a>
+            <a href="{{ route('store')}}"><img src ="{{secure_asset('/images/store.jpg')}}" id="box5"></a>
+        </div>
+
+
     <!--　ログイン前の登録画面 -->
     @else
     
@@ -42,6 +63,8 @@ TODO list
             </div>
         
     </div>
+    
+   
     
     
     <!--- srcのところに動画を入れるだけで変更可能 -->

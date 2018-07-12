@@ -17,5 +17,25 @@ Route::get('/', function () {
 
 Auth::routes();
 
-/* 未使用 */
+
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/map', function () {
+    return view('contents/map');
+})->name('map');
+//Route::get('/', 'MicropostsController@index');
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::resource('users', 'UsersController', ['only' => ['index', 'show']]);
+    Route::resource('microposts', 'MicropostsController', ['only' => ['store', 'destroy']]);
+});
+
+
+//store.bladeにつなげるリンクを作成
+Route::get('/restaurants', 'RestaurantsController@index')->name('store');
+
+//Route::get('/','RestaurantsController@getIndex');
+
+
+//timeline用
+Route::get('/timeline', 'MicropostsController@timeline')->name('timeline');
