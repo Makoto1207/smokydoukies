@@ -33,13 +33,17 @@
             
                 
             </table>
+            
+            {!! Form::open(['method' => 'GET']) !!}
+            {!! Form::text('s', null) !!}
+            {!! Form::submit('検索') !!}
+            {!! Form::close() !!}
+    
+    
         </div>
         
     
-    {!! Form::open(['method' => 'GET']) !!}
-    {!! Form::text('s', null) !!}
-    {!! Form::submit('検索') !!}
-    {!! Form::close() !!}
+    
     
     @endif
     
