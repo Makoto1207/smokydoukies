@@ -19,16 +19,5 @@ class RestaurantsController extends Controller
         ]);
     }
     
-    public function getIndex()
-    {
-        // 検索するテキスト取得
-        $search = Request::get('s');
-        $query = Autumn2016::query();
-        // 検索するテキストが入力されている場合のみ
-        if(!empty($search)) {
-            $query->where('title', 'like', '%'.$search.'%');
-        }
-        $data = $query->get();
-        return view('search.index', compact('data', 'search'));
-    }
+    
 }

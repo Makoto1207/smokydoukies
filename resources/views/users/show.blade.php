@@ -5,11 +5,33 @@
         <aside class="col-xs-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
+                    <!-- nickname 表示 -->
                     <h3 class="panel-title">{{ $user->nickname }}</h3>
                 </div>
                 <div class="panel-body">
-                <img class="media-object img-rounded img-responsive" src="{{ Gravatar::src($user->nickname, 500) }}" alt="">
+                <img class="media-object img-rounded img-responsive" src="{{ Gravatar::src($user->nickname, 262) }}" alt="">
                 </div>
+            </div>
+            <div>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th scope="row">いつもタバコを吸う場所</th>
+                            <td>{{ $user->place }}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">一日に吸う本数</th>
+                            <td>{{ $user->tabaco }}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">いつも吸うたばこの種類</th>
+                            <td>{{ $user->brand }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+               
+                
+              
             </div>
         </aside>
         <div class="col-xs-8">

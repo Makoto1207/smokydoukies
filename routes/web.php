@@ -34,7 +34,7 @@ Route::group(['middleware' => ['auth']], function () {
 //store.bladeにつなげるリンクを作成
 Route::get('/restaurants', 'RestaurantsController@index')->name('store');
 
-Route::get('/','RestaurantsController@getIndex');
+//Route::get('/','RestaurantsController@getIndex');
 
 
 //timeline用
