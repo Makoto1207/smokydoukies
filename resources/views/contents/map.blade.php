@@ -23,34 +23,38 @@
     <h2>二子玉川の喫煙所マップ</h2>
      
     <div class="introduction">
-        <a href="#imageA" id="A" class="member-frame" style="background-image: url('img/A.jpg')">A</a>
-        <a href="#imageB" id="B" class="member-frame" style="background-image: url('img/B.jpg')">B</a>
-        <a href="#imageC" id="C" class="member-frame" style="background-image: url('img/C.jpg')">C</a>
-        <a href="#imageD" id="D" class="member-frame" style="background-image: url('img/D.jpg')">D</a>
+        <img src="{{secure_asset('/img/map.jpg')}}" alt="sample" usemap="#sample">
+        
+        <map name="sample">
+            <area shape="poly" coords="109,25,91,278,134,319,582,404,635,243,639,146,488,121,479,157" href="#imageA" alt="map_a">
+            <area shape="poly" coords="129,343,85,382,72,554,376,633,414,398" href="#imageB" alt="map_b">
+            <area shape="poly" coords="487,423,445,606,740,747,778,539" href="#imageC" alt="map_c">
+            <area shape="poly" coords="893,589,854,802,963,872,957,889,1057,956,1250,735,1075,676,893,589" href="#imageD" alt="map_d">
+        </map>
     </div>
     
     <div>
         <h2 id=imageA>A地区</h2>
         <div class="maplarge" id=imageA>
-            <img src="img/A.jpg">
+            <img src="img/a.jpg">
             <a href="#" class="buttons">Store</a>
         </div>
         
         <h2 id=imageB>B地区</h2>
         <div class="maplarge">
-            <img src="img/B.jpg">
+            <img src="img/b.jpg">
             <a href="#" class="buttons">Store</a>
         </div>
         
         <h2 id=imageC>C地区</h2>
         <div class="maplarge">
-            <img src="img/C.jpg">
+            <img src="img/c.jpg">
             <a href="#" class="buttons">Store</a>
         </div>
         
         <h2 id=imageD>D地区</h2>
         <div class="maplarge">
-            <img src="img/D.jpg">
+            <img src="img/d.jpg">
             <a href="#" class="buttons">Store</a>
         </div>
     </div>
