@@ -30,12 +30,12 @@
                                 
                                 <select id="brand" type="text" class="form-control" name="brand" value="{{ old('brand') }}" required autofocus>name="example2" size="5">
                                         <option value="">6つの選択肢から選択</option>
-                                        <option value="選択肢2">紙たばこ</option>
-                                        <option value="選択肢3">紙メンソール</option>
-                                        <option value="選択肢4">アイコス</option>
-                                        <option value="選択肢5">グロー</option>
-                                        <option value="選択肢6">プルームテック</option>
-                                        <option value="選択肢7">その他</option>
+                                        <option value="紙たばこ">紙たばこ</option>
+                                        <option value="紙メンソール">紙メンソール</option>
+                                        <option value="アイコス">アイコス</option>
+                                        <option value="グロー">グロー</option>
+                                        <option value="プルームテック">プルームテック</option>
+                                        <option value="その他">その他</option>
                                 </select>
 
                                 @if ($errors->has('brand'))
@@ -55,11 +55,11 @@
                             <div class="col-md-6">
                                  <select id="place" type="text" class="form-control" name="place" value="{{ old('place') }}" required autofocus>name="example2" size="5">
                                         <option value="">5つの選択肢から選択</option>
-                                        <option value="place1">会社近くの室内喫煙所</option>
-                                        <option value="place2">会社近くの屋外喫煙所</option>
-                                        <option value="place3">会社近くのショッピングモール内</option>
-                                        <option value="place4">KFCの近くの喫煙所</option>
-                                        <option value="place5">その他</option>
+                                        <option value="会社近くの室内喫煙所">会社近くの室内喫煙所</option>
+                                        <option value="会社近くの屋外喫煙所">会社近くの屋外喫煙所</option>
+                                        <option value="会社近くのショッピングモール内">会社近くのショッピングモール内</option>
+                                        <option value="KFCの近くの喫煙所">KFCの近くの喫煙所</option>
+                                        <option value="その他">その他</option>
                                 </select>
                                 
                                
@@ -78,11 +78,11 @@
                             <div class="col-md-6">
                                  <select id="tabaco" type="text" class="form-control" name="tabaco" value="{{ old('tabaco') }}" required autofocus>name="example2" size="5">
                                         <option value="">5つの選択肢から選択</option>
-                                        <option value="tabaco1">1～3本</option>
-                                        <option value="tabaco2">5 ～10本</option>
-                                        <option value="tabaco3">10～15本</option>
-                                        <option value="tabaco4">15～1箱</option>
-                                        <option value="tabaco5">１箱以上</option>
+                                        <option value="1～3本">1～3本</option>
+                                        <option value="5 ～10本">5 ～10本</option>
+                                        <option value="10～15本">10～15本</option>
+                                        <option value="15～1箱">15～1箱</option>
+                                        <option value="１箱以上">１箱以上</option>
                                 </select>
 
                                 @if ($errors->has('tabaco'))
