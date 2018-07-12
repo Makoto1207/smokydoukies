@@ -36,7 +36,7 @@
         </aside>
         <div class="col-xs-8">
             <ul class="nav nav-tabs nav-justified">
-                <li><a href="#">TimeLine</a></li>
+                <li>Tweet<span class="badge">{{ $count_microposts }}</span></li>
                 
             </ul>
             
