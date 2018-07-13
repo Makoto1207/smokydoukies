@@ -92,6 +92,19 @@
 
 /* 終わり */
 
+    /* register.bladeについて */
+    label{
+        color: black;
+    }
+    
+    .input_box{
+        border:0;
+        color:#aaa;
+        border:solid 1px #ccc;
+        margin:0 0 20px;
+        width:300px;
+    }
+
 
 /* navbar用のcss*/
 

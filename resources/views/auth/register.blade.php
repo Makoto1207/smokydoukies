@@ -15,7 +15,7 @@
                             <label for="nickname" class="col-md-4 control-label">Nickname</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control" name="nickname" value="{{ old('nickname') }}" required autofocus>
+                                <input class="input_box" id="name" type="text"  name="nickname" value="{{ old('nickname') }}" required autofocus>
 
                                 @if ($errors->has('nickname'))
                                     <span class="help-block">
@@ -23,12 +23,14 @@
                                     </span>
                                 @endif
                             </div>
-                        </div><div class="form-group{{ $errors->has('brand') ? ' has-error' : '' }}">
+                        </div>
+                        
+                        <div class="form-group{{ $errors->has('brand') ? ' has-error' : '' }}">
                             <label for="brand" class="col-md-4 control-label">What brand do you usually smoke?</label>
 
                             <div class="col-md-6">
                                 
-                                <select id="brand" type="text" class="form-control" name="brand" value="{{ old('brand') }}" required autofocus>name="example2" size="5">
+                                <select class="input_box" id="brand" type="text" class="form-control" name="brand" value="{{ old('brand') }}" required autofocus>name="example2" size="5">
                                         <option value="">6つの選択肢から選択</option>
                                         <option value="紙たばこ">紙たばこ</option>
                                         <option value="紙メンソール">紙メンソール</option>
@@ -53,7 +55,7 @@
                             <label for="tabaco" class="col-md-4 control-label">Where do you usually smoke?</label>
 
                             <div class="col-md-6">
-                                 <select id="place" type="text" class="form-control" name="place" value="{{ old('place') }}" required autofocus>name="example2" size="5">
+                                 <select class="input_box" id="place" type="text" class="form-control" name="place" value="{{ old('place') }}" required autofocus>name="example2" size="5">
                                         <option value="">5つの選択肢から選択</option>
                                         <option value="会社近くの室内喫煙所">会社近くの室内喫煙所</option>
                                         <option value="会社近くの屋外喫煙所">会社近くの屋外喫煙所</option>
@@ -76,7 +78,7 @@
                             <label for="tabaco" class="col-md-4 control-label">How many times you smoke in a day?</label>
 
                             <div class="col-md-6">
-                                 <select id="tabaco" type="text" class="form-control" name="tabaco" value="{{ old('tabaco') }}" required autofocus>name="example2" size="5">
+                                 <select class="input_box" id="tabaco" type="text" class="form-control" name="tabaco" value="{{ old('tabaco') }}" required autofocus>name="example2" size="5">
                                         <option value="">5つの選択肢から選択</option>
                                         <option value="1～3本">1～3本</option>
                                         <option value="5 ～10本">5 ～10本</option>
@@ -97,7 +99,7 @@
                             <label for="password" class="col-md-4 control-label">Password</label>
 
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password" required>
+                                <input class="input_box" id="password" type="password" class="form-control" name="password" required>
 
                                 @if ($errors->has('password'))
                                     <span class="help-block">
@@ -111,7 +113,7 @@
                             <label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>
 
                             <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                                <input class="input_box" id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
                         </div>
 
