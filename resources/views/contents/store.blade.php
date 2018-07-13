@@ -1,5 +1,3 @@
-<!--検索機能はまだ出来ていない -->
-
 @extends('layouts.app')
 
 @section('content')
@@ -33,17 +31,22 @@
             
                 
             </table>
-        </div>
+            
         
-    
+        
+    店名検索
     {!! Form::open(['method' => 'GET']) !!}
-    {!! Form::text('s', null) !!}
+    {!! Form::text('name', null) !!}
     {!! Form::submit('検索') !!}
     {!! Form::close() !!}
     
+    エリア検索
+    {!! Form::open(['method' => 'GET']) !!}
+    {!! Form::text('area', null) !!}
+    {!! Form::submit('検索') !!}
+    {!! Form::close() !!}
+        </div>
     @endif
     
 
 @endsection
-
-
