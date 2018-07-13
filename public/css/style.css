@@ -2,6 +2,23 @@
 
 
 
+/* 
+    TODO list 
+    
+    x welcome bladeのボタン修正
+    x welcome bladeのボタン加工
+    
+    x Profileの名前の修正
+    x Smokersのview profileの修正
+    x Mapのボタン修正
+
+
+
+*/
+
+
+
+
 
 /* 
    welcome.blade用のｃｓｓです。 
@@ -9,26 +26,26 @@
 
     /* 背景動画用の加工 */
     video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 1;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 1;
     }
     
     /* 動画の上にテキストが表示されるためのｃｓｓ */
     .title {
-    position: relative; /*必ず必要*/
-    z-index: 2; /*必ず必要*/
-    text-align:center;
-    width:50%;
-    padding:20px;
-    margin: 0 auto;
-    color: white;
-    margin-top: 130px;
+        position: relative; /*必ず必要*/
+        z-index: 2; /*必ず必要*/
+        text-align:center;
+        width:50%;
+        padding:20px;
+        margin: 0 auto;
+        color: white;
+        margin-top: 90px;
     }
     
     
@@ -36,88 +53,143 @@
     h1{
         font-weight:bolder;
         font-size: 150px;
+        margin-bottom: 00px;
+        font-family: Monotype Corsiva;
+        margin-bottom: 80px;
     }
     
+    
+
+    
     /*ボタンのｃｓｓ　*/
-    .buttons {
+    .welcomebuttons {
         width:20px;
         font-size:24px;
         font-weight:bold;
-        text-decoration:none;
-        display:block;
-        padding:8px 0 10px;
-        color:#fff;
-        background-color:#49a9d4;
-        border-radius:25px;
-        display: inline-block;
-        margin: 20px;
+        padding: 0.3em 1em;
+        text-decoration: none;
+        color: #AA0000;
+        border: solid 2px #AA0000;
+        border-radius: 3px;
+        transition: .4s;
+        
+        margin: 40px;
     }
-
+    
+    .welcomebuttons span{
+      display:inline-block;
+      position: relative;
+      transition: .5s;
+      color: white;
+    }
+    
+    .welcomebuttons:hover span{
+      -webkit-transform: rotateX(360deg);
+      -ms-transform: rotateX(360deg);
+      transform: rotateX(360deg);
+      text-decoration: none;
+    }
 
 /* 終わり */
 
+
 /* navbar用のcss*/
-.navbar-collapse.collapse {
-    display: block!important;
-    height: auto!important;
-    padding-bottom: 0px;
-    overflow: visible!important;
-}
 
-a.dropdown-toggle{
-    margin-right: 10px;
-}
+    .navbar-collapse.collapse {
+        display: block!important;
+        height: auto!important;
+        padding-bottom: 0px;
+        overflow: visible!important;
+    }
+    
+    a.dropdown-toggle{
+        margin-right: 10px;
+    }
+    
+    .homebtn{
+        margin-right: 50px;
+    }
 
-.homebtn{
-    margin-right: 50px;
-}
+
+
 
 /* index用のｃｓｓ　*/
 
-            body{
-                /* margin-top でナブバーに重ならないように変更*/
-                margin-top: 70px;
-                padding:0px;
-            }
-            
-            #box1,#box2,#box3,#box4,#box5{
-                height: 100vh;
-                width: 100%;
-            }
-            
-            
-            
-            #menu{
-                position: fixed;
-                top: 51.33px;
+    body{
+        /* margin-top でナブバーに重ならないように変更*/
+        margin-top: 70px;
+        padding:0px;
+    }
+    
+    #box1,#box2,#box3,#box4,#box5{
+        height: 100vh;
+        width: 100%;
+        
+    }
+    
+    
+    
+    #menu{
+        position: fixed;
+        top: 51.33px;
 
-            }
-            
-            
-            
-            
-            #leftoptions{
-                height: 10000px;
-                width: 135px;
-                background-color: pink;
-                float: left;
-                opacity: 0.8;
-            }
-            
-            
-            a{
-                font-family: arial black;
-                font-size: 20px;
-                text-decoration: none;
-                margin-left: -15px;
-            }
-            
-       
+    }
+    
+    
+    
+    
+    #leftoptions{
+        height: 10000px;
+        width: 135px;
+        background-color: pink;
+        float: left;
+        opacity: 0.8;
+    }
+    
+    
+    /* navleftの文字のフォントやサイズ変更 */
+    
+    #link1, #link2, #link3, #link4, #link5{
+        text-decoration: none;
+        
+    }
+
+    
+    .lefttext{
+        font-family: Microsoft JhengHei UI Light;
+        font-size: 20px;
+        margin-left: -15px;
+        
+        
+        text-decoration: none;
+        color: white;
+    }
+    
+    .lefttext:hover{
+        color: black;
+    }
+    
+    
+/* Profile用のCSSです */
+ 
+
+
+
+
+/* ここから */
+
+
+
+
+
 
 /* map.blade.php用のCSSです */
+
 /* ここから */
-    .center{
-        text-align:center
+
+    
+    .container{
+        margin-bottom: 60px;
     }
     
     .introduction {
@@ -163,6 +235,37 @@ a.dropdown-toggle{
     .maplarge{
         text-align:center;
     }
+    
+    /* ストアにつなげるボタン*/
+    
+    .storebuttons{
+        display: inline-block;
+        padding: 0.1em 1em;
+        text-decoration: none;
+        color: black;
+        border: solid 2px black;
+        border-radius: 3px;
+        transition: .4s;
+        text-align: center;
+        font-size: 50px;
+        font-family: Microsoft JhengHei UI Light;
+        
+        margin-bottom: 60px;
+        
+    }
+    
+    .storebuttons:hover{
+        background-color: #333333;
+        color: white;
+        text-decoration: none;
+        
+    }
+    
+    .mapdetail{
+        text-align: center;
+    }
+    
+
     
     
 /* ここまで */

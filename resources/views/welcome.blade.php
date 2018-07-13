@@ -28,11 +28,11 @@ TODO list
         <div id="menu">
             <div id="leftoptions">
                 <ul style="list-style:none;">
-                    <li><a href="#box1" id="link1">Profile</a></li>
-                    <li><a href="#box2" id="link2">Smokers</a></li>
-                    <li><a href="#box3" id="link3">Timeline</a></li>
-                    <li><a href="#box4" id="link4">Maps</a></li>
-                    <li><a href="#box5" id="link5">Store</a></li>
+                    <li><a href="#box1" id="link1"><span class="lefttext">Profile</span></a></li>
+                    <li><a href="#box2" id="link2"><span class="lefttext">Smokers</span></a></li>
+                    <li><a href="#box3" id="link3"><span class="lefttext">Timeline</span></a></li>
+                    <li><a href="#box4" id="link4"><span class="lefttext">Maps</span></a></li>
+                    <li><a href="#box5" id="link5"><span class="lefttext">Store</span></a></li>
                     
                 </ul>
             </div>
@@ -55,11 +55,15 @@ TODO list
     
     <!-- サービス名表示 -->
     <div class="title">
-        <h1 clsss="headings">Smoky Doukies</h1>
-        
+        <h1 clsss="headings"><span clsss="smoky">Smoky</span>
+                            <span class="doukies">Doukies</span></h1>
+            
+            
+            
+            <!-- ログイン・サインボタン-->
             <div>
-                <a href= "{{ route('register') }}" class="buttons">Sign up</a>
-                <a href= "{{ route('login') }}" class="buttons">Log in</a>
+                <a href= "{{ route('register') }}" class="welcomebuttons"><span>SIGN UP</span></a>
+                <a href= "{{ route('login') }}" class="welcomebuttons"><span>LOGIN</span></a>
             </div>
         
     </div>
