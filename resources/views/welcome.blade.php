@@ -38,12 +38,12 @@ TODO list
             </div>
         </div>
         
-        <div>
-            <a href="{{route('users.show', Auth::id())}}"><img src ="{{secure_asset('/images/profile.jpg')}}" id="box1"></a>
-            <a href="{{route('users.index')}}"><img src ="{{secure_asset('/images/smokers.jpg')}}" id="box2"></a>
-            <a href="{{route('timeline')}}"><img src ="{{secure_asset('/images/timeline.jpg')}}" id="box3"></a>
-            <a href="{{ route('map')}}"><img src ="{{secure_asset('/images/map.jpg')}}" id="box4"></a>
-            <a href="{{ route('store')}}"><img src ="{{secure_asset('/images/store.jpg')}}" id="box5"></a>
+        <div class="slidetest">
+            <a href="{{route('users.show', Auth::id())}}"><img src ="{{secure_asset('/images/1.gif')}}" id="box1"></a>
+            <a href="{{route('users.index')}}"><img src ="{{secure_asset('/images/2.gif')}}" id="box2"></a>
+            <a href="{{route('timeline')}}"><img src ="{{secure_asset('/images/3.gif')}}" id="box3"></a>
+            <a href="{{ route('map')}}"><img src ="{{secure_asset('/images/4.gif')}}" id="box4"></a>
+            <a href="{{ route('store')}}"><img src ="{{secure_asset('/images/5.gif')}}" id="box5"></a>
         </div>
 
 

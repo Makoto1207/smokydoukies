@@ -11,6 +11,8 @@
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                         {{ csrf_field() }}
 
+                        
+            <!--名前-->
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                             <label for="nickname" class="col-md-4 control-label">Nickname</label>
 
@@ -25,19 +27,22 @@
                             </div>
                         </div>
                         
+            <!--銘柄-->                
                         <div class="form-group{{ $errors->has('brand') ? ' has-error' : '' }}">
                             <label for="brand" class="col-md-4 control-label">What brand do you usually smoke?</label>
 
                             <div class="col-md-6">
                                 
+
                                 <select class="input_box" id="brand" type="text" class="form-control" name="brand" value="{{ old('brand') }}" required autofocus>name="example2" size="5">
-                                        <option value="">6つの選択肢から選択</option>
-                                        <option value="紙たばこ">紙たばこ</option>
-                                        <option value="紙メンソール">紙メンソール</option>
-                                        <option value="アイコス">アイコス</option>
-                                        <option value="グロー">グロー</option>
-                                        <option value="プルームテック">プルームテック</option>
-                                        <option value="その他">その他</option>
+                                        <option value="">Brand to use</option>
+                                        <option value="cigarette">cigarette</option>
+                                        <option value="menthol">menthol</option>
+                                        <option value="iqos">iqos</option>
+                                        <option value="glow">glow</option>
+                                        <option value="ploomtech">ploomtech</option>
+                                        <option value="etc">etc</option>
+
                                 </select>
 
                                 @if ($errors->has('brand'))
@@ -50,7 +55,7 @@
                         
                         
                         
-                        
+            <!--場所-->
                         <div class="form-group{{ $errors->has('place') ? ' has-error' : '' }}">
                             <label for="tabaco" class="col-md-4 control-label">Where do you usually smoke?</label>
 
@@ -63,9 +68,7 @@
                                         <option value="KFCの近くの喫煙所">KFCの近くの喫煙所</option>
                                         <option value="その他">その他</option>
                                 </select>
-                                
                                
-
                                 @if ($errors->has('place'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('place') }}</strong>
@@ -74,6 +77,7 @@
                             </div>
                         </div>
 
+            <!--本数-->
                         <div class="form-group{{ $errors->has('tabaco') ? ' has-error' : '' }}">
                             <label for="tabaco" class="col-md-4 control-label">How many times you smoke in a day?</label>
 
@@ -95,6 +99,7 @@
                             </div>
                         </div>
 
+            <!--パスワード-->
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label for="password" class="col-md-4 control-label">Password</label>
 
@@ -109,6 +114,7 @@
                             </div>
                         </div>
 
+            <!--パスワード確認-->
                         <div class="form-group">
                             <label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>
 
@@ -116,6 +122,8 @@
                                 <input class="input_box" id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
                         </div>
+
+
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
