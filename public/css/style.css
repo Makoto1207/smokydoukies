@@ -173,7 +173,27 @@
 /* Profile用のCSSです */
  
 
-
+/*smokers用のcss*/
+    .nickname{
+        font-size: 50px;
+        text-align: center;
+        color:  black;
+        font-family: "Lobster", serif;
+      
+        
+    }
+    
+    #profile_pic{
+        margin-bottom: 50px;
+       
+    }
+    
+    .nickname:hover{
+        transform: scale(1.2);
+        text-decoration: none;
+    }
+    
+    
 
 
 /* ここから */
