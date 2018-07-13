@@ -29,13 +29,13 @@
                             <div class="col-md-6">
                                 
                                 <select id="brand" type="text" class="form-control" name="brand" value="{{ old('brand') }}" required autofocus>name="example2" size="5">
-                                        <option value="">6つの選択肢から選択</option>
-                                        <option value="紙たばこ">紙たばこ</option>
-                                        <option value="紙メンソール">紙メンソール</option>
-                                        <option value="アイコス">アイコス</option>
-                                        <option value="グロー">グロー</option>
-                                        <option value="プルームテック">プルームテック</option>
-                                        <option value="その他">その他</option>
+                                        <option value="">Brand to use</option>
+                                        <option value="cigarette">cigarette</option>
+                                        <option value="menthol">menthol</option>
+                                        <option value="iqos">iqos</option>
+                                        <option value="glow">glow</option>
+                                        <option value="ploomtech">ploomtech</option>
+                                        <option value="etc">etc</option>
                                 </select>
 
                                 @if ($errors->has('brand'))

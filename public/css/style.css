@@ -121,7 +121,7 @@
 
     body{
         /* margin-top でナブバーに重ならないように変更*/
-        margin-top: 70px;
+        margin-top: 50px;
         padding:0px;
     }
     
@@ -129,8 +129,12 @@
         height: 100vh;
         width: 100%;
         
+        
+        
     }
     
+    
+
     
     
     #menu{
@@ -145,7 +149,7 @@
     #leftoptions{
         height: 10000px;
         width: 135px;
-        background-color: pink;
+        background-color: #333333;
         float: left;
         opacity: 0.8;
     }
