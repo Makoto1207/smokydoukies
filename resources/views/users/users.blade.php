@@ -3,7 +3,7 @@
 @foreach ($users as $user)
     <li class="media">
         <div class="media-left">
-            <img class="media-object img-rounded" src="{{ Gravatar::src($user->nickname, 50) }}" alt="">
+            <img class="media-object img-rounded" src="{{secure_asset('/images/cigs/'. $user->brand. '.jpg')}}" alt="">
         </div>
         <div class="media-body">
             <div>
