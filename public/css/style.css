@@ -2,6 +2,28 @@
 
 
 
+/* 
+    TODO list 
+    
+    x welcome bladeのボタン修正
+    x welcome bladeのボタン加工
+    
+    x Profileの名前の修正
+    x Smokersのview profileの修正
+    x Mapのボタン修正
+
+
+
+*/
+    /* 前ページの背景色　black */
+    
+    body {
+        background-color: black;
+    }
+
+
+
+
 
 /* 
    welcome.blade用のｃｓｓです。 
@@ -9,14 +31,14 @@
 
     /* 背景動画用の加工 */
     video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 1;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 1;
     }
     
     /* 動画の上にテキストが表示されるためのｃｓｓ */
@@ -36,88 +58,212 @@
     h1{
         font-weight:bolder;
         font-size: 150px;
+        margin-bottom: 00px;
+        font-family: Monotype Corsiva;
+        margin-bottom: 80px;
     }
     
+    
+
+    
     /*ボタンのｃｓｓ　*/
-    .buttons {
+    .welcomebuttons {
         width:20px;
         font-size:24px;
         font-weight:bold;
-        text-decoration:none;
-        display:block;
-        padding:8px 0 10px;
-        color:#fff;
-        background-color:#49a9d4;
-        border-radius:25px;
-        display: inline-block;
-        margin: 20px;
+        padding: 0.3em 1em;
+        text-decoration: none;
+        color: #AA0000;
+        border: solid 2px #AA0000;
+        border-radius: 3px;
+        transition: .4s;
+        
+        margin: 40px;
     }
-
+    
+    .welcomebuttons span{
+      display:inline-block;
+      position: relative;
+      transition: .5s;
+      color: white;
+    }
+    
+    .welcomebuttons:hover span{
+      -webkit-transform: rotateX(360deg);
+      -ms-transform: rotateX(360deg);
+      transform: rotateX(360deg);
+      text-decoration: none;
+    }
 
 /* 終わり */
 
+    /* register.bladeについて */
+    
+   
+   
+    
+    .input_box{
+        border:0;
+        background-color:#404040;
+        height: 50px;
+        width:40%;
+        font-size: 20px;
+    }
+    
+    .signup{
+        color: white;
+    }
+    
+    .before_login{
+        color: white;
+        text-align: center;
+    }
+    
+    .welcomebuttons_2 {
+        width:100px;
+        font-size:20px;
+        font-weight:bold;
+        padding: 0.3em 1em;
+        text-decoration: none;
+        background-color: black;
+        color: #AA0000;
+        border: solid 2px #AA0000;
+        border-radius: 3px;
+        transition: .4s;
+        margin: 40px;
+    }
+    .welcomebuttons_2:hover {
+        transform: scale(1.2);
+        
+        
+    }
+    
+
+
 /* navbar用のcss*/
-.navbar-collapse.collapse {
-    display: block!important;
-    height: auto!important;
-    padding-bottom: 0px;
-    overflow: visible!important;
-}
 
-a.dropdown-toggle{
-    margin-right: 10px;
-}
+    .navbar-collapse.collapse {
+        display: block!important;
+        height: auto!important;
+        padding-bottom: 0px;
+        overflow: visible!important;
+    }
+    
+    a.dropdown-toggle{
+        margin-right: 10px;
+    }
+    
+    .homebtn{
+        margin-right: 50px;
+    }
 
-.homebtn{
-    margin-right: 50px;
-}
 
-/* index用のｃｓｓ　*/
 
-            body{
-                /* margin-top でナブバーに重ならないように変更*/
-                margin-top: 70px;
-                padding:0px;
-            }
-            
-            #box1,#box2,#box3,#box4,#box5{
-                height: 100vh;
-                width: 100%;
-            }
-            
-            
-            
-            #menu{
-                position: fixed;
-                top: 51.33px;
 
-            }
-            
-            
-            
-            
-            #leftoptions{
-                height: 10000px;
-                width: 135px;
-                background-color: pink;
-                float: left;
-                opacity: 0.8;
-            }
-            
-            
-            a{
-                font-family: arial black;
-                font-size: 20px;
-                text-decoration: none;
-                margin-left: -15px;
-            }
-            
+/* index用��ｃｓｓ　*/
+
+    body{
+        /* margin-top でナブバーに重ならないように変更*/
+        margin-top: 50px;
+        padding:0px;
+    }
+    
+    #box1,#box2,#box3,#box4,#box5{
+        height: 100vh;
+        width: 100%;
+        
+        
+        
+    }
+    
+    
+
+    
+    
+    #menu{
+        position: fixed;
+        top: 51.33px;
+
+    }
+    
+    
+    
+    
+    #leftoptions{
+        height: 10000px;
+        width: 135px;
+        background-color: #333333;
+        float: left;
+        opacity: 0.8;
+    }
+    
+    
+    /* navleftの文字のフォントやサイズ変更 */
+    
+    #link1, #link2, #link3, #link4, #link5{
+        text-decoration: none;
+        
+    }
+
+    
+    .lefttext{
+        font-family: Microsoft JhengHei UI Light;
+        font-size: 20px;
+        margin-left: -15px;
+        
+        
+        text-decoration: none;
+        color: white;
+    }
+    
+    .lefttext:hover{
+        color: black;
+    }
+    
+    
+/* Profile用のCSSです */
+ 
+
+/*smokers用のcss*/
+    .nickname{
+        font-size: 50px;
+        text-align: center;
+        color:  black;
+        font-family: "Lobster", serif;
+      
+        
+    }
+    
+    #profile_pic{
+        margin-bottom: 50px;
        
+    }
+    
+    .nickname:hover{
+        transform: scale(1.2);
+        text-decoration: none;
+    }
+    
+    
+
+
+/* TWEETに関するｃｓｓ */
+#tweet_pic{
+    width: 80px;
+}
+
+
+
+
+
 
 /* map.blade.php用のCSSです */
+
 /* ここから */
-    .center{
-        text-align:center
+
+    
+    .container{
+        margin-bottom: 60px;
     }
     
     .introduction {
@@ -163,6 +309,37 @@ a.dropdown-toggle{
     .maplarge{
         text-align:center;
     }
+    
+    /* ストアにつなげるボタン*/
+    
+    .storebuttons{
+        display: inline-block;
+        padding: 0.1em 1em;
+        text-decoration: none;
+        color: black;
+        border: solid 2px black;
+        border-radius: 3px;
+        transition: .4s;
+        text-align: center;
+        font-size: 50px;
+        font-family: Microsoft JhengHei UI Light;
+        
+        margin-bottom: 60px;
+        
+    }
+    
+    .storebuttons:hover{
+        background-color: #333333;
+        color: white;
+        text-decoration: none;
+        
+    }
+    
+    .mapdetail{
+        text-align: center;
+    }
+    
+
     
     
 /* ここまで */

@@ -1,6 +1,49 @@
 @extends('layouts.app')
 
 @section('content')
+
+
+ <?php 
+
+$arr = [
+    'cigs' => '紙たばこ', 
+    'mens' => 'メンソール',
+    'icos' => 'アイコス',
+    'glwo' => 'グロー',
+    'blue' => 'ブルームテック',
+];
+
+
+
+$bpic= "$user->brand";
+
+$cigs = "{{secure_asset('/images/cigs/cig1.jpg')}}"; 
+$mens = "{{secure_asset('/images/cigs/cig2.jpg')}}"; 
+$icos = "{{secure_asset('/images/cigs/cig3.jpg')}}"; 
+$glwo = "{{secure_asset('/images/cigs/cig4.jpg')}}"; 
+$blue = "{{secure_asset('/images/cigs/cig5.jpg')}}"; 
+
+
+
+    if($bpic = "紙たばこ"){
+        
+        
+        // echo "<img src=\"$cigs\">";
+
+    }
+
+?> 
+
+
+
+
+
+
+
+
+
+
+
     <div class="row" style="margin-top: 131.33px;">
         <aside class="col-xs-4">
             <div class="panel panel-default">
@@ -9,7 +52,11 @@
                     <h3 class="panel-title">{{ $user->nickname }}</h3>
                 </div>
                 <div class="panel-body">
-                <img class="media-object img-rounded img-responsive" src="{{ Gravatar::src($user->nickname, 262) }}" alt="">
+                    
+                    
+                <!--　プロフィール画像 ブランド名で画像を変更　 -->
+                <img class="media-object img-rounded img-responsive" src="{{secure_asset('/images/cigs/'. $user->brand. '.jpg')}}">
+
                 </div>
             </div>
             <div>
@@ -36,7 +83,7 @@
         </aside>
         <div class="col-xs-8">
             <ul class="nav nav-tabs nav-justified">
-                <li><a href="#">TimeLine</a></li>
+                <li>Tweet<span class="badge" >{{ $count_microposts }}</span></li>
                 
             </ul>
             

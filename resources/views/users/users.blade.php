@@ -1,9 +1,15 @@
 @if (count($users) > 0)
-<ul class="media-list">
+<div class="container">
+    <div class="row">
+        
+    
 @foreach ($users as $user)
-    <li class="media">
-        <div class="media-left">
-            <img class="media-object img-rounded" src="{{ Gravatar::src($user->nickname, 50) }}" alt="">
+   
+
+    <div class="col-md-4">
+        <div class="img-thumbnail" id="profile_pic">
+            <img  src="{{secure_asset('/images/cigs/'. $user->brand. '.jpg')}}"  alt="">
+            <p class="nickname">{!! link_to_route('users.show', $user->nickname, ['id' => $user->id]) !!}</p>
         </div>
         <div class="media-body">
             <div>
@@ -23,6 +29,8 @@
         </div>
     </li>
 @endforeach
-</ul>
+        
+    </div>
+</div>
 {!! $users->render() !!}
 @endif
