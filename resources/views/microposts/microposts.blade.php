@@ -5,7 +5,7 @@
         <div class="media-left">
             <img id="tweet_pic" class="media-object img-rounded" src="{{secure_asset('/images/cigs/'. $user->brand. '.jpg')}}"alt="">
         </div>
-        <div class="media-body">
+        <div class="media-body"  id="tweet">
             <div>
                 {!! link_to_route('users.show', $user->nickname, ['id' => $user->id]) !!} <span class="text-muted">posted at {{ $micropost->created_at }}</span>
             </div>
