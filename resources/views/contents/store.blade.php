@@ -4,8 +4,8 @@
 
 
     @if (count($restaurants) > 0)
-        <div class="container">
-        <h2>お店一覧</h2>
+        <div id="container">
+        <h2>お店リスト</h2>
             <table class="table table-striped">
                 <thead>
                   <tr>
@@ -31,24 +31,14 @@
             
                 
             </table>
-            
 
-        店名検索
+        ボタンを押すとリストが更新されるよ！
         {!! Form::open(['method' => 'GET']) !!}
         {!! Form::text('name', null) !!}
         {!! Form::submit('検索') !!}
         {!! Form::close() !!}
-
-    
-    
-        </div>
-
-    
-    エリア検索
-    {!! Form::open(['method' => 'GET']) !!}
-    {!! Form::text('area', null) !!}
-    {!! Form::submit('検索') !!}
-    {!! Form::close() !!}
+        
+        </div>   
         </div>
     @endif
     
