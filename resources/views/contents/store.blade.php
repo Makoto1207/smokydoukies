@@ -1,13 +1,11 @@
-<!--検索機能はまだ出来ていない -->
-
 @extends('layouts.app')
 
 @section('content')
 
 
     @if (count($restaurants) > 0)
-        <div class="container">
-        <h2>お店一覧</h2>
+        <div id="container">
+        <h2>お店リスト</h2>
             <table class="table table-striped">
                 <thead>
                   <tr>
@@ -33,21 +31,16 @@
             
                 
             </table>
-            
-            {!! Form::open(['method' => 'GET']) !!}
-            {!! Form::text('s', null) !!}
-            {!! Form::submit('検索') !!}
-            {!! Form::close() !!}
-    
-    
-        </div>
+
+        ボタンを押すとリストが更新されるよ！
+        {!! Form::open(['method' => 'GET']) !!}
+        {!! Form::text('name', null) !!}
+        {!! Form::submit('検索') !!}
+        {!! Form::close() !!}
         
-    
-    
-    
+        </div>   
+        </div>
     @endif
     
 
 @endsection
-
-
