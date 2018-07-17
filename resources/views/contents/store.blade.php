@@ -33,19 +33,16 @@
             </table>
             
 
-    店名検索
-    {!! Form::open(['method' => 'GET']) !!}
-    {!! Form::text('name', null) !!}
-    {!! Form::submit('検索') !!}
-    {!! Form::close() !!}
+        店名検索
+        {!! Form::open(['method' => 'GET']) !!}
+        {!! Form::text('name', null) !!}
+        {!! Form::submit('検索') !!}
+        {!! Form::close() !!}
 
     
     
         </div>
-        
-    
-    
->>>>>>> master
+
     
     エリア検索
     {!! Form::open(['method' => 'GET']) !!}

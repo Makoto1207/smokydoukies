@@ -18,7 +18,7 @@ class RestaurantsController extends Controller
     {
         if($request->name=='')
         {
-            //echo 'test1';
+        echo 'test1';
         $restaurants = \App\Restaurants::all();
 
         return view('contents.store', [
@@ -30,8 +30,9 @@ class RestaurantsController extends Controller
         
         else{
 
-        //echo 'test2';
-        $restaurants = \App\Restaurants::where('name','LIKE','%'.$request->word.'%')->get();
+        echo 'test2';
+        //$restaurants = \App\Restaurants::where('name','LIKE','%'.$request->word.'%')->get();
+        $restaurants = \App\Restaurants::where('name',$request->word)->get();
                     echo $request->name;
 
         return view('contents.store', [
