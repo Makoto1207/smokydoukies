@@ -60,11 +60,11 @@
                                 <label for="formGroupExampleInput">Where do you usually smoke?</label></br>
                                 <select class="input_box" id="place" type="text" class="form-control" name="place" value="{{ old('place') }}" required autofocus>name="example2" size="5">
                                         <option id="placeholder" value=""></option>
-                                        <option value="会社近くの室内喫煙所">会社近くの室内喫煙所</option>
-                                        <option value="会社近くの屋外喫煙所">会社近くの屋外喫煙所</option>
-                                        <option value="会社近くのショッピングモール内">会社近くのショッピングモール内</option>
-                                        <option value="KFCの近くの喫煙所">KFCの近くの喫煙所</option>
-                                        <option value="その他">その他</option>
+                                        <option value="Indoor smoking area near the company">Indoor smoking area near the company</option>
+                                        <option value="Outdoor smoking area near the company">Outdoor smoking area near the company</option>
+                                        <option value="In the rise shopping center">In the rise shopping center</option>
+                                        <option value="The smoking are near the KFC">The smoking are near the KFC</option>
+                                        <option value="etc">etc</option>
                                 </select>
                                
                                 @if ($errors->has('place'))
@@ -81,11 +81,11 @@
                                 <label for="formGroupExampleInput">How many times you smoke in a day?</label></br>
                                 <select class="input_box" id="tabaco" type="text" class="form-control" name="tabaco" value="{{ old('tabaco') }}" required autofocus>name="example2" size="5">
                                         <option id="placeholder" value=""></option>
-                                        <option value="1～3本">1～3本</option>
-                                        <option value="5 ～10本">5 ～10本</option>
-                                        <option value="10～15本">10～15本</option>
-                                        <option value="15～1箱">15～1箱</option>
-                                        <option value="１箱以上">１箱以上</option>
+                                        <option value="1～3 cigarettes">1～3 cigarettes</option>
+                                        <option value="5 ～10 cigarettes">5 ～10 cigarettes</option>
+                                        <option value="10～15 cigarettes">10～15 cigarettes</option>
+                                        <option value="15 cigarettes～1 pack">15 cigarettes～1 pack</option>
+                                        <option value="more than 1 pack">more than 1 pack</option>
                                 </select>
 
                                 @if ($errors->has('tabaco'))
