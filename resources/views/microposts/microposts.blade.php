@@ -3,7 +3,7 @@
     <?php $user = $micropost->user; ?>
     <li class="media">
         <div class="media-left">
-            <img class="media-object img-rounded" src="{{secure_asset('/images/cigs/'. $user->brand. '.jpg')}}"alt="">
+            <img id="tweet_pic" class="media-object img-rounded" src="{{secure_asset('/images/cigs/'. $user->brand. '.jpg')}}"alt="">
         </div>
         <div class="media-body">
             <div>
