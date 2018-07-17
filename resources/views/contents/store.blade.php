@@ -5,6 +5,32 @@
 @section('content')
 
 
+
+<div id="ham-menu">
+    <ul>
+        <li>メニュー1</li>
+        <li>メニュー2</li>
+        <li>メニュー3</li>
+    </ul>
+</div>
+<div id="menu-background"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     @if (count($restaurants) > 0)
         <div class="container">
         <h2>お店一覧</h2>
