@@ -8,71 +8,56 @@
     o store.blade.phpへのリンクを設定する
 
 -->
-
 @extends('layouts.app')
 
 @section('content')
 
-
-
-<div class="container">
-    <h2>二子玉川の喫煙所マップ</h2>
+    <div class="titleformap"><h2>Map of Futakotamagawa</h2></div>
      
     <div class="introduction">
-        <img src="{{secure_asset('/img/map.jpg')}}" alt="sample" usemap="#sample">
+        <img src="{{secure_asset('/img/map.jpg')}}" alt="sample" usemap="#sample" width="600" height="600">
         
         <map name="sample">
-            <area shape="poly" coords="109,25,91,278,134,319,582,404,635,243,639,146,488,121,479,157" href="#imageA" alt="map_a">
-            <area shape="poly" coords="129,343,85,382,72,554,376,633,414,398" href="#imageB" alt="map_b">
-            <area shape="poly" coords="487,423,445,606,740,747,778,539" href="#imageC" alt="map_c">
-            <area shape="poly" coords="893,589,854,802,963,872,957,889,1057,956,1250,735,1075,676,893,589" href="#imageD" alt="map_d">
+            <area shape="poly" coords="57,16,47,188,72,219,296,278,331,100,250,81,244,103,57,16" href="#imageA" alt="map_a">
+            <area shape="poly" coords="67,231,42,261,37,375,195,432,214,269, 67,231" href="#imageB" alt="map_b">
+            <area shape="poly" coords="235,272,212,404,365,489,368,348,235,272" href="#imageC" alt="map_c">
+            <area shape="poly" coords="440,370,400,540,450,575,465,590,490,600,590,470,500,430,440,370"href="#imageD" alt="map_d">
         </map>
     </div>
     
     <div class="mapdetail">
-        <h2 id=imageA>A地区</h2>
-        <div class="maplarge" id=imageA>
-
-            <img src="img/a.jpg">
-            <a href="#" class="buttons">Store</a>
-        </div>
+        
+        
+        <div class="sectiontitle"><h2 id=imageA>A</h2></div>
+            <div class="maplarge">
+                <img src="img/a.jpg" width="550" height="550">
+            </div>
+                <a href="#" class="storebuttons">Stores</a>
+            
+        
+        
+        <div class="sectiontitle"><h2 id=imageB>B</h2></div>
+            <div class="maplarge">
+                <img src="img/b.jpg" width="550" height="550">
+            </div>
+                <a href="#" class="storebuttons">Stores</a>
+            
+        
+        
+        <h2 id=imageC>C</h2>
+            <div class="maplarge">
+                <img src="img/c.jpg" width="550" height="550">
+            </div>
+                <a href="#" class="storebuttons">Stores</a>
         
         
         
-        <h2 id=imageB>B地区</h2>
-
-        <div class="maplarge">
-            <img src="img/b.jpg">
-            <a href="#" class="buttons">Store</a>
-
-        </div>
-
-        <a href="#" class="storebuttons">Store</a>
-        
-        
-        <h2 id=imageC>C地区</h2>
-
-        <div class="maplarge">
-            <img src="img/c.jpg">
-            <a href="#" class="buttons">Store</a>
-
-        </div>
-
-        <a href="#" class="storebuttons">Store</a>
-        
-        <h2 id=imageD>D地区</h2>
-
-        <div class="maplarge">
-            <img src="img/d.jpg">
-            <a href="#" class="buttons">Store</a>
-
-        </div>
-        
-        <a href="#" class="storebuttons">Store</a>
-        
+        <h2 id=imageD>D</h2>
+            <div class="maplarge">
+                <img src="img/d.jpg" width="550" height="550">
+            </div>
+                <a href="#" class="storebuttons">Stores</a>
+            
     </div>
     
-    
-
-</div>
 @endsection

@@ -24,6 +24,11 @@
    welcome.blade用のｃｓｓです。 
 */
 
+    /*background colour統一*/
+    .bg{
+        color:#000000;
+    }
+
     /* 背景動画用の加工 */
     video {
         position: fixed;
@@ -165,21 +170,16 @@
         color: white;
     }
     
-    .lefttext:hover{
+    .lefttext:hover{ 
         color: black;
     }
     
     
 /* Profile用のCSSです */
- 
-
 
 
 
 /* ここから */
-
-
-
 
 
 
@@ -187,17 +187,37 @@
 
 /* ここから */
 
+    .body{
+        background-color: black;
+    }
     
-    .container{
-        margin-bottom: 60px;
+     /*Map of Fytakotamagawaの文字編集 */
+    .titleformap{
+        position: relative; /*必ず必要*/
+        z-index: 2; /*必ず必要*/
+        text-align:center;
+        width:50%;
+        padding:0px;
+        margin: 0 auto;
+        color: gray;
+        margin-top: 30px;
+    }
+    
+    h2{
+        font-weight:bolder;
+        font-size: 50px;
+        font-family: Microsoft JhengHei UI Light;
+        margin-bottom: 40px;
     }
     
     .introduction {
       position: relative;
       width: 900px;
       height: 600px;
-      margin: 20px auto;
+      margin: 0 auto;
+      text-align:center;
     }
+
     
     .member-frame {
       position: absolute;
@@ -208,46 +228,67 @@
       text-indent: -9999px;
     }
     
-    #A{
+    /*二子玉全体地図をクリックしたとき*/
+    area:active, 
+    area:link{
+        outline:none;
+    }
+    
+    area:hover{
+        background-color: gray;
+    }
+    
+    /*セクションごと(AからD)アルファベット表示*/
+    .sectiontitle{
+        font-size: 40px;
+        font-family: Microsoft JhengHei UI Light;
+        margin-top: 100px;
+        color: gray;
+    }
+    
+    /*それぞれの画像AからD*/
+    #imageA{
+      padding: 35px;
+      width:3px;
+      height: 3px;
+    }
+    
+    #imageB{
+      padding: 35px;
       top: 0;
-      left: 0;
-      height: 50%;
+      width: 3px;
+      height: 3px;
     }
     
-    #B{
-      top: 0;
-      right: 0;
-      height: 50%;
+    #imageC{
+      padding: 35px;
+      width: 3px;
+      height: 3px;
     }
     
-    #C{
+    #imageD{
+      padding: 35px;
       bottom: 0;
-      left: 0;
-      height: 50%;
-    }
-    
-    #D{
-      bottom: 0;
-      right: 0;
-      height: 50%;
+      width: 3px;
+      height: 10px;
     }
     
     .maplarge{
         text-align:center;
     }
     
+  
     /* ストアにつなげるボタン*/
-    
     .storebuttons{
         display: inline-block;
         padding: 0.1em 1em;
         text-decoration: none;
-        color: black;
-        border: solid 2px black;
+        color: gray;
+        border: white;
         border-radius: 3px;
         transition: .4s;
-        text-align: center;
-        font-size: 50px;
+        text-align: left;
+        font-size: 100px;
         font-family: Microsoft JhengHei UI Light;
         
         margin-bottom: 60px;
@@ -258,7 +299,6 @@
         background-color: #333333;
         color: white;
         text-decoration: none;
-        
     }
     
     .mapdetail{
