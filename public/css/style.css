@@ -236,8 +236,13 @@
         
     }
     
-    #profile_pic{
+    #profile_pic_flame{
         margin-bottom: 50px;
+       
+    }
+    
+     #profile_pic{
+        width: 250px;
        
     }
     
