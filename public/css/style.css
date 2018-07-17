@@ -15,6 +15,11 @@
 
 
 */
+    /* 前ページの背景色　black */
+    
+    body {
+        background-color: black;
+    }
 
 
 
@@ -38,14 +43,14 @@
     
     /* 動画の上にテキストが表示されるためのｃｓｓ */
     .title {
-        position: relative; /*必ず必要*/
-        z-index: 2; /*必ず必要*/
-        text-align:center;
-        width:50%;
-        padding:20px;
-        margin: 0 auto;
-        color: white;
-        margin-top: 90px;
+    position: relative; /*必ず必要*/
+    z-index: 2; /*必ず必要*/
+    text-align:center;
+    width:50%;
+    padding:20px;
+    margin: 0 auto;
+    color: white;
+    margin-top: 130px;
     }
     
     
@@ -92,6 +97,48 @@
 
 /* 終わり */
 
+    /* register.bladeについて */
+    
+   
+   
+    
+    .input_box{
+        border:0;
+        background-color:#404040;
+        height: 50px;
+        width:40%;
+        font-size: 20px;
+    }
+    
+    .signup{
+        color: white;
+    }
+    
+    .before_login{
+        color: white;
+        text-align: center;
+    }
+    
+    .welcomebuttons_2 {
+        width:100px;
+        font-size:20px;
+        font-weight:bold;
+        padding: 0.3em 1em;
+        text-decoration: none;
+        background-color: black;
+        color: #AA0000;
+        border: solid 2px #AA0000;
+        border-radius: 3px;
+        transition: .4s;
+        margin: 40px;
+    }
+    .welcomebuttons_2:hover {
+        transform: scale(1.2);
+        
+        
+    }
+    
+
 
 /* navbar用のcss*/
 
@@ -113,7 +160,7 @@
 
 
 
-/* index用のｃｓｓ　*/
+/* index用��ｃｓｓ　*/
 
     body{
         /* margin-top でナブバーに重ならないように変更*/
@@ -177,10 +224,33 @@
 /* Profile用のCSSです */
  
 
+/*smokers用のcss*/
+    .nickname{
+        font-size: 50px;
+        text-align: center;
+        color:  black;
+        font-family: "Lobster", serif;
+      
+        
+    }
+    
+    #profile_pic{
+        margin-bottom: 50px;
+       
+    }
+    
+    .nickname:hover{
+        transform: scale(1.2);
+        text-decoration: none;
+    }
+    
+    
 
 
-
-/* ここから */
+/* TWEETに関するｃｓｓ */
+#tweet_pic{
+    width: 80px;
+}
 
 
 
