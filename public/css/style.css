@@ -15,10 +15,12 @@
 
 
 */
+    /* 全ページ共通の加工*/
     /* 前ページの背景色　black */
     
     body {
         background-color: black;
+        padding:0px;
     }
 
 
@@ -89,10 +91,10 @@
         padding: 0.3em 1em;
         text-decoration: none;
         color: #AA0000;
-        border: solid 2px #AA0000;
+        background-color:#AA0000;
         border-radius: 3px;
         transition: .4s;
-        
+        font-family: "Times New Roman";
         margin: 40px;
     }
     
@@ -120,66 +122,149 @@
         height: 50px;
         width:40%;
         font-size: 20px;
+        font-family: "Times New Roman";
+        
     }
     
     .signup{
         color: white;
+        
     }
     
     .before_login{
         color: white;
         text-align: center;
+        font-family: "Times New Roman";
     }
     
     .welcomebuttons_2 {
         width:100px;
         font-size:20px;
         font-weight:bold;
-        padding: 0.3em 1em;
         text-decoration: none;
-        background-color: black;
-        color: #AA0000;
+        background-color: #AA0000;
+        color: white;
         border: solid 2px #AA0000;
         border-radius: 3px;
         transition: .4s;
         margin: 40px;
+        text-align: center;
+        font-family: "Times New Roman";
     }
-    .welcomebuttons_2:hover {
-        transform: scale(1.2);
-        
+    
+    .welcomebuttons_2 span{
+      display:inline-block;
+      position: relative;
+      transition: .5s;
+    }
+    
+    
+    .welcomebuttons_2:hover span{
+      -webkit-transform: rotateX(360deg);
+      -ms-transform: rotateX(360deg);
+      transform: rotateX(360deg);
+      text-decoration: none;        
         
     }
     
 
 
    /* navbar用のcss*/
+   
+    nav ul{
+        list-style:none;
+        overflow: hidden;
+        margin-top: 15px;
+    }
+    
+    nav ul li{
+        display: inline-block;
+        float:right;
+        padding-right: 60px;
+    }
+    
+    nav ul li a{
+        color: #FFCC99;
+        font-family: "Times New Roman";
+        font-size: 20px;
+    }
+    
+    /* 下線表示のｃｓｓ */
+    .topnavs a::after {
+      border-bottom: solid 2px #FFCC99;
+      bottom: 0;
+      content: "";
+      display: block;
+      transition: all .3s ease;
+      -webkit-transition: all .3s ease;
+      width: 0;
+    }
+    .topnavs a:hover::after {
+      width: 100%;
+      color:#FFCC99;
+    }
+    /*　ここまで　*/
+    
+    /*　マウスの上に乗せるときの修正　*/
+    .topnavs a:hover{
+        text-decoration: none;
+        color: #FFCC99;
+    }
+    .topnavs a:active{
+        text-decoration: none;
+    }
+    .topnavs a:visited{
+        text-decoration: none;
+        color: #FFCC99;
+    }
+    .homebtn {
+        float:left;
+    }
+    .homebtn a{
+        color:white;
+        text-decoration: none;
+        font-family: Monotype Corsiva;
+        font-size:25px;
+    }
+    .homebtn a:hover{
+        text-decoration: none;
+        color:white;
+    }
+    .homebtn a:visited{
+        text-decoration: none;
+        color:white;
+    }
+    .logoutbtn a{
+        color: white;
+        text-decoration: none;
+    }
+    .logoutbtn a:hover {
+        text-decoration: none;
+        color:white;
+    }
+    .logoutbtn a:visited{
+        text-decoration: none;
+        color:white;
+    }
+    /*　ここまで　*/
+    
+    
+    
+    
 
-    .navbar-collapse.collapse {
-        display: block!important;
-        height: auto!important;
-        padding-bottom: 0px;
-        overflow: visible!important;
-    }
     
-    a.dropdown-toggle{
-        margin-right: 10px;
-    }
+
     
-    .homebtn{
-        margin-right: 50px;
-    }
+   
+   
+   
 
 
 
 
     /* index用��ｃｓｓ　*/
 
-    body{
-        /* margin-top でナブバーに重ならないように変更*/
-        margin-top: 50px;
-        padding:0px;
-    }
-    
+
     #box1,#box2,#box3,#box4,#box5{
         height: 100vh;
         width: 100%;
@@ -206,6 +291,9 @@
         float: left;
         opacity: 0.8;
     }
+    
+    
+    
     
     
     /* navleftの文字のフォントやサイズ変更 */
@@ -374,6 +462,9 @@
     }
     
 
-    
+    .store{
+        margin-bottom: 60px;
+        color: white;
+    }    
     
 /* ここまで */

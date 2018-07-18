@@ -1,5 +1,5 @@
 @if (count($users) > 0)
-<div class="container">
+<div class="container" style="margin-top: 70px;">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <h2>Smokers</h2>
