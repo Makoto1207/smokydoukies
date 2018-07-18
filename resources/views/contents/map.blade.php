@@ -15,7 +15,7 @@
 
 
 
-<div class="container">
+<div class="container" style="margin-top: 70px;">
     <h2>二子玉川の喫煙所マップ</h2>
      
     <div class="introduction">

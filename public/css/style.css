@@ -195,6 +195,9 @@
         text-decoration: none;
         color: #FFCC99;
     }
+    .topnavs a:active{
+        text-decoration: none;
+    }
     .topnavs a:visited{
         text-decoration: none;
         color: #FFCC99;
