@@ -22,47 +22,39 @@
     <nav class="navbar-fixed-top">
         
             <!--　サイトに表示するナブバー　-->
-                
+            
+            <ul>
                 <!--　ホームボタン　-->
-                <li class=Homebtn>
+                <li class="homebtn">
                     <a class="glyphicon glyphicon-home" href="/"></a>
                 </li>
-            
-            <ul class="navbar-right">
-            
-                <li>{!! link_to_route('users.show', 'Profile', ['id' => Auth::id()]) !!}</li>
                 
-                <li>{!! link_to_route('users.index', 'Smokers') !!}</li>
-                
-                <li>
-                    <a href="{{ route('timeline')}}">Timeline</a>
-                </li>
-                
-                <li>
-                    <a href="{{ route('map')}}">Maps</a>
-                </li>
-                
-                <li>
-                    <a href="{{ route('store')}}">Store</a>
-                </li>
-                
+                <!--　右よせするため変更　-->
                 <!--　ログアウト用のルート　 -->
-                <li>
+                <li class="logoutbtn">
                     <a href="{{ route('logout') }}"onclick="event.preventDefault();document.getElementById('logout-form').submit();" class="glyphicon glyphicon-log-out"></a>
-                
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                    {{ csrf_field() }}
-                </form>
-                
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
                 </li>
-            
+                <!-- ストアボタン -->
+                <li class="topnavs">
+                    <a href="{{ route('store')}}">STORE</a>
+                </li>
+                <!--　マップボタン　-->
+                <li class="topnavs">
+                    <a href="{{ route('map')}}">MAP</a>
+                </li>
+                <!--　タイムラインボタン　-->
+                <li class="topnavs">
+                    <a href="{{ route('timeline')}}">TIMELINE</a>
+                </li>
+                <!--　スモーカーボタン　-->
+                <li class="topnavs">{!! link_to_route('users.index', 'SMOKER') !!}</li>
+                <!--　プロファイル　-->
+                <li class="topnavs">{!! link_to_route('users.show', 'PROFILE', ['id' => Auth::id()]) !!}</li>
             </ul>
-            
-    
-            
     </nav>
-
-
 </header>
 
 @endif
