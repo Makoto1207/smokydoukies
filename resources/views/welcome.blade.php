@@ -38,13 +38,182 @@ TODO list
         <!--    </div>-->
         <!--</div>-->
         
-        <div class="slidetest">
-            <a href="{{route('users.show', Auth::id())}}"><img src ="{{secure_asset('/images/1.gif')}}" id="box1"></a>
-            <a href="{{route('users.index')}}"><img src ="{{secure_asset('/images/2.gif')}}" id="box2"></a>
-            <a href="{{route('timeline')}}"><img src ="{{secure_asset('/images/3.gif')}}" id="box3"></a>
-            <a href="{{ route('map')}}"><img src ="{{secure_asset('/images/4.gif')}}" id="box4"></a>
-            <a href="{{ route('store')}}"><img src ="{{secure_asset('/images/5.gif')}}" id="box5"></a>
+        <!--<div class="slidetest">-->
+        <!--    <a href="{{route('users.show', Auth::id())}}"><img src ="{{secure_asset('/images/1.gif')}}" id="box1"></a>-->
+        <!--    <a href="{{route('users.index')}}"><img src ="{{secure_asset('/images/2.gif')}}" id="box2"></a>-->
+        <!--    <a href="{{route('timeline')}}"><img src ="{{secure_asset('/images/3.gif')}}" id="box3"></a>-->
+        <!--    <a href="{{ route('map')}}"><img src ="{{secure_asset('/images/4.gif')}}" id="box4"></a>-->
+        <!--    <a href="{{ route('store')}}"><img src ="{{secure_asset('/images/5.gif')}}" id="box5"></a>-->
+        <!--</div>-->
+
+
+<html>
+    <head>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }    
+        #box1{
+            height: 100vh;
+            width: 100%;
+            background-image: url("/images/index/user.jpg");
+            background-size: cover;
+            display: table;
+            background-attachment: fixed;
+        }
+        #box2{
+            height: 100vh;
+            width: 100%;
+            background-image: url("/images/index/smokers.jpg");
+            background-size: cover;
+            display: table;
+            background-attachment: fixed;
+        }
+        #box3{
+            height: 100vh;
+            width: 100%;
+            background-image: url("/images/index/timeline.jpg");
+            background-size: cover;
+            display: table;
+            background-attachment: fixed;
+        }
+        #box4{
+            height: 100vh;
+            width: 100%;
+            background-image: url("/images/index/map.jpg");
+            background-size: cover;
+            display: table;
+            background-attachment: fixed;
+        }
+        #box5{
+            height: 100vh;
+            width: 100%;
+            background-image: url("/images/index/store.jpg");
+            background-size: cover;
+            display: table;
+            background-attachment: fixed;
+        }
+        
+        h1{
+            font-family: "Times New Roman";
+            position: relative; /*必ず必要*/
+            z-index: 2; /*必ず必要*/
+            text-align:center;
+            color: white;
+            font-size: 50px;
+            margin: 0 0 10px;
+            
+        }
+        
+        .toptext{
+            font-family: "Times New Roman";
+            position: relative; /*必ず必要*/
+            z-index: 2; /*必ず必要*/
+            text-align:center;
+            color: white;
+            font-size: 50px;
+            margin-top: 300px;
+            margin-bottom:0;
+       }
+
+        .indexbuttons {
+            font-family: "Times New Roman";
+            display: inline-block;
+            padding: 0.3em 1em;
+            text-decoration: none;
+            color: #FFCC99;
+            border: solid 2px #FFCC99;
+            border-radius: 3px;
+            transition: .4s;
+        }
+        
+        .indexbuttons:hover{
+            background: #FFCC99;
+            color: black;
+            text-decoration: none;
+        }
+        
+        #box1 div{
+            text-align: center;
+        }
+                #box2 div{
+            text-align: center;
+        }
+                #box3 div{
+            text-align: center;
+        }
+                #box4 div{
+            text-align: center;
+        }
+                #box5 div{
+            text-align: center;
+        }
+        
+    </style>
+    </head>
+    <body>
+        <div id="box1">
+            <div class="onepic">
+                <h1 class="toptext">DISCOVER</h1>
+                <h1>YOURSELF</h1>
+            </div>
+            <div>
+                <a href= "{{route('users.show', Auth::id())}}" class="indexbuttons"><span>PROFILE</span></a>
+            </div>
         </div>
+        
+        <div id="box2">
+            <h1 class="toptext">MEET</h1>
+            <h1>HOMIE</h1>
+            <div>
+            <a href= "{{route('users.index')}}" class="indexbuttons"><span>SMOKERS</span></a>
+            </div>
+        </div>
+        
+        <div id="box3">
+            <h1 class="toptext">SHARE</h1>
+            <h1>THOUGHTS</h1>
+            <div>
+            <a href= "{{route('timeline')}}" class="indexbuttons"><span>TIMELINE</span></a>
+            </div>
+        </div>
+        
+        <div id="box4">
+            <h1 class="toptext">LOCATION</h1>
+            <div>
+                <a href= "{{ route('map')}}" class="indexbuttons"><span>MAP</span></a>
+            </div>
+        </div>
+        
+        <div id="box5">
+            <h1 class="toptext">SEARCH</h1>
+            <div>
+            <a href= "{{ route('store')}}" class="indexbuttons"><span>STORES</span></a>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <!--　ログイン前の登録画面 -->
