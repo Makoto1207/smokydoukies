@@ -79,7 +79,7 @@
         background-color:#AA0000;
         border-radius: 3px;
         transition: .4s;
-        
+        font-family: "Times New Roman";
         margin: 40px;
     }
     
@@ -107,15 +107,19 @@
         height: 50px;
         width:40%;
         font-size: 20px;
+        font-family: "Times New Roman";
+        
     }
     
     .signup{
         color: white;
+        
     }
     
     .before_login{
         color: white;
         text-align: center;
+        font-family: "Times New Roman";
     }
     
     .welcomebuttons_2 {
@@ -130,6 +134,7 @@
         transition: .4s;
         margin: 40px;
         text-align: center;
+        font-family: "Times New Roman";
     }
     
     .welcomebuttons_2 span{
@@ -200,6 +205,8 @@
     .homebtn a{
         color:white;
         text-decoration: none;
+        font-family: Monotype Corsiva;
+        font-size:25px;
     }
     .homebtn a:hover{
         text-decoration: none;

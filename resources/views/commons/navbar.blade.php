@@ -26,7 +26,7 @@
             <ul>
                 <!--　ホームボタン　-->
                 <li class="homebtn">
-                    <a class="glyphicon glyphicon-home" href="/"></a>
+                    <a href="/">SmokyDoukies</a>
                 </li>
                 
                 <!--　右よせするため変更　-->
