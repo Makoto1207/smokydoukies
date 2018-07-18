@@ -2,9 +2,8 @@
 
 @section('content')
 
-
     @if (count($restaurants) > 0)
-        <div id="container">
+        <div id="container" style="margin-top: 70px;">
         <h2>お店リスト</h2>
             <table class="table table-striped">
                 <thead>

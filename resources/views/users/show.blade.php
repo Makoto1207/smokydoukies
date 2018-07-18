@@ -3,46 +3,6 @@
 @section('content')
 
 
- <?php 
-
-$arr = [
-    'cigs' => '紙たばこ', 
-    'mens' => 'メンソール',
-    'icos' => 'アイコス',
-    'glwo' => 'グロー',
-    'blue' => 'ブルームテック',
-];
-
-
-
-$bpic= "$user->brand";
-
-$cigs = "{{secure_asset('/images/cigs/cig1.jpg')}}"; 
-$mens = "{{secure_asset('/images/cigs/cig2.jpg')}}"; 
-$icos = "{{secure_asset('/images/cigs/cig3.jpg')}}"; 
-$glwo = "{{secure_asset('/images/cigs/cig4.jpg')}}"; 
-$blue = "{{secure_asset('/images/cigs/cig5.jpg')}}"; 
-
-
-
-    if($bpic = "紙たばこ"){
-        
-        
-        // echo "<img src=\"$cigs\">";
-
-    }
-
-?> 
-
-
-
-
-
-
-
-
-
-
 
     <div class="row" style="margin-top: 131.33px;">
         <aside class="col-xs-4">
