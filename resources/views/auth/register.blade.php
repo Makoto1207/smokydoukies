@@ -124,7 +124,7 @@
                             
                            
                             
-                                <button type="submit" class="welcomebuttons_2"><span>SIGN UP</span></button>
+                                <button type="submit" class="welcomebuttons"><span>SIGN UP</span></button>
                           </div>
     </form>
 </div>
