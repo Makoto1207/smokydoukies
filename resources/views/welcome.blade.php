@@ -170,9 +170,12 @@ TODO list
         
         
     </style>
+    
+
+    
+    
     </head>
     <body>
-        
         <ul id="menu" style="margin: 30px 0;">
             <a href="#box1"><li><p  class="glyphicon glyphicon-user"></p></li></a>
             <a href="#box2"><li><p class="glyphicon glyphicon-heart"></p></li></a>

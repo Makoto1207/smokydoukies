@@ -10,9 +10,8 @@
 -->
 
 @if (Auth::check())
-
     <header>
-        <nav class="navbar navbar-inverse navbar-static-top navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-static-top navbar-fixed-top" id="menu-wrap">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -45,7 +44,6 @@
         background-color:transparent;
         border-color:transparent;
     }
-    
     a {
         font-family: "Times New Roman";
         font-size: 20px;
@@ -94,62 +92,34 @@
     .navbar-inverse .navbar-nav .line a:hover{
         color:#FFCC99;
     }
+    
+            
+    #menu-wrap {
+      position: fixed;
+      z-index: 9999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0,0,0,.5);
+      transition: .3s;
+    }
 /* done */
 </style>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--<header class="ueni">-->
-    
-    <!--ナブバー表示必須コマンド？（仮） -->
-<!--    <nav class="navbar-fixed-top">-->
-        
-            <!--　サイトに表示するナブバー　-->
-            
-<!--            <ul>-->
-                <!--　ホームボタン　-->
-<!--                <li class="homebtn">-->
-<!--                    <a href="/">SmokyDoukies</a>-->
-<!--                </li>-->
-                
-                <!--　右よせするため変更　-->
-                <!--　ログアウト用のルート　 -->
-                <!--<li class="logoutbtn">-->
-                <!--    <a href="{{ route('logout') }}"onclick="event.preventDefault();document.getElementById('logout-form').submit();" class="glyphicon glyphicon-log-out"></a>-->
-                <!--        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">-->
-                <!--            {{ csrf_field() }}-->
-                <!--        </form>-->
-                <!--</li>-->
-                <!-- ストアボタン -->
-<!--                <li class="topnavs">-->
-<!--                    <a href="{{ route('store')}}">STORE</a>-->
-<!--                </li>-->
-                <!--　マップボタン　-->
-<!--                <li class="topnavs">-->
-<!--                    <a href="{{ route('map')}}">MAP</a>-->
-<!--                </li>-->
-                <!--　タイムラインボタン　-->
-<!--                <li class="topnavs">-->
-<!--                    <a href="{{ route('timeline')}}">TIMELINE</a>-->
-<!--                </li>-->
-                <!--　スモーカーボタン　-->
-<!--                <li class="topnavs">{!! link_to_route('users.index', 'SMOKER') !!}</li>-->
-                <!--　プロファイル　-->
-<!--                <li class="topnavs">{!! link_to_route('users.show', 'PROFILE', ['id' => Auth::id()]) !!}</li>-->
-<!--            </ul>-->
-<!--    </nav>-->
-<!--</header>-->
-
+<!-- ナブバーがなくなるクエリーコマンド -->
+<script>
+var menuHeight = $("#menu-wrap").height();
+var startPos = 0;
+$(window).scroll(function(){
+  var currentPos = $(this).scrollTop();
+  if (currentPos > startPos) {
+	  if($(window).scrollTop() >= 200) {
+      $("#menu-wrap").css("top", "-" + menuHeight + "px");
+		}
+  } else {
+    $("#menu-wrap").css("top", 0 + "px");
+  }
+  startPos = currentPos;
+});
+</script>
 @endif
