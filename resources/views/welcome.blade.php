@@ -25,18 +25,18 @@ TODO list
 
 
         
-        <div id="menu">
-            <div id="leftoptions">
-                <ul style="list-style:none;">
-                    <li><a href="#box1" id="link1"><span class="lefttext">Profile</span></a></li>
-                    <li><a href="#box2" id="link2"><span class="lefttext">Smokers</span></a></li>
-                    <li><a href="#box3" id="link3"><span class="lefttext">Timeline</span></a></li>
-                    <li><a href="#box4" id="link4"><span class="lefttext">Maps</span></a></li>
-                    <li><a href="#box5" id="link5"><span class="lefttext">Store</span></a></li>
+        <!--<div id="menu">-->
+        <!--    <div id="leftoptions">-->
+        <!--        <ul style="list-style:none;">-->
+        <!--            <li><a href="#box1" id="link1"><span class="lefttext">Profile</span></a></li>-->
+        <!--            <li><a href="#box2" id="link2"><span class="lefttext">Smokers</span></a></li>-->
+        <!--            <li><a href="#box3" id="link3"><span class="lefttext">Timeline</span></a></li>-->
+        <!--            <li><a href="#box4" id="link4"><span class="lefttext">Maps</span></a></li>-->
+        <!--            <li><a href="#box5" id="link5"><span class="lefttext">Store</span></a></li>-->
                     
-                </ul>
-            </div>
-        </div>
+        <!--        </ul>-->
+        <!--    </div>-->
+        <!--</div>-->
         
         <div class="slidetest">
             <a href="{{route('users.show', Auth::id())}}"><img src ="{{secure_asset('/images/1.gif')}}" id="box1"></a>
