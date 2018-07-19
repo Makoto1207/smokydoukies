@@ -319,7 +319,15 @@
     }
     
     /*二子玉全体地図をクリックしたとき*/
-  
+    area:active, 
+    area:link{
+        outline:blue;
+    }
+    
+    area:hover{
+        background-color: gray;
+    }
+
     
     /*セクションごと(AからD)アルファベット表示*/
     .sectiontitle{
