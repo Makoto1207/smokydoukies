@@ -304,8 +304,6 @@
     
     .introduction {
       position: relative;
-      width: 900px;
-      height: 600px;
       margin: 0 auto;
       text-align:center;
     }
@@ -321,14 +319,7 @@
     }
     
     /*二子玉全体地図をクリックしたとき*/
-    area:active, 
-    area:link{
-        outline:none;
-    }
-    
-    area:hover{
-        background-color: gray;
-    }
+  
     
     /*セクションごと(AからD)アルファベット表示*/
     .sectiontitle{

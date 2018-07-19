@@ -22,13 +22,13 @@
 >>>>>>> master
      
     <div class="introduction">
-        <img src="{{secure_asset('/img/map.jpg')}}" alt="sample" usemap="#sample" width="600" height="600">
+        <img src="{{secure_asset('/img/mapFULLedit.jpg')}}" alt="sample" usemap="#sample">
         
         <map name="sample">
-            <area shape="poly" coords="57,16,47,188,72,219,296,278,331,100,250,81,244,103,57,16" href="#imageA" alt="map_a">
-            <area shape="poly" coords="67,231,42,261,37,375,195,432,214,269, 67,231" href="#imageB" alt="map_b">
-            <area shape="poly" coords="235,272,212,404,365,489,368,348,235,272" href="#imageC" alt="map_c">
-            <area shape="poly" coords="440,370,400,540,450,575,465,590,490,600,590,470,500,430,440,370"href="#imageD" alt="map_d">
+            <area shape="poly" coords="100,30,76,178,94,200,345,299,396,157" href="#imageA" alt="map_a">
+            <area shape="poly" coords="98,213,60,234,38,331,201,414,233,357,252,266" href="#imageB" alt="map_b">
+            <area shape="poly" coords="287,300,240,411,398,515,454,389" href="#imageC" alt="map_c">
+            <area shape="poly" coords="502,442,451,558,556,669,696,569"href="#imageD" alt="map_d">
         </map>
     </div>
     
@@ -37,7 +37,7 @@
         
         <div class="sectiontitle"><h2 id=imageA>A</h2></div>
             <div class="maplarge">
-                <img src="img/a.jpg" width="550" height="550">
+                <img src="img/mapAedit.jpg" width="550" height="550">
             </div>
                 <a href="#" class="storebuttons">Stores</a>
             
@@ -45,7 +45,7 @@
         
         <div class="sectiontitle"><h2 id=imageB>B</h2></div>
             <div class="maplarge">
-                <img src="img/b.jpg" width="550" height="550">
+                <img src="img/mapBedit.jpg" width="550" height="550">
             </div>
                 <a href="#" class="storebuttons">Stores</a>
             
@@ -53,7 +53,7 @@
         
         <h2 id=imageC>C</h2>
             <div class="maplarge">
-                <img src="img/c.jpg" width="550" height="550">
+                <img src="img/mapCedit.jpg" width="550" height="550">
             </div>
                 <a href="#" class="storebuttons">Stores</a>
         
@@ -61,7 +61,7 @@
         
         <h2 id=imageD>D</h2>
             <div class="maplarge">
-                <img src="img/d.jpg" width="550" height="550">
+                <img src="img/mapDedit.jpg" width="550" height="550">
             </div>
                 <a href="#" class="storebuttons">Stores</a>
             
