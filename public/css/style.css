@@ -154,19 +154,19 @@
     
 
 
-   /* navbar用のcss*/
+    /*navbar用のcss*/
    
-    nav ul{
-        list-style:none;
-        overflow: hidden;
-        margin-top: 15px;
-    }
+    /*nav ul{*/
+    /*    list-style:none;*/
+    /*    overflow: hidden;*/
+    /*    margin-top: 15px;*/
+    /*}*/
     
-    nav ul li{
-        display: inline-block;
-        float:right;
-        padding-right: 60px;
-    }
+    /*nav ul li{*/
+    /*    display: inline-block;*/
+    /*    float:right;*/
+    /*    padding-right: 60px;*/
+    /*}*/
     
     nav ul li a{
         color: #FFCC99;
@@ -174,7 +174,7 @@
         font-size: 20px;
     }
     
-    /* 下線表示のｃｓｓ */
+     /*下線表示のｃｓｓ */
     .topnavs a::after {
       border-bottom: solid 2px #FFCC99;
       bottom: 0;
@@ -188,9 +188,9 @@
       width: 100%;
       color:#FFCC99;
     }
-    /*　ここまで　*/
+    　/*ここまで　*/
     
-    /*　マウスの上に乗せるときの修正　*/
+    　/*マウスの上に乗せるときの修正　*/
     .topnavs a:hover{
         text-decoration: none;
         color: #FFCC99;
@@ -231,7 +231,7 @@
         text-decoration: none;
         color:white;
     }
-    /*　ここまで　*/
+    　/*ここまで　*/
     
     
     
@@ -250,35 +250,7 @@
     /* index用��ｃｓｓ　*/
 
 
-    #box1,#box2,#box3,#box4,#box5{
-        height: 100vh;
-        width: 100%;
-        
-    }
-    
-    
 
-    
-    
-    #menu{
-        position: fixed;
-        top: 51.33px;
-
-    }
-    
-    
-    
-    
-    #leftoptions{
-        height: 10000px;
-        width: 135px;
-        background-color: #333333;
-        float: left;
-        opacity: 0.8;
-    }
-    
-    
-    
     
     
     /* navleftの文字のフォントやサイズ変更 */
@@ -368,10 +340,7 @@
 
 /* ここから */
 
-    
-    .container{
-        margin-bottom: 60px;
-    }
+
     
     .introduction {
       position: relative;

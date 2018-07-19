@@ -1,9 +1,9 @@
 <!-- 
     TODO LIST
     
-    o navのテンプレを使う
-    0 背景を透明にする
-    0 mobile対応できるようにする
+    x navのテンプレを使う
+    x 背景を透明にする
+    x mobile対応できるようにする
     
     x スクロールするとどっかいくようにする
 
@@ -21,7 +21,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/">SmokyDoukies</a>
+                    <a class="navbar-brand" href="#">SmokyDoukies</a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">

@@ -14,7 +14,7 @@ TODO list
 -->
 
 
-@extends('layouts.app')
+@extends('layouts.appwelcome')
 
 
 @section('content')
@@ -61,6 +61,7 @@ TODO list
             background-size: cover;
             display: table;
             background-attachment: fixed;
+            max-width: 100%;
         }
         #box2{
             height: 100vh;
@@ -69,6 +70,7 @@ TODO list
             background-size: cover;
             display: table;
             background-attachment: fixed;
+            max-width: 100%;
         }
         #box3{
             height: 100vh;
@@ -77,6 +79,7 @@ TODO list
             background-size: cover;
             display: table;
             background-attachment: fixed;
+            max-width: 100%;
         }
         #box4{
             height: 100vh;
@@ -85,6 +88,7 @@ TODO list
             background-size: cover;
             display: table;
             background-attachment: fixed;
+            max-width: 100%;
         }
         #box5{
             height: 100vh;
@@ -93,23 +97,20 @@ TODO list
             background-size: cover;
             display: table;
             background-attachment: fixed;
+            max-width: 100%;
+            
         }
         
         h1{
             font-family: "Times New Roman";
-            position: relative; /*必ず必要*/
-            z-index: 2; /*必ず必要*/
             text-align:center;
             color: white;
             font-size: 50px;
             margin: 0 0 10px;
-            
         }
         
         .toptext{
             font-family: "Times New Roman";
-            position: relative; /*必ず必要*/
-            z-index: 2; /*必ず必要*/
             text-align:center;
             color: white;
             font-size: 50px;
@@ -150,12 +151,41 @@ TODO list
             text-align: center;
         }
         
+        #menu{
+        position: fixed;
+        top: 240px;
+
+        }
+        
+        #menu a{
+            list-style-type: none;
+            color:white;
+            transition: .1s;
+        }
+        #menu a:hover{
+            color:white;
+            font-size: 50px;
+        }
+        
+        
+        
     </style>
     </head>
     <body>
+        
+        <ul id="menu" style="margin: 30px 0;">
+            <a href="#box1"><li><p  class="glyphicon glyphicon-user"></p></li></a>
+            <a href="#box2"><li><p class="glyphicon glyphicon-heart"></p></li></a>
+            <a href="#box3"><li><p class="glyphicon glyphicon-comment"></p></li></a>
+            <a href="#box4"><li><p class="glyphicon glyphicon-flag"></p></li></a>
+            <a href="#box5"><li><p class="glyphicon glyphicon-glass"></p></li></a>
+        </ul>
+        
+        
+        
         <div id="box1">
             <div class="onepic">
-                <h1 class="toptext">DISCOVER</h1>
+                <h1 class="toptext">SMOKE</h1>
                 <h1>YOURSELF</h1>
             </div>
             <div>
@@ -165,7 +195,7 @@ TODO list
         
         <div id="box2">
             <h1 class="toptext">MEET</h1>
-            <h1>HOMIE</h1>
+            <h1>DOUKIES</h1>
             <div>
             <a href= "{{route('users.index')}}" class="indexbuttons"><span>SMOKERS</span></a>
             </div>
@@ -180,7 +210,7 @@ TODO list
         </div>
         
         <div id="box4">
-            <h1 class="toptext">LOCATION</h1>
+            <h1 class="toptext">DISCOVER</h1>
             <div>
                 <a href= "{{ route('map')}}" class="indexbuttons"><span>MAP</span></a>
             </div>
@@ -194,18 +224,6 @@ TODO list
         </div>
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
