@@ -15,12 +15,10 @@
 
 
 */
-    /* 全ページ共通の加工*/
     /* 前ページの背景色　black */
     
     body {
         background-color: black;
-        padding:0px;
     }
 
 
@@ -30,6 +28,11 @@
 /* 
    welcome.blade用のｃｓｓです。 
 */
+
+    /*background colour統一*/
+    .bg{
+        color:#000000;
+    }
 
     /* 背景動画用の加工 */
     video {
@@ -76,10 +79,10 @@
         padding: 0.3em 1em;
         text-decoration: none;
         color: #AA0000;
-        background-color:#AA0000;
+        border: solid 2px #AA0000;
         border-radius: 3px;
         transition: .4s;
-        font-family: "Times New Roman";
+        
         margin: 40px;
     }
     
@@ -107,149 +110,66 @@
         height: 50px;
         width:40%;
         font-size: 20px;
-        font-family: "Times New Roman";
-        
     }
     
     .signup{
         color: white;
-        
     }
     
     .before_login{
         color: white;
         text-align: center;
-        font-family: "Times New Roman";
     }
     
     .welcomebuttons_2 {
         width:100px;
         font-size:20px;
         font-weight:bold;
+        padding: 0.3em 1em;
         text-decoration: none;
-        background-color: #AA0000;
-        color: white;
+        background-color: black;
+        color: #AA0000;
         border: solid 2px #AA0000;
         border-radius: 3px;
         transition: .4s;
         margin: 40px;
-        text-align: center;
-        font-family: "Times New Roman";
     }
-    
-    .welcomebuttons_2 span{
-      display:inline-block;
-      position: relative;
-      transition: .5s;
-    }
-    
-    
-    .welcomebuttons_2:hover span{
-      -webkit-transform: rotateX(360deg);
-      -ms-transform: rotateX(360deg);
-      transform: rotateX(360deg);
-      text-decoration: none;        
+    .welcomebuttons_2:hover {
+        transform: scale(1.2);
+        
         
     }
     
 
 
    /* navbar用のcss*/
-   
-    nav ul{
-        list-style:none;
-        overflow: hidden;
-        margin-top: 15px;
-    }
-    
-    nav ul li{
-        display: inline-block;
-        float:right;
-        padding-right: 60px;
-    }
-    
-    nav ul li a{
-        color: #FFCC99;
-        font-family: "Times New Roman";
-        font-size: 20px;
-    }
-    
-    /* 下線表示のｃｓｓ */
-    .topnavs a::after {
-      border-bottom: solid 2px #FFCC99;
-      bottom: 0;
-      content: "";
-      display: block;
-      transition: all .3s ease;
-      -webkit-transition: all .3s ease;
-      width: 0;
-    }
-    .topnavs a:hover::after {
-      width: 100%;
-      color:#FFCC99;
-    }
-    /*　ここまで　*/
-    
-    /*　マウスの上に乗せるときの修正　*/
-    .topnavs a:hover{
-        text-decoration: none;
-        color: #FFCC99;
-    }
-    .topnavs a:active{
-        text-decoration: none;
-    }
-    .topnavs a:visited{
-        text-decoration: none;
-        color: #FFCC99;
-    }
-    .homebtn {
-        float:left;
-    }
-    .homebtn a{
-        color:white;
-        text-decoration: none;
-        font-family: Monotype Corsiva;
-        font-size:25px;
-    }
-    .homebtn a:hover{
-        text-decoration: none;
-        color:white;
-    }
-    .homebtn a:visited{
-        text-decoration: none;
-        color:white;
-    }
-    .logoutbtn a{
-        color: white;
-        text-decoration: none;
-    }
-    .logoutbtn a:hover {
-        text-decoration: none;
-        color:white;
-    }
-    .logoutbtn a:visited{
-        text-decoration: none;
-        color:white;
-    }
-    /*　ここまで　*/
-    
-    
-    
-    
 
+    .navbar-collapse.collapse {
+        display: block!important;
+        height: auto!important;
+        padding-bottom: 0px;
+        overflow: visible!important;
+    }
     
-
+    a.dropdown-toggle{
+        margin-right: 10px;
+    }
     
-   
-   
-   
+    .homebtn{
+        margin-right: 50px;
+    }
 
 
 
 
     /* index用��ｃｓｓ　*/
 
-
+    body{
+        /* margin-top でナブバーに重ならないように変更*/
+        margin-top: 50px;
+        padding:0px;
+    }
+    
     #box1,#box2,#box3,#box4,#box5{
         height: 100vh;
         width: 100%;
@@ -278,9 +198,6 @@
     }
     
     
-    
-    
-    
     /* navleftの文字のフォントやサイズ変更 */
     
     #link1, #link2, #link3, #link4, #link5{
@@ -299,7 +216,7 @@
         color: white;
     }
     
-    .lefttext:hover{
+    .lefttext:hover{ 
         color: black;
     }
     
@@ -312,7 +229,6 @@
     }
     
 /* Profile用のCSSです */
- 
 
 /*smokers用のcss*/
     .nickname{
@@ -346,8 +262,6 @@
         
         
   
-    
-    
 
 
 /* TWEETに関するｃｓｓ */
@@ -361,24 +275,39 @@
 
 
 
-
-
-
 /* map.blade.php用のCSSです */
 
 /* ここから */
 
+    .body{
+        background-color: black;
+    }
     
-    .container{
-        margin-bottom: 60px;
+     /*Map of Fytakotamagawaの文字編集 */
+    .titleformap{
+        position: relative; /*必ず必要*/
+        z-index: 2; /*必ず必要*/
+        text-align:center;
+        width:50%;
+        padding:0px;
+        margin: 0 auto;
+        color: gray;
+        margin-top: 30px;
+    }
+    
+    h2{
+        font-weight:bolder;
+        font-size: 50px;
+        font-family: Microsoft JhengHei UI Light;
+        margin-bottom: 40px;
     }
     
     .introduction {
       position: relative;
-      width: 900px;
-      height: 600px;
-      margin: 20px auto;
+      margin: 0 auto;
+      text-align:center;
     }
+
     
     .member-frame {
       position: absolute;
@@ -389,46 +318,68 @@
       text-indent: -9999px;
     }
     
-    #A{
+    /*二子玉全体地図をクリックしたとき*/
+    area:active, 
+    area:link{
+        outline:blue;
+    }
+    
+    area:hover{
+        background-color: gray;
+    }
+
+    
+    /*セクションごと(AからD)アルファベット表示*/
+    .sectiontitle{
+        font-size: 40px;
+        font-family: Microsoft JhengHei UI Light;
+        margin-top: 100px;
+        color: gray;
+    }
+    
+    /*それぞれの画像AからD*/
+    #imageA{
+      padding: 35px;
+      width:3px;
+      height: 3px;
+    }
+    
+    #imageB{
+      padding: 35px;
       top: 0;
-      left: 0;
-      height: 50%;
+      width: 3px;
+      height: 3px;
     }
     
-    #B{
-      top: 0;
-      right: 0;
-      height: 50%;
+    #imageC{
+      padding: 35px;
+      width: 3px;
+      height: 3px;
     }
     
-    #C{
+    #imageD{
+      padding: 35px;
       bottom: 0;
-      left: 0;
-      height: 50%;
-    }
-    
-    #D{
-      bottom: 0;
-      right: 0;
-      height: 50%;
+      width: 3px;
+      height: 10px;
     }
     
     .maplarge{
         text-align:center;
     }
     
+  
     /* ストアにつなげるボタン*/
-    
     .storebuttons{
         display: inline-block;
         padding: 0.1em 1em;
         text-decoration: none;
-        color: black;
-        border: solid 2px black;
+        color: gray;
+        border: white;
         border-radius: 3px;
         transition: .4s;
-        text-align: center;
-        font-size: 50px;
+        text-align: left;
+        font-size: 100px;
         font-family: Microsoft JhengHei UI Light;
         
         margin-bottom: 60px;
@@ -439,7 +390,6 @@
         background-color: #333333;
         color: white;
         text-decoration: none;
-        
     }
     
     .mapdetail{
@@ -447,9 +397,6 @@
     }
     
 
-    .store{
-        margin-bottom: 60px;
-        color: white;
-    }    
+    
     
 /* ここまで */
