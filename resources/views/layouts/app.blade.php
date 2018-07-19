@@ -10,6 +10,7 @@
 
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
+
     
     <head>
         <meta charset="utf-8">
@@ -27,6 +28,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
        
+       <script async="" src="//www.google-analytics.com/analytics.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+       
        
         <!-- CSSに必要 -->
         <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
@@ -35,7 +39,7 @@
         
         
         
-        <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <!-- ＃リンクのスムーズスクロール -->
         <script>
           $(function(){
@@ -67,6 +71,7 @@
         
     </head>
 
+
     <body>
         <!-- navbar のブレード -->
         @include('commons.navbar')
@@ -76,4 +81,6 @@
         </div>
     
     </body>
+</div>
 </html>
+
