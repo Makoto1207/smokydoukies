@@ -18,6 +18,8 @@ TODO list
 
 
 @section('content')
+
+
     
     
     <!-- ログイン後表示画面(仮) -->
@@ -51,23 +53,30 @@ TODO list
     @else
     
     
-    
+ <div class="container" style="margin-top: 70px;">
+  
+         
     
     <!-- サービス名表示 -->
     <div class="title">
-        <h1 clsss="headings"><span clsss="smoky">Smoky</span>
+        <h1 class="headings"><span class="smoky">Smoky</span>
                             <span class="doukies">Doukies</span></h1>
             
-            
-            
-            <!-- ログイン・サインボタン-->
-            <div>
-                <a href= "{{ route('register') }}" class="welcomebuttons"><span>SIGN UP</span></a>
-                <a href= "{{ route('login') }}" class="welcomebuttons"><span>LOGIN</span></a>
+        <!-- ログイン・サインボタン-->
+           <div class="row">
+              <div class="col-12 col-md-6">
+                  <a href= "{{ route('register') }}" class="welcomebuttons"><span>SIGN UP</span></a>
+              </div>
+              <div class="col-12 col-md-6">
+                  <a href= "{{ route('login') }}" class="welcomebuttons"><span>LOGIN</span></a>
+              </div>
             </div>
+            
+           
         
-    </div>
     
+      </div>
+    </div>
    
     
     

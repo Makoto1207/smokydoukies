@@ -73,14 +73,14 @@
         width:20px;
         font-size:24px;
         font-weight:bold;
-        padding: 0.3em 1em;
+        padding: 0.4em;
         text-decoration: none;
         color: #AA0000;
         background-color:#AA0000;
         border-radius: 3px;
         transition: .4s;
         font-family: "Times New Roman";
-        margin: 40px;
+        
     }
     
     .welcomebuttons span{
@@ -328,11 +328,7 @@
         margin-bottom: 50px;
        
     }
-    
-     #profile_pic{
-        width: 250px;
-       
-    }
+
     
     .nickname:hover{
         transform: scale(1.2);
