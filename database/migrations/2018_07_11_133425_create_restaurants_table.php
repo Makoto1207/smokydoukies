@@ -18,6 +18,7 @@ class CreateRestaurantsTable extends Migration
             $table->string('name');
             $table->string('area');
             $table->string('smoke');
+            $table->string('url');
             $table->timestamps();
         });
     }
