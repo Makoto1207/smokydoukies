@@ -12,14 +12,10 @@
 
 @section('content')
 
-<<<<<<< HEAD
-    <div class="titleformap"><h2>Map of Futakotamagawa</h2></div>
-=======
 
 
 <div class="container" style="margin-top: 70px;">
     <h2>二子玉川の喫煙所マップ</h2>
->>>>>>> master
      
     <div class="introduction">
         <img src="{{secure_asset('/img/mapFULLedit.jpg')}}" alt="sample" usemap="#sample">
