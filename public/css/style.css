@@ -48,30 +48,35 @@
     position: relative; /*必ず必要*/
     z-index: 2; /*必ず必要*/
     text-align:center;
-    width:50%;
+       
     padding:20px;
     margin: 0 auto;
     color: white;
-    margin-top: 130px;
+    margin-top: 10px;
     }
     
     
     /*smoky doukiesの文字編集 */
     h1{
         font-weight:bolder;
-        font-size: 150px;
-        margin-bottom: 00px;
+        font-size: 15vw;
+        text-align:center;
         font-family: Monotype Corsiva;
-        margin-bottom: 80px;
+        margin-bottom: 5px;
     }
     
     
 
     
     /*ボタンのｃｓｓ　*/
+    
+    #buttons{
+        margin-top: 40px;
+    }
     .welcomebuttons {
+        
         width:20px;
-        font-size:24px;
+        font-size:20px;
         font-weight:bold;
         padding: 0.4em;
         text-decoration: none;
@@ -449,3 +454,75 @@
     }    
     
 /* ここまで */
+
+/*profile post */
+    
+    .post_box{
+        background-color:black;
+        color:white;
+        padding: 0.5em 1em;
+        margin: 0;
+        border: solid 3px #000000;
+        border-color: white;
+    }
+    @media (min-width: 768px) {
+        .post_box {
+            width: 500px;
+        }
+        
+    }
+    @media (max-width: 768px) {
+        .post_box {
+            width: 300px;
+        }
+        
+    }
+
+
+
+    .store{
+        margin-bottom: 60px;
+        color: white;
+    }    
+    
+    .table {
+        color:white; 
+    }
+    
+    
+     /*写真の下のニックネームのデザイン*/
+     #pro_nickname{
+         color:gray;
+         font-size: 60px;
+         text-align :center;
+         margin-right: 100px;
+         font-family: Monotype Corsiva;
+     }
+     
+     .tweet1{
+         color:white;
+     }
+     
+     .post_button{
+         color: #baab8f;
+         background-color: black;
+         border:solid 1px opacity;
+         border-color: #baab8f;
+         font-size: 17px;
+         padding: 0px 10px 0px 10px;
+         margin-bottom: 50px;
+     }
+    
+    #answer{
+        font-family: Monotype Corsiva;
+        color:#baab8f ;
+        font-size: 25px;
+    }
+    #question{
+        font-family: Monotype Corsiva;
+        color:white;
+        font-size: 22px;
+    }
+    
+    
+/*ここまで*/

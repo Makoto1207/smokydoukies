@@ -59,22 +59,28 @@ TODO list
     
     <!-- サービス名表示 -->
     <div class="title">
-        <h1 class="headings"><span class="smoky">Smoky</span>
-                            <span class="doukies">Doukies</span></h1>
+        
+        
+        
+        
+        <h1>Smoky</h1>
+        <h1>Doukies</h1>
             
         <!-- ログイン・サインボタン-->
            <div class="row">
-              <div class="col-12 col-md-6">
-                  <a href= "{{ route('register') }}" class="welcomebuttons"><span>SIGN UP</span></a>
-              </div>
-              <div class="col-12 col-md-6">
-                  <a href= "{{ route('login') }}" class="welcomebuttons"><span>LOGIN</span></a>
-              </div>
+                <div class="col-md-offset-2 col-md-8">
+                  <div class="col-12 col-md-6" id="buttons">
+                      <a href= "{{ route('register') }}" class="welcomebuttons"><span>SIGN UP</span></a>
+                  </div>
+                  <div class="col-12 col-md-6" id="buttons">
+                      <a href= "{{ route('login') }}" class="welcomebuttons"><span>LOGIN</span></a>
+                  </div>
+                </div>
             </div>
             
            
         
-    
+        </div>
       </div>
     </div>
    
