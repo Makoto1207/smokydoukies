@@ -23,6 +23,7 @@ TODO list
     <!-- ログイン後表示画面(仮) -->
     @if(Auth::check())
 
+<<<<<<< HEAD
     <html>
         <head>
         </head>
@@ -200,6 +201,7 @@ TODO list
             }
         </style>
         <!-- all done -->
+
         
     @else
     <!-- before login -->
