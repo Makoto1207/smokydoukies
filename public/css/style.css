@@ -51,35 +51,41 @@
     position: relative; /*必ず必要*/
     z-index: 2; /*必ず必要*/
     text-align:center;
-    width:50%;
     padding:20px;
     margin: 0 auto;
     color: white;
-    margin-top: 130px;
+    margin-top: 40px;
     }
     
     
     /*smoky doukiesの文字編集 */
     h1{
         font-weight:bolder;
-        font-size: 150px;
+        font-size: 20vw;
         margin-bottom: 00px;
         font-family: Monotype Corsiva;
-        margin-bottom: 80px;
+        text-align: center;
+       
     }
     
     
 
     
     /*ボタンのｃｓｓ　*/
+    
+    #buttons{
+        margin-top: 40px;
+    }
+    
     .welcomebuttons {
-        width:20px;
-        font-size:24px;
+        width:8em;
+        font-size:20px;
         font-weight:bold;
         padding: 0.4em;
         text-decoration: none;
         color: #AA0000;
         border: solid 2px #AA0000;
+        background-color: #000;
         border-radius: 3px;
         transition: .4s;
         font-family: "Times New Roman";
@@ -108,7 +114,6 @@
         border:0;
         background-color:#404040;
         height: 50px;
-        width:40%;
         font-size: 20px;
     }
     
@@ -420,3 +425,76 @@
     
     
 /* ここまで */
+/*profile post */
+    
+    .post_box{
+        background-color:black;
+        color:white;
+        padding: 0.5em 1em;
+        margin:  0;
+        border: solid 3px #000000;
+        border-color: white;
+    }
+
+
+    .store{
+        margin-bottom: 60px;
+        color: white;
+    }    
+    
+    .table {
+        color:white; 
+    }
+    
+      #profile_pic_flame{
+          align-items:center;
+      }
+    
+     /*写真の下のニックネームのデザイン*/
+     #pro_nickname{
+         color:gray;
+         font-size: 60px;
+         text-align :center;
+         margin-right: 100px;
+         font-family: Monotype Corsiva;
+     }
+     
+     .tweet1{
+         color:white;
+     }
+     
+     .post_button{
+         color: #baab8f;
+         background-color: black;
+         border:solid 1px opacity;
+         border-color: #baab8f;
+         margin-bottom: 40px;
+     }
+    
+    #answer{
+        font-family: Monotype Corsiva;
+        color:#baab8f ;
+        font-size: 25px;
+    }
+    #question{
+        font-family: Monotype Corsiva;
+        color:white;
+        font-size: 22px;
+    }
+    
+
+
+
+
+/*画面のサイズによってサイズを変えたいとき*/
+
+    @media (min-width: 768px) {
+    .post_box {width: 400px;}
+    .input_box{width: 400px;}
+    }
+    
+    @media (max-width: 768px) {
+    .post_box {width: 300px;}
+    .input_box{width: 250px;}
+    }
+    

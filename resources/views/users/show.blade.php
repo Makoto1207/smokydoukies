@@ -15,9 +15,11 @@
                 <p id="pro_nickname">   {{ $user->nickname }} </p>
             </div>
            
-    
+                    
+                   
             <!--基本情報-->  
             <div>
+                
                             <p id='question'>smoking area</p>
                             <p id='answer'>{{ $user->place }}</p> 
                         
@@ -26,9 +28,8 @@
     
                             <p id='question'>sigaret brand</p>
                             <p id='answer'>{{ $user->brand }}</p>
+                       
             </div>
-            
-            
         </div>     
             
             
@@ -42,7 +43,6 @@
             
              
                  @if (Auth::id() == $user->id)
-                
                   {!! Form::open(['route' => 'microposts.store']) !!}
                           {!! Form::textarea('content', old('content'),['class'=>'post_box'])!!}
            
@@ -51,7 +51,6 @@
                           
                       
                   {!! Form::close() !!}
-                
             @endif
             <div class='tweet1'>        
             @if (count($microposts) > 0)
