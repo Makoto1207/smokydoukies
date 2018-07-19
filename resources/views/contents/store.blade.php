@@ -3,12 +3,14 @@
 @section('content')
 
     @if (count($restaurants) > 0)
-        <div id="container" style="margin-top: 70px;">
+        <div id="hoge" style="margin-top: 70px;">
         
+        <div class="col-md-10 col-md-offset-1">
+        <h2 id="store_all">お店リスト</h2>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
         
-        <h2>お店リスト</h2>
-        
-        ボタンを押すとリストが更新されるよ！
+        <span id="store_all">ボタンを押すとリストが更新されるよ！</span>
         {!! Form::open(['method' => 'GET']) !!}
         {!! Form::text('name', null) !!}
         {!! Form::submit('検索') !!}
@@ -16,7 +18,7 @@
         
             <table class="table table-striped">
                 <thead>
-                  <tr>
+                  <tr id="store_all">
                     <th>ID</th>
                     <th>お店の名前</th>
                     <th>エリア</th>
@@ -27,7 +29,7 @@
         
             @foreach($restaurants as $restaurant)
 
-                <tbody>
+                <tbody class="table_color">
                   <tr>
                     <td>{{{ $restaurant->id }}}</td>
                     <td>{{{ $restaurant->name }}}</td>
@@ -42,8 +44,8 @@
                 
             </table>
 
-        
-        
+        </div>
+        </div>
         </div>   
         </div>
     @endif
