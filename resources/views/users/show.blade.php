@@ -2,62 +2,65 @@
 
 @section('content')
 
+<div class="container" style="margin-top: 75px;">
+    
+        <div class="col-md-10 col-md-offset-1">
 
-
-    <div class="row" style="margin-top: 131.33px;">
-        <aside class="col-xs-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <!-- nickname 表示 -->
-                    <h3 class="panel-title">{{ $user->nickname }}</h3>
-                </div>
-                <div class="panel-body">
-                    
-                    
-                <!--　プロフィール画像 ブランド名で画像を変更　 -->
-                <img class="media-object img-rounded img-responsive" src="{{secure_asset('/images/cigs/'. $user->brand. '.jpg')}}">
-
-                </div>
+      
+        <div class="col-12 col-md-6"> 
+        
+            <!--写真と名前-->
+            <div  id="profile_pic_flame">
+                <img  id="profile_pic" src="{{secure_asset('/images/cigs/'. $user->brand. '.jpg')}}"  class="img-responsive">
+                <p id="pro_nickname">   {{ $user->nickname }} </p>
             </div>
+           
+    
+            <!--基本情報-->  
             <div>
-                <table class="table">
-                    <tbody>
-                        <tr>
-                            <th scope="row">いつもタバコを吸う場所</th>
-                            <td>{{ $user->place }}</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">一日に吸う本数</th>
-                            <td>{{ $user->tabaco }}</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">いつも吸うたばこの種類</th>
-                            <td>{{ $user->brand }}</td>
-                        </tr>
-                    </tbody>
-                </table>
-               
-                
-              
+                            <p id='question'>smoking area</p>
+                            <p id='answer'>{{ $user->place }}</p> 
+                        
+                            <p id='question'>Sigarets/a day</p>
+                            <p id='answer'>{{ $user->tabaco }}</p>
+    
+                            <p id='question'>sigaret brand</p>
+                            <p id='answer'>{{ $user->brand }}</p>
             </div>
-        </aside>
-        <div class="col-xs-8">
-            <ul class="nav nav-tabs nav-justified">
-                <li>Tweet<span class="badge" >{{ $count_microposts }}</span></li>
-                
-            </ul>
             
-             @if (Auth::id() == $user->id)
+            
+        </div>     
+            
+            
+            
+            
+            <!--↓右側-->
+       
+       
+      <div class="col-12 col-md-6">
+            <p class="tweet1">Tweet</p><span class="badge" >{{ $count_microposts }}</span></p>
+            
+             
+                 @if (Auth::id() == $user->id)
+                
                   {!! Form::open(['route' => 'microposts.store']) !!}
-                      <div class="form-group">
-                          {!! Form::textarea('content', old('content'), ['class' => 'form-control', 'rows' => '2']) !!}
-                          {!! Form::submit('Post', ['class' => 'btn btn-primary btn-block']) !!}
-                      </div>
+                          {!! Form::textarea('content', old('content'),['class'=>'post_box'])!!}
+           
+                             {!! Form::submit('Post',['class'=>'post_button'] )!!}
+                          
+                      
                   {!! Form::close() !!}
+                
             @endif
+            <div class='tweet1'>        
             @if (count($microposts) > 0)
                 @include('microposts.microposts', ['microposts' => $microposts])
             @endif
-        </div>
+          
+     
     </div>
+  </div>          
+</div>
+    
+    
 @endsection

@@ -13,8 +13,8 @@ TODO list
 
 -->
 
-
-@extends('layouts.app')
+<!-- for navbar  -->
+@extends('layouts.appwelcome')
 
 
 @section('content')
@@ -25,32 +25,188 @@ TODO list
     <!-- ログイン後表示画面(仮) -->
     @if(Auth::check())
 
+<<<<<<< HEAD
+    <html>
+        <head>
+        </head>
+        <body>
+            <!--　左のスクロールバー　-->
+            <ul id="menu" style="margin: 30px 0;">
+                <a href="#box1"><li><p  class="glyphicon glyphicon-user"></p></li></a>
+                <a href="#box2"><li><p class="glyphicon glyphicon-heart"></p></li></a>
+                <a href="#box3"><li><p class="glyphicon glyphicon-comment"></p></li></a>
+                <a href="#box4"><li><p class="glyphicon glyphicon-flag"></p></li></a>
+                <a href="#box5"><li><p class="glyphicon glyphicon-glass"></p></li></a>
+            </ul>
+            <!-- done　-->
+            <!-- background img & texts -->
+            <div id="box1">
+                <div class="onepic">
+                    <h1 class="toptext">SMOKE</h1>
+                    <h1>YOURSELF</h1>
+                </div>
+                <div>
+                    <a href= "{{route('users.show', Auth::id())}}" class="indexbuttons"><span>PROFILE</span></a>
+                </div>
+            </div>
+            
+            <div id="box2">
+                <h1 class="toptext">MEET</h1>
+                <h1>DOUKIES</h1>
+                <div>
+                <a href= "{{route('users.index')}}" class="indexbuttons"><span>SMOKERS</span></a>
+                </div>
+            </div>
+            
+            <div id="box3">
+                <h1 class="toptext">SHARE</h1>
+                <h1>THOUGHTS</h1>
+                <div>
+                <a href= "{{route('timeline')}}" class="indexbuttons"><span>TIMELINE</span></a>
+                </div>
+            </div>
+            
+            <div id="box4">
+                <h1 class="toptext">DISCOVER</h1>
+                <div>
+                    <a href= "{{ route('map')}}" class="indexbuttons"><span>MAP</span></a>
+                </div>
+            </div>
+            
+            <div id="box5">
+                <h1 class="toptext">SEARCH</h1>
+                <div>
+                <a href= "{{ route('store')}}" class="indexbuttons"><span>STORES</span></a>
+                </div>
+            </div>
+            <!-- done -->
+        </body>
+    </html>
+    
+    <!-- ログイン後のｃｓｓ  -->
+    <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }    
+            #box1{
+                height: 100vh;
+                width: 100%;
+                background-image: url("/images/index/user.jpg");
+                background-size: cover;
+                display: table;
+                background-attachment: fixed;
+                max-width: 100%;
+            }
+            #box2{
+                height: 100vh;
+                width: 100%;
+                background-image: url("/images/index/smokers.jpg");
+                background-size: cover;
+                display: table;
+                background-attachment: fixed;
+                max-width: 100%;
+            }
+            #box3{
+                height: 100vh;
+                width: 100%;
+                background-image: url("/images/index/timeline.jpg");
+                background-size: cover;
+                display: table;
+                background-attachment: fixed;
+                max-width: 100%;
+            }
+            #box4{
+                height: 100vh;
+                width: 100%;
+                background-image: url("/images/index/map.jpg");
+                background-size: cover;
+                display: table;
+                background-attachment: fixed;
+                max-width: 100%;
+            }
+            #box5{
+                height: 100vh;
+                width: 100%;
+                background-image: url("/images/index/store.jpg");
+                background-size: cover;
+                display: table;
+                background-attachment: fixed;
+                max-width: 100%;
+                
+            }
+            
+            h1{
+                font-family: "Times New Roman";
+                text-align:center;
+                color: white;
+                font-size: 50px;
+                margin: 0 0 10px;
+            }
+            
+            .toptext{
+                font-family: "Times New Roman";
+                text-align:center;
+                color: white;
+                font-size: 50px;
+                margin-top: 300px;
+                margin-bottom:0;
+           }
+    
+            .indexbuttons {
+                font-family: "Times New Roman";
+                display: inline-block;
+                padding: 0.3em 1em;
+                text-decoration: none;
+                color: #FFCC99;
+                border: solid 2px #FFCC99;
+                border-radius: 3px;
+                transition: .4s;
+            }
+            
+            .indexbuttons:hover{
+                background: #FFCC99;
+                color: black;
+                text-decoration: none;
+            }
+            
+            #box1 div{
+                text-align: center;
+            }
+                    #box2 div{
+                text-align: center;
+            }
+                    #box3 div{
+                text-align: center;
+            }
+                    #box4 div{
+                text-align: center;
+            }
+                    #box5 div{
+                text-align: center;
+            }
+            
+            #menu{
+            position: fixed;
+            top: 240px;
+    
+            }
+            
+            #menu a{
+                list-style-type: none;
+                color:white;
+                transition: .1s;
+            }
+            #menu a:hover{
+                color:white;
+                font-size: 50px;
+            }
+        </style>
+        <!-- all done -->
 
         
-        <!--<div id="menu">-->
-        <!--    <div id="leftoptions">-->
-        <!--        <ul style="list-style:none;">-->
-        <!--            <li><a href="#box1" id="link1"><span class="lefttext">Profile</span></a></li>-->
-        <!--            <li><a href="#box2" id="link2"><span class="lefttext">Smokers</span></a></li>-->
-        <!--            <li><a href="#box3" id="link3"><span class="lefttext">Timeline</span></a></li>-->
-        <!--            <li><a href="#box4" id="link4"><span class="lefttext">Maps</span></a></li>-->
-        <!--            <li><a href="#box5" id="link5"><span class="lefttext">Store</span></a></li>-->
-                    
-        <!--        </ul>-->
-        <!--    </div>-->
-        <!--</div>-->
-        
-        <div class="slidetest">
-            <a href="{{route('users.show', Auth::id())}}"><img src ="{{secure_asset('/images/1.gif')}}" id="box1"></a>
-            <a href="{{route('users.index')}}"><img src ="{{secure_asset('/images/2.gif')}}" id="box2"></a>
-            <a href="{{route('timeline')}}"><img src ="{{secure_asset('/images/3.gif')}}" id="box3"></a>
-            <a href="{{ route('map')}}"><img src ="{{secure_asset('/images/4.gif')}}" id="box4"></a>
-            <a href="{{ route('store')}}"><img src ="{{secure_asset('/images/5.gif')}}" id="box5"></a>
-        </div>
-
-
-    <!--　ログイン前の登録画面 -->
     @else
+
     
     
  <div class="container" style="margin-top: 70px;">
@@ -58,9 +214,13 @@ TODO list
          
     
     <!-- サービス名表示 -->
+
+    <!-- before login -->
+
     <div class="title">
         <h1 class="headings"><span class="smoky">Smoky</span>
                             <span class="doukies">Doukies</span></h1>
+
             
         <!-- ログイン・サインボタン-->
            <div class="row">
@@ -80,16 +240,11 @@ TODO list
    
     
     
-    <!--- srcのところに動画を入れるだけで変更可能 -->
-    
-    <video src="video/test.mp4" muted autoplay loop></video>
-    
-    
 
+    <!--- srcのところに動画を入れるだけで変更可能 -->
+    <video src="video/smoke.mp4" muted autoplay loop></video>
+    
+    
     
     @endif
-    
-    
-    
-    
 @endsection
