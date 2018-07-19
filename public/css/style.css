@@ -456,6 +456,11 @@
         color: white;
     }
     
+    #search_message{
+        color: white;
+        font-size: large;
+    }
+    
     #table{
         background-color:black;
         color:black;
