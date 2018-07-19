@@ -12,17 +12,14 @@
 
 @section('content')
 
-<<<<<<< HEAD
-    <div class="titleformap"><h2>Map of Futakotamagawa</h2></div>
-=======
-
+    <div class="titleformap"><h2>Smoking areas in Futakotamagawa</h2></div>
 
 <div class="container" style="margin-top: 70px;">
-    <h2>二子玉川の喫煙所マップ</h2>
+    <h2>Click on map for more details!</h2>
 >>>>>>> master
      
     <div class="introduction">
-        <img src="{{secure_asset('/img/mapFULLedit.jpg')}}" alt="sample" usemap="#sample">
+        <img src="{{secure_asset('/img/mapFULLedit2.jpg')}}" alt="sample" usemap="#sample">
         
         <map name="sample">
             <area shape="poly" coords="100,30,76,178,94,200,345,299,396,157" href="#imageA" alt="map_a">
