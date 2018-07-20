@@ -4,6 +4,7 @@
 @section('content')
 
 <div class="before_login">
+ 
 
 
         
@@ -120,19 +121,15 @@
 
 
 
-                        <div class="form-group">
-                            
-                           
-                            
-                                <button type="submit" class="welcomebuttons_2"><span>SIGN UP</span></button>
-                          </div>
-    </form>
-</div>
-         
- 
-
+                        <div>
+                            <button type="submit" class="welcomebuttons"><span>SIGN UP</span></button>
+                        </div>
+                    </form>
 
 </div>
 
 @endsection
+
+
+    
 

@@ -18,6 +18,8 @@ TODO list
 
 
 @section('content')
+
+
     
     
     <!-- ログイン後表示画面(仮) -->
@@ -204,15 +206,47 @@ TODO list
 
         
     @else
+
+    
+    
+ <div class="container" style="margin-top: 70px;">
+  
+         
+    
+    <!-- サービス名表示 -->
+
     <!-- before login -->
+
     <div class="title">
-        <h1 clsss="headings"><span clsss="smoky">Smoky</span>
-                            <span class="doukies">Doukies</span></h1>
-            <div>
-                <a href= "{{ route('register') }}" class="welcomebuttons"><span>SIGN UP</span></a>
-                <a href= "{{ route('login') }}" class="welcomebuttons"><span>LOGIN</span></a>
+        
+        
+        
+        <div class="col-md-offset-2 col-md-8">
+            <img src="images/rogo.png"  class='img-responsive'>
+        </div>
+            
+        <!-- ログイン・サインボタン-->
+           <div class="row">
+               <div class="col-md-offset-2 col-md-8">
+                
+                  <div class="col-12 col-md-6" id="buttons">
+                      <a href= "{{ route('register') }}" class="welcomebuttons"><span>SIGN UP</span></a>
+                  </div>
+                  <div class="col-12 col-md-6" id="buttons">
+                      <a href= "{{ route('login') }}" class="welcomebuttons"><span>LOGIN</span></a>
+                  </div>
+              
             </div>
+            
+           
+        
+        </div>
+      </div>
     </div>
+   
+    
+    
+
     <!--- srcのところに動画を入れるだけで変更可能 -->
     <video src="video/smoke.mp4" muted autoplay loop></video>
     
