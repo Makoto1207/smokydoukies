@@ -221,9 +221,9 @@ TODO list
         
         
         
-        
-        <h1>Smoky</h1>
-        <h1>Doukies</h1>
+        <div class="col-md-offset-2 col-md-8">
+            <img src="images/rogo.png"  class='img-responsive'>
+        </div>
             
         <!-- ログイン・サインボタン-->
            <div class="row">
