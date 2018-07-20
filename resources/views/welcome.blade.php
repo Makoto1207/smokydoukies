@@ -292,13 +292,13 @@ TODO list
                     
                 
                 <div class="row">
-                    <div class="btnframe" class="col-12 col-md-6" style="margin:40px">
+                    <div class="btnframe" class="col-12 col-md-6" style="margin:30px">
                         <span class="btneffect"></span>
                             <a href= "{{ route('register') }}"><span>SIGN UP</span></a>
                     </div>  
                   
                   
-                    <div class="btnframe" class="col-12 col-md-6" style="margin:40px">
+                    <div class="btnframe" class="col-12 col-md-6" style="margin:30px">
                         <span class="btneffect"></span>
                             <a href= "{{ route('login') }}"><span>LOGIN</span></a>
                     </div>
