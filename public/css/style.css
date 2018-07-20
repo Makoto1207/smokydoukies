@@ -298,27 +298,33 @@
     }
     
      /*Map of Fytakotamagawaの文字編集 */
+
     .titleformap{
         position: relative; /*必ず必要*/
         z-index: 2; /*必ず必要*/
         text-align:center;
         width:50%;
         padding:0px;
-        margin: 0 auto;
+        margin: auto;
         color: gray;
-        margin-top: 30px;
+        margin-top: 60px;
+        font-size: 60px;
+        font-family:  "Lobster", serif;
     }
     
-    h2{
+    .sub-titleformap{
         font-weight:bolder;
-        font-size: 50px;
-        font-family: Microsoft JhengHei UI Light;
+        font-size: 30px;
+        margin-top: 0px;
+        text-align:center;
+        color: gray;
+        font-family: "Lobster", serif;
         margin-bottom: 40px;
     }
-    
+
+
     .introduction {
       position: relative;
-      margin: 0 auto;
       text-align:center;
     }
 
@@ -331,6 +337,7 @@
       background-size: cover;
       text-indent: -9999px;
     }
+    
     
     /*二子玉全体地図をクリックしたとき*/
     area:active, 
@@ -392,9 +399,9 @@
         border: white;
         border-radius: 3px;
         transition: .4s;
-        text-align: left;
-        font-size: 100px;
-        font-family: Microsoft JhengHei UI Light;
+        text-align: center;
+        font-size: 70px;
+        font-family: "Lobster", serif;
         
         margin-bottom: 60px;
         
@@ -408,6 +415,7 @@
     
     .mapdetail{
         text-align: center;
+        margin: 0;
     }
     
 

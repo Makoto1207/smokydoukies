@@ -25,7 +25,6 @@ TODO list
     <!-- ログイン後表示画面(仮) -->
     @if(Auth::check())
 
-<<<<<<< HEAD
     <html>
         <head>
         </head>
