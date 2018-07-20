@@ -25,7 +25,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="line">{!! link_to_route('users.show', 'PROFILE', ['id' => Auth::id()]) !!}</li>
-                        <li class="line">{!! link_to_route('users.index', 'SMOKER') !!}</li>
+                        <li class="line">{!! link_to_route('users.index', 'SMOKERS') !!}</li>
                         <li class="line"><a href="{{ route('timeline')}}">TIMELINE</a></li>
                         <li class="line"><a href="{{ route('map')}}">MAP</a></li>
                         <li class="line"><a href="{{ route('store')}}">STORE</a></li>
