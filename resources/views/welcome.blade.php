@@ -284,36 +284,31 @@ TODO list
         
         
         
-        <div class="col-md-offset-2 col-md-8">
+        <div >
             <img src="images/rogo.png"  class='img-responsive'>
         </div>
             
         <!-- ログイン・サインボタン-->
-           <div class="row">
-               <div class="col-md-offset-2 col-md-8">
+                    
                 
-                  <div class="col-12 col-md-6" id="buttons">
-                      <a href= "{{ route('register') }}" class="welcomebuttons"><span>SIGN UP</span></a>
-                  </div>
+                <div class="row">
+                    <div class="btnframe" class="col-12 col-md-6" style="margin:40px">
+                        <span class="btneffect"></span>
+                            <a href= "{{ route('register') }}"><span>SIGN UP</span></a>
+                    </div>  
                   
                   
-                  <div class="col-12 col-md-6" id="buttons"></div>
-                      <a href= "{{ route('login') }}" class="welcomebuttons"><span>LOGIN</span></a>
-                  </div>
-              
-              
-                <div class="btnframe">
-                    <div class="btneffect"></div>
-                        <a href= "{{ route('store')}}"><span>STORES</span></a>
+                    <div class="btnframe" class="col-12 col-md-6" style="margin:40px">
+                        <span class="btneffect"></span>
+                            <a href= "{{ route('login') }}"><span>LOGIN</span></a>
+                    </div>
                 </div>
-              
-              
+                    
+                </div>
             </div>
             
            
-        
-        </div>
-      </div>
+ 
     </div>
    
     
@@ -328,16 +323,18 @@ TODO list
             .btnframe{
               width:150px;
               height:50px;
-              border:2px solid #FFCC99;
+              border:2px solid white;
               border-radius: 3px;
+              cursor:pointer;
               position:relative;
               overflow:hidden;
               margin: auto;
+              display:inline-block;
             }
             .btnframe a{
               font-family:time new roman;
               font-size:20px;
-              color:#FFCC99;
+              color:white;
               text-decoration:none;
               line-height:50px;
               transition:all .3s ease;
@@ -348,7 +345,7 @@ TODO list
               width:150px;
               height:50px;
               left:-150px;
-              background:#FFCC99;
+              background:white;
               position:absolute;
               transition:all .3s ease;
               z-index:1;
