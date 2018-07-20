@@ -343,6 +343,14 @@
       text-indent: -9999px;
     }
     
+    
+    
+    /*map page title*/
+    .titleformap{
+        margin-top: 90px;
+        font-family:  "Lobster", serif;
+    }
+    
     /*二子玉全体地図をクリックしたとき*/
     area:active, 
     area:link{
