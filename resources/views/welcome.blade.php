@@ -184,6 +184,7 @@ TODO list
               height:50px;
               border:2px solid #FFCC99;
               border-radius: 3px;
+              cursor:pointer;
               position:relative;
               overflow:hidden;
               margin: auto;
