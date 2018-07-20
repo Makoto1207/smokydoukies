@@ -22,10 +22,6 @@
     <div class="col-10 col-offset-1">
         <div class="introduction">
             <img src="{{secure_asset('/img/mapFULLedit2.jpg')}}" alt="sample" usemap="#sample" class='img-responsive' style="margin: auto;">
-
-     
-    <div class="introduction">
-        <img src="{{secure_asset('/img/mapFULLedit2.jpg')}}" alt="sample" usemap="#sample">
         
         <map name="sample">
             <area shape="poly" coords="100,30,76,178,94,200,345,299,396,157" href="#imageA" alt="map_a">
