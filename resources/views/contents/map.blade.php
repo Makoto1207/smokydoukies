@@ -37,7 +37,7 @@
             <div class="maplarge">
                 <img src="img/mapAedit.jpg" width="550" height="550">
             </div>
-                <a href="{{ route('store')}}" class="storebuttons">Stores</a>
+                <a href="{{ route('store')}}?name=(A)" class="storebuttons">Stores</a>
             
         
         
@@ -45,7 +45,7 @@
             <div class="maplarge">
                 <img src="img/mapBedit.jpg" width="550" height="550">
             </div>
-                <a href="{{ route('store')}}" class="storebuttons">Stores</a>
+                <a href="{{ route('store')}}?name=(B)" class="storebuttons">Stores</a>
             
         
         
@@ -53,7 +53,7 @@
             <div class="maplarge">
                 <img src="img/mapCedit.jpg" width="550" height="550">
             </div>
-                <a href="{{ route('store')}}" class="storebuttons">Stores</a>
+                <a href="{{ route('store')}}?name=(C)" class="storebuttons">Stores</a>
         
         
         
@@ -61,7 +61,7 @@
             <div class="maplarge">
                 <img src="img/mapDedit.jpg" width="550" height="550">
             </div>
-                <a href="{{ route('store')}}" class="storebuttons">Stores</a>
+                <a href="{{ route('store')}}?name=(D)" class="storebuttons">Stores</a>
             
     </div>
     
