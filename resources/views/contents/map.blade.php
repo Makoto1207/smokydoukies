@@ -13,14 +13,14 @@
 @section('content')
 
 
-    <div class="titleformap"><h2>Smoking areas in Futakotamagawa</h2></div>
+    <div class="titleformap">Smoking areas in Futakotamagawa</div>
 
-<div class="container" style="margin-top: 70px;">
-    <h3>Click on map for more details! ↓↓</h3>
+<div class="container" style="margin-top: 10px;">
+    <div class ="sub-titleformap">Click on map for more details!</div>
 
-    <div class="col-100 col-offset-1">
+    <div class="col-10 col-offset-1">
         <div class="introduction">
-            <img src="{{secure_asset('/img/mapFULLedit2.jpg')}}" alt="sample" usemap="#sample" class='img-responsive'>
+            <img src="{{secure_asset('/img/mapFULLedit2.jpg')}}" alt="sample" usemap="#sample" class='img-responsive' style="margin: auto;">
             
             <map name="sample">
                 <area shape="poly" coords="100,30,76,178,94,200,345,299,396,157" href="#imageA" alt="map_a">
@@ -33,17 +33,18 @@
         <div class="mapdetail">
             
             
-            <div class="sectiontitle"><h2 id=imageA>A</h2></div>
+            <div class="sectiontitle">
+                <h2 id=imageA>A</h2>
                 <div class="maplarge">
-                    <img src="img/mapAedit.jpg" width="550" height="550" class='img-responsive'>
+                    <img src="img/mapAedit.jpg" width="550" height="550" class='img-responsive' style="margin: auto;">
                 </div>
                     <a href="{{ route('store')}}" class="storebuttons">Stores</a>
-                
+            </div>    
             
             
             <div class="sectiontitle"><h2 id=imageB>B</h2></div>
                 <div class="maplarge">
-                    <img src="img/mapBedit.jpg" width="550" height="550" class='img-responsive'>
+                    <img src="img/mapBedit.jpg" width="550" height="550" class='img-responsive' style="margin: auto;">
                 </div>
                     <a href="{{ route('store')}}" class="storebuttons">Stores</a>
                 
@@ -51,7 +52,7 @@
             
             <h2 id=imageC>C</h2>
                 <div class="maplarge">
-                    <img src="img/mapCedit.jpg" width="550" height="550" class='img-responsive'>
+                    <img src="img/mapCedit.jpg" width="550" height="550" class='img-responsive' style="margin: auto;">
                 </div>
                     <a href="{{ route('store')}}" class="storebuttons">Stores</a>
             
@@ -59,10 +60,10 @@
             
             <h2 id=imageD>D</h2>
                 <div class="maplarge">
-                    <img src="img/mapDedit.jpg" width="550" height="550" class='img-responsive'>
+                    <img src="img/mapDedit.jpg" width="550" height="550" class='img-responsive' style="margin: auto;">
                 </div>
                     <a href="{{ route('store')}}" class="storebuttons">Stores</a>
-                
-        </div>
+        </div>      
     </div>
+</div>
 @endsection
