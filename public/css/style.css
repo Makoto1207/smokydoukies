@@ -438,6 +438,35 @@
     }
     
 
+    .store{
+        margin-bottom: 60px;
+        color: white;
+    }
     
+    #store_all{
+        color: white;
+        font-family: "Times New Roman";
+    }
+    
+    #search_message{
+        color: white;
+        font-size: large;
+    }
+    
+    #table{
+        background-color:black;
+        color:black;
+    }
+    
+    .table_color tr td{
+        background-color:black;
+        color:white;
+    }
+    
+    .table_color tr td a{
+
+        color:white;
+    }
+
     
 /* ここまで */
