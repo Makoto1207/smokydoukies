@@ -52,7 +52,7 @@
 
                         <div class="form-group">
                            
-                                <button type="submit"  class="welcomebuttons_2"><span>LOGIN</span></button>
+                                <button type="submit"  class="welcomebuttons"><span>LOGIN</span></button>
 
                     </form>
 

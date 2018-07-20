@@ -45,7 +45,6 @@
     
     /* 動画の上にテキストが表示されるためのｃｓｓ */
     .title {
-
     position: relative; /*必ず必要*/
     z-index: 2; /*必ず必要*/
     text-align:center;
@@ -61,7 +60,6 @@
     h1{
         font-weight:bolder;
         font-size: 150px;
-       
         margin-bottom: 00px;
         font-family: Monotype Corsiva;
         margin-bottom: 80px;
@@ -71,7 +69,6 @@
 
     
     /*ボタンのｃｓｓ　*/
-
     .welcomebuttons {
         width:20px;
         font-size:24px;
@@ -339,7 +336,7 @@
     
     .nickname:hover{
         transform: scale(1.2);
-        text-decoration: none;
+        text-decoration: none
     }
     
 /*timeline用のcss*/
@@ -360,6 +357,13 @@
     
      #tweet{
          color: white;
+     }
+     
+     .delete_button{
+        color: #800000;
+         background-color: black;
+         border:solid 1px opacity;
+        border-color: #800000;
      }
 
 
@@ -450,9 +454,67 @@
     }
     
 
+    .profile_strings{
+        font-family: 'Amatic SC', cursive;
+    }
+    /*profile post */
+    
+    .post_box{
+        background-color:black;
+        color:white;
+        padding: 0.5em 1em;
+        margin: 2em 0;
+        border: solid 3px #000000;
+        border-color: white;
+    }
+
+
     .store{
         margin-bottom: 60px;
         color: white;
     }    
     
-/* ここまで */
+    .table {
+        color:white; 
+    }
+    
+      #profile_pic_flame{
+          align-items:center;
+      }
+    
+     /*写真の下のニックネームのデザイン*/
+     #pro_nickname{
+         color:gray;
+         font-size: 60px;
+         text-align :center;
+         margin-right: 100px;
+         font-family: Monotype Corsiva;
+     }
+     
+     .tweet1{
+         color:white;
+     }
+     
+     .post_button{
+         color: #baab8f;
+         background-color: black;
+         border:solid 1px opacity;
+         border-color: #baab8f;
+         float: right
+     }
+    
+    #answer{
+        font-family: Monotype Corsiva;
+        color:#baab8f ;
+        font-size: 25px;
+    }
+    #question{
+        font-family: Monotype Corsiva;
+        color:white;
+        font-size: 22px;
+    }
+    
+    .tweet1{
+        margin-top: 30px;
+    }
+/*ここまで*/
