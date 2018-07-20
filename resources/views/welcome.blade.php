@@ -25,7 +25,6 @@ TODO list
     <!-- ログイン後表示画面(仮) -->
     @if(Auth::check())
 
-<<<<<<< HEAD
     <html>
         <head>
         </head>
@@ -45,39 +44,64 @@ TODO list
                     <h1 class="toptext">SMOKE</h1>
                     <h1>YOURSELF</h1>
                 </div>
-                <div>
-                    <a href= "{{route('users.show', Auth::id())}}" class="indexbuttons"><span>PROFILE</span></a>
+
+                
+                <div class="btnframe">
+                    <div class="btneffect"></div>
+                        <a href= "{{route('users.show', Auth::id())}}"><span>PROFILE</span></a>
                 </div>
+                
+                
+                
             </div>
             
             <div id="box2">
                 <h1 class="toptext">MEET</h1>
                 <h1>DOUKIES</h1>
-                <div>
-                <a href= "{{route('users.index')}}" class="indexbuttons"><span>SMOKERS</span></a>
+
+                <div class="btnframe">
+                    <div class="btneffect"></div>
+                        <a href= "{{route('users.index')}}"><span>SMOKERS</span></a>
                 </div>
+                
+                
+                
             </div>
             
             <div id="box3">
                 <h1 class="toptext">SHARE</h1>
                 <h1>THOUGHTS</h1>
-                <div>
-                <a href= "{{route('timeline')}}" class="indexbuttons"><span>TIMELINE</span></a>
+
+                
+                <div class="btnframe">
+                    <div class="btneffect"></div>
+                        <a href= "{{route('timeline')}}"><span>TIMELINE</span></a>
                 </div>
+                
+                
+                
             </div>
             
             <div id="box4">
                 <h1 class="toptext">DISCOVER</h1>
-                <div>
-                    <a href= "{{ route('map')}}" class="indexbuttons"><span>MAP</span></a>
+
+                <div class="btnframe">
+                    <div class="btneffect"></div>
+                        <a href= "{{ route('map')}}"><span>MAP</span></a>
                 </div>
+                
+                
+                
             </div>
             
             <div id="box5">
                 <h1 class="toptext">SEARCH</h1>
-                <div>
-                <a href= "{{ route('store')}}" class="indexbuttons"><span>STORES</span></a>
+                
+                <div class="btnframe">
+                    <div class="btneffect"></div>
+                        <a href= "{{ route('store')}}"><span>STORES</span></a>
                 </div>
+                
             </div>
             <!-- done -->
         </body>
@@ -152,23 +176,61 @@ TODO list
                 margin-top: 300px;
                 margin-bottom:0;
            }
+           
+           
+           /* ボタンの加工 */
+            .btnframe{
+              width:150px;
+              height:50px;
+              border:2px solid #FFCC99;
+              border-radius: 3px;
+              position:relative;
+              overflow:hidden;
+              margin: auto;
+            }
+            .btnframe a{
+              font-family:time new roman;
+              font-size:20px;
+              color:#FFCC99;
+              text-decoration:none;
+              line-height:50px;
+              transition:all .3s ease;
+              z-index:2;
+              position:relative;
+            }
+            .btneffect{
+              width:150px;
+              height:50px;
+              left:-150px;
+              background:#FFCC99;
+              position:absolute;
+              transition:all .3s ease;
+              z-index:1;
+            }
+            .btnframe:hover .btneffect{
+              left:0;
+            }
+            .btnframe:hover a{
+              color:black;
+            }
+
     
-            .indexbuttons {
-                font-family: "Times New Roman";
-                display: inline-block;
-                padding: 0.3em 1em;
-                text-decoration: none;
-                color: #FFCC99;
-                border: solid 2px #FFCC99;
-                border-radius: 3px;
-                transition: .4s;
-            }
+            /*.indexbuttons {*/
+            /*    font-family: "Times New Roman";*/
+            /*    display: inline-block;*/
+            /*    padding: 0.3em 1em;*/
+            /*    text-decoration: none;*/
+            /*    color: #FFCC99;*/
+            /*    border: solid 2px #FFCC99;*/
+            /*    border-radius: 3px;*/
+            /*    transition: .4s;*/
+            /*}*/
             
-            .indexbuttons:hover{
-                background: #FFCC99;
-                color: black;
-                text-decoration: none;
-            }
+            /*.indexbuttons:hover{*/
+            /*    background: #FFCC99;*/
+            /*    color: black;*/
+            /*    text-decoration: none;*/
+            /*}*/
             
             #box1 div{
                 text-align: center;
@@ -232,9 +294,18 @@ TODO list
                   <div class="col-12 col-md-6" id="buttons">
                       <a href= "{{ route('register') }}" class="welcomebuttons"><span>SIGN UP</span></a>
                   </div>
-                  <div class="col-12 col-md-6" id="buttons">
+                  
+                  
+                  <div class="col-12 col-md-6" id="buttons"></div>
                       <a href= "{{ route('login') }}" class="welcomebuttons"><span>LOGIN</span></a>
                   </div>
+              
+              
+                <div class="btnframe">
+                    <div class="btneffect"></div>
+                        <a href= "{{ route('store')}}"><span>STORES</span></a>
+                </div>
+              
               
             </div>
             
@@ -251,6 +322,44 @@ TODO list
     <video src="video/smoke.mp4" muted autoplay loop></video>
     
     
+    <style>
+               /* ボタンの加工 */
+            .btnframe{
+              width:150px;
+              height:50px;
+              border:2px solid #FFCC99;
+              border-radius: 3px;
+              position:relative;
+              overflow:hidden;
+              margin: auto;
+            }
+            .btnframe a{
+              font-family:time new roman;
+              font-size:20px;
+              color:#FFCC99;
+              text-decoration:none;
+              line-height:50px;
+              transition:all .3s ease;
+              z-index:2;
+              position:relative;
+            }
+            .btneffect{
+              width:150px;
+              height:50px;
+              left:-150px;
+              background:#FFCC99;
+              position:absolute;
+              transition:all .3s ease;
+              z-index:1;
+            }
+            .btnframe:hover .btneffect{
+              left:0;
+            }
+            .btnframe:hover a{
+              color:black;
+            }
+    
+    </style>
     
     @endif
 @endsection

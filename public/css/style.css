@@ -48,13 +48,11 @@
     
     /* 動画の上にテキストが表示されるためのｃｓｓ */
     .title {
-    position: relative; /*必ず必要*/
-    z-index: 2; /*必ず必要*/
-    text-align:center;
-    padding:20px;
-    margin: 0 auto;
-    color: white;
-    margin-top: 40px;
+        position: relative; /*必ず必要*/
+        z-index: 2; /*必ず必要*/
+        text-align:center;
+        padding:20px;
+        margin: 0 auto;
     }
     
     
@@ -66,6 +64,12 @@
         font-family: Monotype Corsiva;
         text-align: center;
        
+    }
+    
+    .img-responsive{
+        max-width: 85%;
+        height: auto;
+        margin: auto
     }
     
     
