@@ -466,6 +466,17 @@
         margin: 2em 0;
         border: solid 3px #000000;
         border-color: white;
+        
+         
+
+
+  width: 100%;
+  box-sizing: border-box;
+  margin: 1em 0;
+  padding: .8em;
+  border-radius: 1em;
+  border: 2px solid #aaa;
+
     }
 
 
@@ -517,4 +528,6 @@
     .tweet1{
         margin-top: 30px;
     }
+    
+ 
 /*ここまで*/
