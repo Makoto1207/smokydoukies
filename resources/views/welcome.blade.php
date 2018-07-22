@@ -234,15 +234,22 @@ TODO LIST
             <!-- ログイン・サインボタン-->
                     <div class="row">
                         <!-- SingUPボタン加工ようのdiv別け -->
-                        <div class="btnframe" class="col-12 col-md-6" style="margin:30px">
-                            <span class="btneffect"></span>
-                                <a href= "{{ route('register') }}"><span>SIGN UP</span></a>
-                        </div>  
+                        <!--<div class="btnframe" class="col-12 col-md-6" style="margin:30px">-->
+                        <!--    <span class="btneffect"></span>-->
+                        <!--        <a href= "{{ route('register') }}"><span>SIGN UP</span></a>-->
+                        <!--</div>  -->
                         <!-- Loginボタン加工ようのdiv別け -->                  
+                        <!--<div class="btnframe" class="col-12 col-md-6" style="margin:30px">-->
+                        <!--    <span class="btneffect"></span>-->
+                        <!--        <a href= "{{ route('login') }}"><span>LOGIN</span></a>-->
+                        <!--</div>-->
+                        
+                        
                         <div class="btnframe" class="col-12 col-md-6" style="margin:30px">
                             <span class="btneffect"></span>
-                                <a href= "{{ route('login') }}"><span>LOGIN</span></a>
+                                <a href= "#intro1"><span>LEARN MORE</span></a>
                         </div>
+                        
                     </div>
                         
         </div>
@@ -253,13 +260,55 @@ TODO LIST
     
     
     
-    
-    
+    <!-- イントロページ -->
+    <div>
+        <div id="intro1">
+            <section class="feautures">
+                <div class="col-sm-6 col-sm-offset-3 container">
+                    <h2>OUR FEATURE</h2>
+                        <div class="titledesc">
+                            <p>Platform where all people gathers for peace.</p> 
+                            <p>We brighten our future, we thrive for love.</p>
+                            <p>Get ready to join smoky doukies.</p>
+                        </div>
+                        
+                </div>
+
+                
+            </section>
+
+        </div>
+        
+    </div>
+
+
     
     
     
     
     <style>
+        #intro1{
+            margin-top: 300px;
+            height: 100vh;
+            width: 100%;
+            z-index: 3;
+            position: relative;
+            background-color: white;
+        }
+        
+        .feautures{
+            padding: 140px 0;
+            text-align:center;
+            letter-spacing: 4px;
+            margin: 0 0 70px;
+        }
+        
+        .container h2{
+            font-family: "Times New Roman";
+        }
+    
+    
+    
         /* 背景動画用の加工 */
         video {
             position: fixed;

@@ -114,4 +114,29 @@
           startPos = currentPos;
         });
     </script>
+    
+
+@else
+<!-- ログイン前イントロページにてのnav -->
+    <header>
+        <nav class="navbar navbar-inverse navbar-static-top navbar-fixed-top" id="menu-wrap">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>{!! link_to_route('register', 'SING UP') !!}</li>
+                        <li>{!! link_to_route('login', 'LOGIN') !!}</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
 @endif
