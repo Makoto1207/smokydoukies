@@ -88,48 +88,11 @@
     }
     　/*ここまで　*/
     
-    
-    
-    
-
-    
-
-    
-   
-   
-   
-
 
 
 
     /* index用��ｃｓｓ　*/
 
-
-
-    
-    
-    /* navleftの文字のフォントやサイズ変更 */
-    
-    /*#link1, #link2, #link3, #link4, #link5{*/
-    /*    text-decoration: none;*/
-        
-    /*}*/
-
-    
-    /*.lefttext{*/
-    /*    font-family: Microsoft JhengHei UI Light;*/
-    /*    font-size: 20px;*/
-    /*    margin-left: -15px;*/
-        
-        
-    /*    text-decoration: none;*/
-    /*    color: white;*/
-    /*}*/
-    
-    /*.lefttext:hover{ */
-    /*    color: black;*/
-    /*}*/
-    
     /*各コンテンツの題名のフォント*/
     h2{
         color: #686868;
@@ -140,24 +103,8 @@
     
 /* Profile用のCSSです */
 
-/*smokers用のcss*/
-    /*.nickname{*/
-    /*    font-size: 50px;*/
-    /*    text-align: center;*/
-    /*    color:  black;*/
-    /*    font-family: "Lobster", serif;*/
-    /*}*/
     
-    #profile_pic_flame{
-        margin-bottom: 50px;
-       
-    }
 
-    
-    /*.nickname:hover{*/
-    /*    transform: scale(1.2);*/
-    /*    text-decoration: none;*/
-    /*}*/
     
 /*timeline用のcss*/
     .timeline{

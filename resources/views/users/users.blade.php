@@ -35,6 +35,13 @@
         transform: scale(1.2);
         text-decoration: none;
     }
+    
+    /* チェキの様な加工 */
+    #profile_pic_flame{
+        margin-bottom: 50px;
+    }
+
+    
 </style>
 
 @endif
