@@ -139,9 +139,8 @@
             .before_login{
               font-family: "Times New Roman";
             }
-
             
-                   /* ボタンの加工 */
+            /* ボタンの加工 */
             .btnframe{
               width:150px;
               height:60px;

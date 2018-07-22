@@ -18,4 +18,23 @@
    
 </div>
 {!! $users->render() !!}
+
+
+
+<style>
+
+    /* 文字の色変更 */
+    .nickname {
+        text-align: center;
+    }
+    .nickname a{
+        color: black;
+        font-size:30px;
+    }
+    .nickname a:hover{
+        transform: scale(1.2);
+        text-decoration: none;
+    }
+</style>
+
 @endif

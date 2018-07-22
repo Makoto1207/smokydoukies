@@ -141,14 +141,12 @@
 /* Profile用のCSSです */
 
 /*smokers用のcss*/
-    .nickname{
-        font-size: 50px;
-        text-align: center;
-        color:  black;
-        font-family: "Lobster", serif;
-      
-        
-    }
+    /*.nickname{*/
+    /*    font-size: 50px;*/
+    /*    text-align: center;*/
+    /*    color:  black;*/
+    /*    font-family: "Lobster", serif;*/
+    /*}*/
     
     #profile_pic_flame{
         margin-bottom: 50px;
@@ -156,10 +154,10 @@
     }
 
     
-    .nickname:hover{
-        transform: scale(1.2);
-        text-decoration: none;
-    }
+    /*.nickname:hover{*/
+    /*    transform: scale(1.2);*/
+    /*    text-decoration: none;*/
+    /*}*/
     
 /*timeline用のcss*/
     .timeline{
