@@ -10,7 +10,7 @@
         </div>
         <div class="col-md-8 col-md-offset-2">
         
-        <span id="search_message">Push the button to update the restaurant list</span>
+        <span id="search_message">Push the button to update the restaurant list | </span> <a href="{{ route('store')}}" id="search_message">Show Full List</a>
         {!! Form::open(['method' => 'GET']) !!}
         {!! Form::text('name', null) !!}
         {!! Form::submit('Search') !!}
