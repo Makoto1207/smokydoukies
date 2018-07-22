@@ -65,7 +65,7 @@
 <style>
 
             .before_login{
-                font-family: time new roman;
+                font-family: "Times New Roman";
                 margin: 30px;
             }
             
@@ -83,7 +83,7 @@
               display:inline-block;
             }
             .btnframe button{
-              font-family:time new roman;
+              font-family: "Times New Roman";
               font-size:20px;
               color:white;
               text-decoration:none;

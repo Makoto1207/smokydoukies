@@ -1,30 +1,14 @@
 <!-- 
-TODO list 
-
-    x 背景に動画ながす
-    x サービス名を中心に表示する
-    x サインイン・ログインボタンを左右にサービス名のしたに表示する
-    x レイアウトを作成する
-    x ボタンの加工
-    x ログイン後の画面表示
-    
-    終わってないこと
-    携帯画面でのアスペクト
+TODO LIST
 
 -->
 
 <!-- for navbar  -->
 @extends('layouts.appwelcome')
-
-
 @section('content')
 
-
-    
-    
     <!-- ログイン後表示画面(仮) -->
     @if(Auth::check())
-
     <html>
         <head>
         </head>
@@ -190,7 +174,7 @@ TODO list
               margin: auto;
             }
             .btnframe a{
-              font-family:time new roman;
+              font-family: "Times New Roman";
               font-size:20px;
               color:#FFCC99;
               text-decoration:none;
@@ -215,37 +199,8 @@ TODO list
               color:black;
             }
 
-    
-            /*.indexbuttons {*/
-            /*    font-family: "Times New Roman";*/
-            /*    display: inline-block;*/
-            /*    padding: 0.3em 1em;*/
-            /*    text-decoration: none;*/
-            /*    color: #FFCC99;*/
-            /*    border: solid 2px #FFCC99;*/
-            /*    border-radius: 3px;*/
-            /*    transition: .4s;*/
-            /*}*/
             
-            /*.indexbuttons:hover{*/
-            /*    background: #FFCC99;*/
-            /*    color: black;*/
-            /*    text-decoration: none;*/
-            /*}*/
-            
-            #box1 div{
-                text-align: center;
-            }
-                    #box2 div{
-                text-align: center;
-            }
-                    #box3 div{
-                text-align: center;
-            }
-                    #box4 div{
-                text-align: center;
-            }
-                    #box5 div{
+            #box1, #box2, #box3, #box4, #box5 div{
                 text-align: center;
             }
             
@@ -267,96 +222,108 @@ TODO list
         </style>
         <!-- all done -->
 
-        
+    <!-- ログイン後 -->
     @else
-
-    
-    
- <div class="container" style="margin-top: 70px;">
-  
-         
-    
+    <div class="container" style="margin-top: 70px;">
     <!-- サービス名表示 -->
-
-    <!-- before login -->
-
-    <div class="title">
-        
-        
-        
-        <div >
-            <img src="images/rogo.png"  class='img-responsive'>
-        </div>
-            
-        <!-- ログイン・サインボタン-->
-                    
-                
-                <div class="row">
-                    <div class="btnframe" class="col-12 col-md-6" style="margin:30px">
-                        <span class="btneffect"></span>
-                            <a href= "{{ route('register') }}"><span>SIGN UP</span></a>
-                    </div>  
-                  
-                  
-                    <div class="btnframe" class="col-12 col-md-6" style="margin:30px">
-                        <span class="btneffect"></span>
-                            <a href= "{{ route('login') }}"><span>LOGIN</span></a>
-                    </div>
-                </div>
-                    
-                </div>
+        <div class="title">
+            <div >
+                <img src="images/rogo.png"  class='img-responsive'>
             </div>
             
-           
- 
+            <!-- ログイン・サインボタン-->
+                    <div class="row">
+                        <!-- SingUPボタン加工ようのdiv別け -->
+                        <div class="btnframe" class="col-12 col-md-6" style="margin:30px">
+                            <span class="btneffect"></span>
+                                <a href= "{{ route('register') }}"><span>SIGN UP</span></a>
+                        </div>  
+                        <!-- Loginボタン加工ようのdiv別け -->                  
+                        <div class="btnframe" class="col-12 col-md-6" style="margin:30px">
+                            <span class="btneffect"></span>
+                                <a href= "{{ route('login') }}"><span>LOGIN</span></a>
+                        </div>
+                    </div>
+                        
+        </div>
     </div>
-   
-    
-    
 
-    <!--- srcのところに動画を入れるだけで変更可能 -->
+    <!-- 背景動画 -->
     <video src="video/smoke.mp4" muted autoplay loop></video>
     
     
-    <style>
-               /* ボタンの加工 */
-            .btnframe{
-              width:150px;
-              height:50px;
-              border:2px solid white;
-              border-radius: 3px;
-              cursor:pointer;
-              position:relative;
-              overflow:hidden;
-              margin: auto;
-              display:inline-block;
-            }
-            .btnframe a{
-              font-family:time new roman;
-              font-size:20px;
-              color:white;
-              text-decoration:none;
-              line-height:50px;
-              transition:all .3s ease;
-              z-index:2;
-              position:relative;
-            }
-            .btneffect{
-              width:150px;
-              height:50px;
-              left:-150px;
-              background:white;
-              position:absolute;
-              transition:all .3s ease;
-              z-index:1;
-            }
-            .btnframe:hover .btneffect{
-              left:0;
-            }
-            .btnframe:hover a{
-              color:black;
-            }
     
+    
+    
+    
+    
+    
+    
+    <style>
+        /* 背景動画用の加工 */
+        video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 1;
+        }
+    
+        /* 動画の上にテキストが表示されるためのｃｓｓ */
+        .title {
+            position: relative; /*必ず必要*/
+            z-index: 2; /*必ず必要*/
+            text-align:center;
+            padding:20px;
+            margin: 0 auto;
+        }
+        /* ロゴ用のｃｓｓ */
+        .img-responsive{
+            max-width: 55%;
+            height: auto;
+            margin: auto
+        }
+    
+       /* ボタンの加工 */
+        .btnframe{
+          width:150px;
+          height:50px;
+          border:2px solid white;
+          border-radius: 3px;
+          cursor:pointer;
+          position:relative;
+          overflow:hidden;
+          margin: auto;
+          display:inline-block;
+        }
+        .btnframe a{
+          font-family:"Times New Roman";
+          font-size:20px;
+          color:white;
+          text-decoration:none;
+          line-height:50px;
+          transition:all .3s ease;
+          z-index:2;
+          position:relative;
+        }
+        .btneffect{
+          width:150px;
+          height:50px;
+          left:-150px;
+          background:white;
+          position:absolute;
+          transition:all .3s ease;
+          z-index:1;
+        }
+        .btnframe:hover .btneffect{
+          left:0;
+        }
+        .btnframe:hover a{
+          color:black;
+        }
     </style>
     
     @endif
