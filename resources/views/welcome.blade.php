@@ -28,12 +28,13 @@ TODO LIST
                     <h1 class="toptext">SMOKE</h1>
                     <h1>YOURSELF</h1>
                 </div>
-
                 
                 <div class="btnframe">
                     <div class="btneffect"></div>
                         <a href= "{{route('users.show', Auth::id())}}"><span>PROFILE</span></a>
                 </div>
+                
+                <p class="scroll js-scroll"><a href="#box2">SCROLL</a></p>                        
                 
                 
                 
@@ -67,7 +68,7 @@ TODO LIST
             </div>
             
             <div id="box4">
-                <h1 class="toptext">DISCOVER</h1>
+                <h1 class="toptext" style="font-size:80px;">DISCOVER</h1>
 
                 <div class="btnframe">
                     <div class="btneffect"></div>
@@ -75,11 +76,10 @@ TODO LIST
                 </div>
                 
                 
-                
             </div>
             
             <div id="box5">
-                <h1 class="toptext">SEARCH</h1>
+                <h1 class="toptext" style="font-size:80px;">SEARCH</h1>
                 
                 <div class="btnframe">
                     <div class="btneffect"></div>
@@ -148,7 +148,7 @@ TODO LIST
                 font-family: "Times New Roman";
                 text-align:center;
                 color: white;
-                font-size: 50px;
+                font-size: 80px;
                 margin: 0 0 10px;
             }
             
@@ -219,6 +219,57 @@ TODO LIST
                 color:white;
                 font-size: 50px;
             }
+            
+            .scroll{
+              position: absolute;
+              width: 100%;
+              text-align: center;
+              margin:130px 0 0;
+              font-family: "Time New Romans";
+            }
+              .scroll a{
+                position: relative;
+                display: inline-block;
+                font-size: 20px;
+                font-weight: bold;
+                color: #fff;
+                text-decoration: none;
+                padding: 0 0 35px;
+              }
+            /*矢印を作成する*/
+            .scroll a:before{
+              content: "";
+              position: absolute;
+              width: 10px;
+              height: 10px;
+              left: 0;
+              right: 0;
+              bottom: 25px;
+              margin: auto;
+              border-bottom: 2px solid #fff;
+              border-right: 2px solid #fff;
+              transform: rotate(45deg);
+              animation: move 2s infinite;
+            }
+        
+        
+        /*矢印をアニメーションする*/
+    @keyframes move {
+      0% {
+        transform: rotate(45deg) translate(0, 0);
+      }
+      20% {
+        transform: rotate(45deg) translate(10px, 10px);
+      }
+      40% {
+        transform: rotate(45deg) translate(0, 0);
+      }
+    }
+        
+            
+            
+            
+            
         </style>
         <!-- all done -->
 
