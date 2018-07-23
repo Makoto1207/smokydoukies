@@ -42,7 +42,7 @@
 <style>
 /* start */
     .navbar {
-        background-color:transparent;
+        background-color:black;
         border-color:transparent;
     }
     

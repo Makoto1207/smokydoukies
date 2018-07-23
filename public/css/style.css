@@ -115,17 +115,6 @@
   
 
 
-/* TWEETに関するｃｓｓ */
-    #tweet_pic{
-        width: 80px;
-    }
-    
-     #tweet{
-         color: white;
-     }
-
-
-
 /* map.blade.php用のCSSです */
 
 /* ここから */
@@ -285,21 +274,6 @@
 
         color:white;
     }
-
-    
-/* ここまで */
-/*profile post */
-    
-    .post_box{
-        background-color:black;
-        color:white;
-        padding: 0.5em 1em;
-        margin:  0;
-        border: solid 3px #000000;
-        border-color: white;
-    }
-
-
     .store{
         margin-bottom: 60px;
         color: white;
@@ -309,41 +283,10 @@
         color:white; 
     }
     
-      #profile_pic_flame{
-          align-items:center;
-      }
+/* ここまで */
+/*profile post */
     
-     /*写真の下のニックネームのデザイン*/
-     #pro_nickname{
-         color:gray;
-         font-size: 60px;
-         text-align :center;
-         margin-right: 100px;
-         font-family: Monotype Corsiva;
-     }
-     
-     .tweet1{
-         color:white;
-     }
-     
-     .post_button{
-         color: #baab8f;
-         background-color: black;
-         border:solid 1px opacity;
-         border-color: #baab8f;
-         margin-bottom: 40px;
-     }
     
-    #answer{
-        font-family: Monotype Corsiva;
-        color:#baab8f ;
-        font-size: 25px;
-    }
-    #question{
-        font-family: Monotype Corsiva;
-        color:white;
-        font-size: 22px;
-    }
     
 
 
@@ -352,7 +295,7 @@
 /*画面のサイズによってサイズを変えたいとき*/
 
     @media (min-width: 768px) {
-    .post_box {width: 400px;}
+    .post_box {width: 346px;}
     .input_box{width: 400px;}
     }
     
