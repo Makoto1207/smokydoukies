@@ -16,10 +16,12 @@ class RestaurantsController extends Controller
 {
      public function index(Request $request)
     {
+        $num=0;
         if($request->name=='')
         {
         $restaurants = \App\Restaurants::all();
-
+        $num=count($restaurants);
+        echo $num.PHP_EOL;
         return view('contents.store', [
             'restaurants' => $restaurants,
         ]);
@@ -29,8 +31,9 @@ class RestaurantsController extends Controller
         
         else{
         $restaurants = \App\Restaurants::where('name','LIKE','%'.$request->name.'%')->orwhere('smoke','LIKE','%'.$request->name.'%')->orwhere('area','LIKE','%'.$request->name.'%')->get();
-
-        return view('contents.store', [
+        $num=count($restaurants);
+        echo $num.PHP_EOL;
+                return view('contents.store', [
             'restaurants' => $restaurants,
         ]);   
         }
