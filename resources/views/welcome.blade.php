@@ -245,10 +245,16 @@ TODO LIST
                         <!--</div>-->
                         
                         
-                        <div class="btnframe" class="col-12 col-md-6" style="margin:30px">
-                            <span class="btneffect"></span>
-                                <a href= "#intro1"><span>LEARN MORE</span></a>
-                        </div>
+                        <!--<div class="btnframe" class="col-12 col-md-6" style="margin:30px">-->
+                        <!--    <span class="btneffect"></span>-->
+                        <!--        <a href= "#intro1"><span>LEARN MORE</span></a>-->
+                        <!--</div>-->
+                        
+                        <!-- scroll down ボタン -->
+                        <p class="scroll js-scroll"><a href="#intro1">CLICK</a></p>                        
+                            
+                        
+                        
                         
                     </div>
                         
@@ -264,8 +270,8 @@ TODO LIST
     <div>
         <div id="intro1">
             <section class="feautures">
-                <div class="col-sm-6 col-sm-offset-3 container">
-                    <div class="row">
+                <div class="container">
+                    <div class="row" style="margin:0 0 70px;">
                         <h2>OUR SERVICES</h2>
                             <div class="titledesc">
                                 <p>Platform where all people gathers for peace.</p> 
@@ -273,20 +279,43 @@ TODO LIST
                                 <p>Get ready to join smoky doukies.</p>
                             </div>
                     </div>
-                    <div class="row col-md-3 col-sm-6 col-xs-12">
-                        <div >
-                            <div class="featureitem">
-                                <span class="glyphicon glyphicon-user"></span>
-                                <h3>Your Profile</h3>
-                                <p>"Your informations are open to all the users. Also, you could state your feelings on board."</p>
+                    <div class="row">
+                        <div class="intropages">
+                            <div class="col-sm-6 col-md-4 col-lg-2 col-lg-offset-1">
+                                <p class="glyphicon glyphicon-user" style="font-size: 30px;"></p>
+                                <h3>Profile</h3>
+                                <p>Your informations are open to all the users. Also, you could state your feelings on board.</p>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-2">
+                                <p class="glyphicon glyphicon-heart" style="font-size: 30px;"></p>
+                                <h3>Smokers</h3>
+                                <p>You can view other Smokers detail. Thefore, you can find buddies.</p>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-2">
+                                <p class="glyphicon glyphicon-comment" style="font-size: 30px;"></p>
+                                <h3>Timelines</h3>
+                                <p>All the conversation are showed in this page. You are able to know each others.</p>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-2">
+                                <p class="glyphicon glyphicon-flag" style="font-size: 30px;"></p>
+                                <h3>Map</h3>
+                                <p>Every details of restoran locations are shown. You could discover where to go</p>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-2">
+                                <p class="glyphicon glyphicon-glass" style="font-size: 30px;"></p>
+                                <h3>Restaurant</h3>
+                                <p>About 250 restaurant information are stored. You could find the perfect place to enjoy.</p>
                             </div>
                         </div>
                     </div>
-
-                        
+                    <div class="row">
+                            <div class="btnframeintro" class="col-12 col-md-6" style="margin-top:30px;">
+                            <span class="btneffectintro"></span>
+                                <a href= "{{ route('register') }}"><span>SIGN UP NOW</span></a>
+                        </div>
+                    </div>
                 </div>
 
-                
             </section>
 
         </div>
@@ -300,7 +329,7 @@ TODO LIST
     
     <style>
         #intro1{
-            margin-top: 300px;
+            margin-top: 430px;
             height: 100vh;
             width: 100%;
             z-index: 3;
@@ -309,16 +338,20 @@ TODO LIST
         }
         
         .feautures{
-            padding: 140px 0;
+            padding: 70px 0;
             text-align:center;
             letter-spacing: 4px;
-            margin: 0 0 70px;
+            background-color:white;
         }
         
         .container h2{
             font-family: "Times New Roman";
         }
-    
+        
+        .intropages div{
+            margin-bottom: 30px;
+        }        
+
     
     
         /* 背景動画用の加工 */
@@ -349,10 +382,50 @@ TODO LIST
         }
     
        /* ボタンの加工 */
-        .btnframe{
-          width:150px;
+        /*.btnframe{*/
+        /*  width:180px;*/
+        /*  height:50px;*/
+        /*  border:2px solid white;*/
+        /*  border-radius: 3px;*/
+        /*  cursor:pointer;*/
+        /*  position:relative;*/
+        /*  overflow:hidden;*/
+        /*  margin: auto;*/
+        /*  display:inline-block;*/
+        /*}*/
+        /*.btnframe a{*/
+        /*  font-family:"Times New Roman";*/
+        /*  font-size:20px;*/
+        /*  color:white;*/
+        /*  text-decoration:none;*/
+        /*  line-height:50px;*/
+        /*  transition:all .3s ease;*/
+        /*  z-index:2;*/
+        /*  position:relative;*/
+        /*}*/
+        /*.btneffect{*/
+        /*  width:180px;*/
+        /*  height:50px;*/
+        /*  left:-180px;*/
+        /*  background:white;*/
+        /*  position:absolute;*/
+        /*  transition:all .3s ease;*/
+        /*  z-index:1;*/
+        /*}*/
+        /*.btnframe:hover .btneffect{*/
+        /*  left:0;*/
+        /*}*/
+        /*.btnframe:hover a{*/
+        /*  color:black;*/
+        /*}*/
+        
+        
+        
+        /* introボタンの加工 */
+        .btnframeintro{
+          width:220px;
           height:50px;
-          border:2px solid white;
+          border:2px solid black;
           border-radius: 3px;
           cursor:pointer;
           position:relative;
@@ -360,31 +433,94 @@ TODO LIST
           margin: auto;
           display:inline-block;
         }
-        .btnframe a{
+        .btnframeintro a{
           font-family:"Times New Roman";
           font-size:20px;
-          color:white;
+          color:black;
           text-decoration:none;
           line-height:50px;
           transition:all .3s ease;
           z-index:2;
           position:relative;
         }
-        .btneffect{
-          width:150px;
+        .btneffectintro{
+          width:220px;
           height:50px;
-          left:-150px;
-          background:white;
+          left:-220px;
+          background:black;
           position:absolute;
           transition:all .3s ease;
           z-index:1;
         }
-        .btnframe:hover .btneffect{
+        .btnframeintro:hover .btneffectintro{
           left:0;
         }
-        .btnframe:hover a{
-          color:black;
+        .btnframeintro:hover a{
+          color:white;
         }
+        
+        
+        
+        
+        .scroll{
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      margin:90px 0 0;
+      font-family: "Time New Romans";
+            }
+      .scroll a{
+        position: relative;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+        padding: 0 0 35px;
+      }
+        /*矢印を作成する*/
+        .scroll a:before{
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          left: 0;
+          right: 0;
+          bottom: 25px;
+          margin: auto;
+          border-bottom: 2px solid #fff;
+          border-right: 2px solid #fff;
+          transform: rotate(45deg);
+          animation: move 2s infinite;
+        }
+        
+        
+        /*矢印をアニメーションする*/
+    @keyframes move {
+      0% {
+        transform: rotate(45deg) translate(0, 0);
+      }
+      20% {
+        transform: rotate(45deg) translate(10px, 10px);
+      }
+      40% {
+        transform: rotate(45deg) translate(0, 0);
+      }
+    }
+        
+        
+        
+        
+   
+        
+        
+        
+        
+        
+        
+        
+        
+        
     </style>
     
     @endif

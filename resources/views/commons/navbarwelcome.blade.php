@@ -131,12 +131,83 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li>{!! link_to_route('register', 'SING UP') !!}</li>
-                        <li>{!! link_to_route('login', 'LOGIN') !!}</li>
+                        <li class="line">{!! link_to_route('register', 'SING UP') !!}</li>
+                        <li class="line">{!! link_to_route('login', 'LOGIN') !!}</li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    
+        <!-- ナブバー用のｃｓｓ -->
+    <style>
+    /* start */
+        .navbar {
+            background-color:transparent;
+            border-color:transparent;
+        }
+        a {
+            font-family: "Times New Roman";
+            font-size: 20px;
+            color:#FFCC99;
+        }
+        .navbar-header buttons{
+            color:white;
+        }
+        .line a::after {
+          border-bottom: solid 2px #FFCC99;
+          bottom: 0;
+          content: "";
+          display: block;
+          transition: all .3s ease;
+          -webkit-transition: all .3s ease;
+          width: 0;
+        }
+        .line a:hover::after {
+          width: 100%;
+          color:#FFCC99;
+        }
+        
+        .navbar-inverse .navbar-nav li a{
+            color:#FFCC99;
+        }
+        .navbar-inverse .navbar-nav .logoutbtn a {
+            color:white;
+        }
+        
+        .navbar-inverse .navbar-nav .line a:hover{
+            color:#FFCC99;
+        }
+        #menu-wrap {
+          position: fixed;
+          z-index: 9999;
+          top: 0;
+          left: 0;
+          width: 100%;
+          background: rgba(0,0,0,.5);
+          transition: .3s;
+        }
+    /* done */
+    </style>
+    
+    
+    
+
+    <script>
+        var menuHeight = $("#menu-wrap").height();
+        var startPos = 0;
+        $(window).scroll(function(){
+          var currentPos = $(this).scrollTop();
+          if (currentPos > startPos) {
+        	  if($(window).scrollTop() >= 200) {
+              $("#menu-wrap").css("top", "-" + menuHeight + "px");
+        		}
+          } else {
+            $("#menu-wrap").css("top", 0 + "px");
+          }
+          startPos = currentPos;
+        });
+    </script>
+
 
 @endif
