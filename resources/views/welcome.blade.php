@@ -34,7 +34,7 @@ TODO LIST
                         <a href= "{{route('users.show', Auth::id())}}"><span>PROFILE</span></a>
                 </div>
                 
-                <p class="scroll js-scroll"><a href="#box2">SCROLL</a></p>                        
+                <p class="scroll js-scroll"><a href="#box2">SCROLL DOWN</a></p>                        
                 
                 
                 
