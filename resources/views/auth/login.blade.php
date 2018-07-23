@@ -66,7 +66,7 @@
 
             .before_login{
                 font-family: "Times New Roman";
-                margin: 30px;
+                margin: 200px;
             }
             
             
