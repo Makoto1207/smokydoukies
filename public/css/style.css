@@ -11,16 +11,11 @@
     x Profileの名前の修正
     x Smokersのview profileの修正
     x Mapのボタン修正
-
-
-
 */
-    /* 全ページ共通の加工*/
     /* 前ページの背景色　black */
     
     body {
         background-color: black;
-        padding:0px;
     }
 
 
@@ -30,6 +25,11 @@
 /* 
    welcome.blade用のｃｓｓです。 
 */
+
+    /*background colour統一*/
+    .bg{
+        color:#000000;
+    }
 
     /* 背景動画用の加工 */
     video {
@@ -48,39 +48,45 @@
     position: relative; /*必ず必要*/
     z-index: 2; /*必ず必要*/
     text-align:center;
-    width:50%;
     padding:20px;
     margin: 0 auto;
     color: white;
-    margin-top: 130px;
+    margin-top: 40px;
     }
     
     
     /*smoky doukiesの文字編集 */
     h1{
         font-weight:bolder;
-        font-size: 150px;
+        font-size: 20vw;
         margin-bottom: 00px;
         font-family: Monotype Corsiva;
-        margin-bottom: 80px;
+        text-align: center;
+       
     }
     
     
 
     
     /*ボタンのｃｓｓ　*/
+    
+    #buttons{
+        margin-top: 40px;
+    }
+    
     .welcomebuttons {
-        width:20px;
-        font-size:24px;
+        width:8em;
+        font-size:20px;
         font-weight:bold;
-        padding: 0.3em 1em;
+        padding: 0.4em;
         text-decoration: none;
         color: #AA0000;
-        background-color:#AA0000;
+        border: solid 2px #AA0000;
+        background-color: #000;
         border-radius: 3px;
         transition: .4s;
         font-family: "Times New Roman";
-        margin: 40px;
+
     }
     
     .welcomebuttons span{
@@ -105,76 +111,41 @@
         border:0;
         background-color:#404040;
         height: 50px;
-        width:40%;
         font-size: 20px;
-        font-family: "Times New Roman";
-        
     }
     
     .signup{
         color: white;
-        
     }
     
     .before_login{
         color: white;
         text-align: center;
-        font-family: "Times New Roman";
-    }
-    
-    .welcomebuttons_2 {
-        width:100px;
-        font-size:20px;
-        font-weight:bold;
-        text-decoration: none;
-        background-color: #AA0000;
-        color: white;
-        border: solid 2px #AA0000;
-        border-radius: 3px;
-        transition: .4s;
-        margin: 40px;
-        text-align: center;
-        font-family: "Times New Roman";
-    }
-    
-    .welcomebuttons_2 span{
-      display:inline-block;
-      position: relative;
-      transition: .5s;
     }
     
     
-    .welcomebuttons_2:hover span{
-      -webkit-transform: rotateX(360deg);
-      -ms-transform: rotateX(360deg);
-      transform: rotateX(360deg);
-      text-decoration: none;        
-        
-    }
     
 
 
-   /* navbar用のcss*/
+    /*navbar用のcss*/
    
-    nav ul{
-        list-style:none;
-        overflow: hidden;
-        margin-top: 15px;
+    /*nav ul{*/
+    /*    list-style:none;*/
+    /*    overflow: hidden;*/
+    /*    margin-top: 15px;*/
+    /*}*/
+    
+    /*nav ul li{*/
+    /*    display: inline-block;*/
+    /*    float:right;*/
+    /*    padding-right: 60px;*/
+    /*}*/
+    
+    a.dropdown-toggle{
+        margin-right: 10px;
     }
     
-    nav ul li{
-        display: inline-block;
-        float:right;
-        padding-right: 60px;
-    }
-    
-    nav ul li a{
-        color: #FFCC99;
-        font-family: "Times New Roman";
-        font-size: 20px;
-    }
-    
-    /* 下線表示のｃｓｓ */
+     /*下線表示のｃｓｓ */
     .topnavs a::after {
       border-bottom: solid 2px #FFCC99;
       bottom: 0;
@@ -188,9 +159,9 @@
       width: 100%;
       color:#FFCC99;
     }
-    /*　ここまで　*/
+    　/*ここまで　*/
     
-    /*　マウスの上に乗せるときの修正　*/
+    　/*マウスの上に乗せるときの修正　*/
     .topnavs a:hover{
         text-decoration: none;
         color: #FFCC99;
@@ -231,7 +202,7 @@
         text-decoration: none;
         color:white;
     }
-    /*　ここまで　*/
+    　/*ここまで　*/
     
     
     
@@ -250,35 +221,7 @@
     /* index用��ｃｓｓ　*/
 
 
-    #box1,#box2,#box3,#box4,#box5{
-        height: 100vh;
-        width: 100%;
-        
-    }
-    
-    
 
-    
-    
-    #menu{
-        position: fixed;
-        top: 51.33px;
-
-    }
-    
-    
-    
-    
-    #leftoptions{
-        height: 10000px;
-        width: 135px;
-        background-color: #333333;
-        float: left;
-        opacity: 0.8;
-    }
-    
-    
-    
     
     
     /* navleftの文字のフォントやサイズ変更 */
@@ -299,7 +242,7 @@
         color: white;
     }
     
-    .lefttext:hover{
+    .lefttext:hover{ 
         color: black;
     }
     
@@ -312,7 +255,6 @@
     }
     
 /* Profile用のCSSです */
- 
 
 /*smokers用のcss*/
     .nickname{
@@ -328,15 +270,11 @@
         margin-bottom: 50px;
        
     }
-    
-     #profile_pic{
-        width: 250px;
-       
-    }
+
     
     .nickname:hover{
         transform: scale(1.2);
-        text-decoration: none
+        text-decoration: none;
     }
     
 /*timeline用のcss*/
@@ -346,40 +284,12 @@
         
         
   
-    
-    
-
-
-/* TWEETに関するｃｓｓ */
-    #tweet_pic{
-        width: 80px;
-    }
-    
-     #tweet{
-         color: white;
-     }
-     
-     .delete_button{
-        color: #800000;
-         background-color: black;
-         border:solid 1px opacity;
-        border-color: #800000;
-     }
-
-
-
-
 
 
 /* map.blade.php用のCSSです */
 
 /* ここから */
 
-<<<<<<< HEAD
-    
-    .container{
-        margin-bottom: 60px;
-=======
     .body{
         background-color: black;
     }
@@ -407,20 +317,14 @@
         color: gray;
         font-family: "Lobster", serif;
         margin-bottom: 40px;
->>>>>>> 8c1a0ae5dfffbf53b2242c86126cef6c220e784f
     }
 
 
     .introduction {
       position: relative;
-<<<<<<< HEAD
-      width: 900px;
-      height: 600px;
-      margin: 20px auto;
-=======
       text-align:center;
->>>>>>> 8c1a0ae5dfffbf53b2242c86126cef6c220e784f
     }
+
     
     .member-frame {
       position: absolute;
@@ -431,12 +335,6 @@
       text-indent: -9999px;
     }
     
-<<<<<<< HEAD
-    #A{
-      top: 0;
-      left: 0;
-      height: 50%;
-=======
     
     /*二子玉全体地図をクリックしたとき*/
     area:active, 
@@ -462,49 +360,45 @@
       padding: 35px;
       width:3px;
       height: 3px;
->>>>>>> 8c1a0ae5dfffbf53b2242c86126cef6c220e784f
     }
     
-    #B{
+    #imageB{
+      padding: 35px;
       top: 0;
-      right: 0;
-      height: 50%;
+      width: 3px;
+      height: 3px;
     }
     
-    #C{
-      bottom: 0;
-      left: 0;
-      height: 50%;
+    #imageC{
+      padding: 35px;
+      width: 3px;
+      height: 3px;
     }
     
-    #D{
+    #imageD{
+      padding: 35px;
       bottom: 0;
-      right: 0;
-      height: 50%;
+      width: 3px;
+      height: 10px;
     }
     
     .maplarge{
         text-align:center;
     }
     
+  
     /* ストアにつなげるボタン*/
-    
     .storebuttons{
         display: inline-block;
         padding: 0.1em 1em;
         text-decoration: none;
-        color: black;
-        border: solid 2px black;
+        color: gray;
+        border: white;
         border-radius: 3px;
         transition: .4s;
         text-align: center;
-<<<<<<< HEAD
-        font-size: 50px;
-        font-family: Microsoft JhengHei UI Light;
-=======
         font-size: 70px;
         font-family: "Lobster", serif;
->>>>>>> 8c1a0ae5dfffbf53b2242c86126cef6c220e784f
         
         margin-bottom: 60px;
         
@@ -514,7 +408,6 @@
         background-color: #333333;
         color: white;
         text-decoration: none;
-        
     }
     
     .mapdetail{
@@ -523,32 +416,35 @@
     }
     
 
-    .profile_strings{
-        font-family: 'Amatic SC', cursive;
+    .store{
+        margin-bottom: 60px;
+        color: white;
     }
-    /*profile post */
     
-    .post_box{
+    #store_all{
+        color: white;
+        font-family: "Times New Roman";
+    }
+    
+    #search_message{
+        color: white;
+        font-size: large;
+    }
+    
+    #table{
+        background-color:black;
+        color:black;
+    }
+    
+    .table_color tr td{
         background-color:black;
         color:white;
-        padding: 0.5em 1em;
-        margin: 2em 0;
-        border: solid 3px #000000;
-        border-color: white;
-        
-         
-
-
-  width: 100%;
-  box-sizing: border-box;
-  margin: 1em 0;
-  padding: .8em;
-  border-radius: 1em;
-  border: 2px solid #aaa;
-
     }
+    
+    .table_color tr td a{
 
-
+        color:white;
+    }
     .store{
         margin-bottom: 60px;
         color: white;
@@ -558,45 +454,24 @@
         color:white; 
     }
     
-      #profile_pic_flame{
-          align-items:center;
-      }
+/* ここまで */
+/*profile post */
     
-     /*写真の下のニックネームのデザイン*/
-     #pro_nickname{
-         color:gray;
-         font-size: 60px;
-         text-align :center;
-         margin-right: 100px;
-         font-family: Monotype Corsiva;
-     }
-     
-     .tweet1{
-         color:white;
-     }
-     
-     .post_button{
-         color: #baab8f;
-         background-color: black;
-         border:solid 1px opacity;
-         border-color: #baab8f;
-         float: right
-     }
     
-    #answer{
-        font-family: Monotype Corsiva;
-        color:#baab8f ;
-        font-size: 25px;
-    }
-    #question{
-        font-family: Monotype Corsiva;
-        color:white;
-        font-size: 22px;
+    
+
+
+
+
+/*画面のサイズによってサイズを変えたいとき*/
+
+    @media (min-width: 768px) {
+    .post_box {width: 346px;}
+    .input_box{width: 400px;}
     }
     
-    .tweet1{
-        margin-top: 30px;
+    @media (max-width: 768px) {
+    .post_box {width: 300px;}
+    .input_box{width: 250px;}
     }
     
- 
-/*ここまで*/
