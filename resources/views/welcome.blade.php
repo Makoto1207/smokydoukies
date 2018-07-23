@@ -265,12 +265,24 @@ TODO LIST
         <div id="intro1">
             <section class="feautures">
                 <div class="col-sm-6 col-sm-offset-3 container">
-                    <h2>OUR FEATURE</h2>
-                        <div class="titledesc">
-                            <p>Platform where all people gathers for peace.</p> 
-                            <p>We brighten our future, we thrive for love.</p>
-                            <p>Get ready to join smoky doukies.</p>
+                    <div class="row">
+                        <h2>OUR SERVICES</h2>
+                            <div class="titledesc">
+                                <p>Platform where all people gathers for peace.</p> 
+                                <p>We brighten our future, we thrive for love.</p>
+                                <p>Get ready to join smoky doukies.</p>
+                            </div>
+                    </div>
+                    <div class="row col-md-3 col-sm-6 col-xs-12">
+                        <div >
+                            <div class="featureitem">
+                                <span class="glyphicon glyphicon-user"></span>
+                                <h3>Your Profile</h3>
+                                <p>"Your informations are open to all the users. Also, you could state your feelings on board."</p>
+                            </div>
                         </div>
+                    </div>
+
                         
                 </div>
 
