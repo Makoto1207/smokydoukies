@@ -1,30 +1,14 @@
 <!-- 
-TODO list 
-
-    x 背景に動画ながす
-    x サービス名を中心に表示する
-    x サインイン・ログインボタンを左右にサービス名のしたに表示する
-    x レイアウトを作成する
-    x ボタンの加工
-    x ログイン後の画面表示
-    
-    終わってないこと
-    携帯画面でのアスペクト
+TODO LIST
 
 -->
 
 <!-- for navbar  -->
 @extends('layouts.appwelcome')
-
-
 @section('content')
 
-
-    
-    
     <!-- ログイン後表示画面(仮) -->
     @if(Auth::check())
-
     <html>
         <head>
         </head>
@@ -44,39 +28,64 @@ TODO list
                     <h1 class="toptext">SMOKE</h1>
                     <h1>YOURSELF</h1>
                 </div>
-                <div>
-                    <a href= "{{route('users.show', Auth::id())}}" class="indexbuttons"><span>PROFILE</span></a>
+                
+                <div class="btnframe">
+                    <div class="btneffect"></div>
+                        <a href= "{{route('users.show', Auth::id())}}"><span>PROFILE</span></a>
                 </div>
+                
+                <p class="scroll js-scroll"><a href="#box2">SCROLL DOWN</a></p>                        
+                
+                
+                
             </div>
             
             <div id="box2">
                 <h1 class="toptext">MEET</h1>
                 <h1>DOUKIES</h1>
-                <div>
-                <a href= "{{route('users.index')}}" class="indexbuttons"><span>SMOKERS</span></a>
+
+                <div class="btnframe">
+                    <div class="btneffect"></div>
+                        <a href= "{{route('users.index')}}"><span>SMOKERS</span></a>
                 </div>
+                
+                
+                
             </div>
             
             <div id="box3">
                 <h1 class="toptext">SHARE</h1>
                 <h1>THOUGHTS</h1>
-                <div>
-                <a href= "{{route('timeline')}}" class="indexbuttons"><span>TIMELINE</span></a>
+
+                
+                <div class="btnframe">
+                    <div class="btneffect"></div>
+                        <a href= "{{route('timeline')}}"><span>TIMELINE</span></a>
                 </div>
+                
+                
+                
             </div>
             
             <div id="box4">
-                <h1 class="toptext">DISCOVER</h1>
-                <div>
-                    <a href= "{{ route('map')}}" class="indexbuttons"><span>MAP</span></a>
+                <h1 class="toptext" style="font-size:80px;">DISCOVER</h1>
+
+                <div class="btnframe">
+                    <div class="btneffect"></div>
+                        <a href= "{{ route('map')}}"><span>MAP</span></a>
                 </div>
+                
+                
             </div>
             
             <div id="box5">
-                <h1 class="toptext">SEARCH</h1>
-                <div>
-                <a href= "{{ route('store')}}" class="indexbuttons"><span>STORES</span></a>
+                <h1 class="toptext" style="font-size:80px;">SEARCH</h1>
+                
+                <div class="btnframe">
+                    <div class="btneffect"></div>
+                        <a href= "{{ route('store')}}"><span>STORES</span></a>
                 </div>
+                
             </div>
             <!-- done -->
         </body>
@@ -139,7 +148,7 @@ TODO list
                 font-family: "Times New Roman";
                 text-align:center;
                 color: white;
-                font-size: 50px;
+                font-size: 80px;
                 margin: 0 0 10px;
             }
             
@@ -151,37 +160,47 @@ TODO list
                 margin-top: 300px;
                 margin-bottom:0;
            }
-    
-            .indexbuttons {
-                font-family: "Times New Roman";
-                display: inline-block;
-                padding: 0.3em 1em;
-                text-decoration: none;
-                color: #FFCC99;
-                border: solid 2px #FFCC99;
-                border-radius: 3px;
-                transition: .4s;
+           
+           
+           /* ボタンの加工 */
+            .btnframe{
+              width:150px;
+              height:50px;
+              border:2px solid #FFCC99;
+              border-radius: 3px;
+              cursor:pointer;
+              position:relative;
+              overflow:hidden;
+              margin: auto;
             }
+            .btnframe a{
+              font-family: "Times New Roman";
+              font-size:20px;
+              color:#FFCC99;
+              text-decoration:none;
+              line-height:50px;
+              transition:all .3s ease;
+              z-index:2;
+              position:relative;
+            }
+            .btneffect{
+              width:150px;
+              height:50px;
+              left:-150px;
+              background:#FFCC99;
+              position:absolute;
+              transition:all .3s ease;
+              z-index:1;
+            }
+            .btnframe:hover .btneffect{
+              left:0;
+            }
+            .btnframe:hover a{
+              color:black;
+            }
+
             
-            .indexbuttons:hover{
-                background: #FFCC99;
-                color: black;
-                text-decoration: none;
-            }
-            
-            #box1 div{
-                text-align: center;
-            }
-                    #box2 div{
-                text-align: center;
-            }
-                    #box3 div{
-                text-align: center;
-            }
-                    #box4 div{
-                text-align: center;
-            }
-                    #box5 div{
+            #box1, #box2, #box3, #box4, #box5 div{
                 text-align: center;
             }
             
@@ -200,29 +219,158 @@ TODO list
                 color:white;
                 font-size: 50px;
             }
+            
+            .scroll{
+              position: absolute;
+              width: 100%;
+              text-align: center;
+              margin:130px 0 0;
+              font-family: "Time New Romans";
+            }
+              .scroll a{
+                position: relative;
+                display: inline-block;
+                font-size: 20px;
+                font-weight: bold;
+                color: #fff;
+                text-decoration: none;
+                padding: 0 0 35px;
+              }
+            /*矢印を作成する*/
+            .scroll a:before{
+              content: "";
+              position: absolute;
+              width: 10px;
+              height: 10px;
+              left: 0;
+              right: 0;
+              bottom: 25px;
+              margin: auto;
+              border-bottom: 2px solid #fff;
+              border-right: 2px solid #fff;
+              transform: rotate(45deg);
+              animation: move 2s infinite;
+            }
+        
+        
+        /*矢印をアニメーションする*/
+    @keyframes move {
+      0% {
+        transform: rotate(45deg) translate(0, 0);
+      }
+      20% {
+        transform: rotate(45deg) translate(10px, 10px);
+      }
+      40% {
+        transform: rotate(45deg) translate(0, 0);
+      }
+    }
+        
+            
+            
+            
+            
         </style>
         <!-- all done -->
 
-        
+    <!-- ログイン後 -->
     @else
-
-    
-    
- <div class="container" style="margin-top: 70px;">
-  
-         
-    
+    <div class="container" style="margin-top: 70px;">
     <!-- サービス名表示 -->
-
-    <!-- before login -->
-
-    <div class="title">
-        
-        
-        
-        <div class="col-md-offset-2 col-md-8">
-            <img src="images/rogo.png"  class='img-responsive'>
+        <div class="title">
+            <div >
+                <img src="images/logo.png"  class='img-responsive'>
+            </div>
+            
+            <!-- ログイン・サインボタン-->
+                    <div class="row">
+                        <!-- SingUPボタン加工ようのdiv別け -->
+                        <!--<div class="btnframe" class="col-12 col-md-6" style="margin:30px">-->
+                        <!--    <span class="btneffect"></span>-->
+                        <!--        <a href= "{{ route('register') }}"><span>SIGN UP</span></a>-->
+                        <!--</div>  -->
+                        <!-- Loginボタン加工ようのdiv別け -->                  
+                        <!--<div class="btnframe" class="col-12 col-md-6" style="margin:30px">-->
+                        <!--    <span class="btneffect"></span>-->
+                        <!--        <a href= "{{ route('login') }}"><span>LOGIN</span></a>-->
+                        <!--</div>-->
+                        
+                        
+                        <!--<div class="btnframe" class="col-12 col-md-6" style="margin:30px">-->
+                        <!--    <span class="btneffect"></span>-->
+                        <!--        <a href= "#intro1"><span>LEARN MORE</span></a>-->
+                        <!--</div>-->
+                        
+                        <!-- scroll down ボタン -->
+                        <p class="scroll js-scroll"><a href="#intro1">CLICK</a></p>                        
+                            
+                        
+                        
+                        
+                    </div>
+                        
         </div>
+    </div>
+
+    <!-- 背景動画 -->
+    <video src="video/smoke.mp4" muted autoplay loop></video>
+    
+    
+    
+    <!-- イントロページ -->
+    <div>
+        <div id="intro1">
+            <section class="feautures">
+                <div class="container">
+                    <div class="row" style="margin:0 0 70px;">
+                        <h2>OUR SERVICES</h2>
+                            <div class="titledesc">
+                                <p>Platform where all people gathers for peace.</p> 
+                                <p>We brighten our future, we thrive for love.</p>
+                                <p>Get ready to join smoky doukies.</p>
+                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="intropages">
+                            <div class="col-sm-6 col-md-4 col-lg-2 col-lg-offset-1">
+                                <p class="glyphicon glyphicon-user" style="font-size: 30px;"></p>
+                                <h3>Profile</h3>
+                                <p>Your informations are open to all the users. Also, you could state your feelings on board.</p>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-2">
+                                <p class="glyphicon glyphicon-heart" style="font-size: 30px;"></p>
+                                <h3>Smokers</h3>
+                                <p>You can view other Smokers detail. Thefore, you can find buddies.</p>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-2">
+                                <p class="glyphicon glyphicon-comment" style="font-size: 30px;"></p>
+                                <h3>Timelines</h3>
+                                <p>All the conversation are showed in this page. You are able to know each others.</p>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-2">
+                                <p class="glyphicon glyphicon-flag" style="font-size: 30px;"></p>
+                                <h3>Map</h3>
+                                <p>Every details of restoran locations are shown. You could discover where to go</p>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-2">
+                                <p class="glyphicon glyphicon-glass" style="font-size: 30px;"></p>
+                                <h3>Restaurant</h3>
+                                <p>About 250 restaurant information are stored. You could find the perfect place to enjoy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="btnframeintro" class="col-12 col-md-6" style="margin-top:30px;">
+                            <span class="btneffectintro"></span>
+                                <a href= "{{ route('register') }}"><span>SIGN UP NOW</span></a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+<<<<<<< HEAD
             
 
         <!-- ログイン・サインボタン-->
@@ -239,18 +387,211 @@ TODO list
             </div>
             
            
+=======
+>>>>>>> 24d19a8f8a8e3b33e6e35b51f024340073697491
         
-        </div>
-      </div>
     </div>
-   
-    
-    
 
-    <!--- srcのところに動画を入れるだけで変更可能 -->
-    <video src="video/smoke.mp4" muted autoplay loop></video>
+
     
     
+    
+    
+    <style>
+        #intro1{
+            margin-top: 430px;
+            height: 100vh;
+            width: 100%;
+            z-index: 3;
+            position: relative;
+            background-color: white;
+        }
+        
+        .feautures{
+            padding: 70px 0;
+            text-align:center;
+            letter-spacing: 4px;
+            background-color:white;
+        }
+        
+        .container h2{
+            font-family: "Times New Roman";
+        }
+        
+        .intropages div{
+            margin-bottom: 30px;
+        }        
+
+    
+    
+        /* 背景動画用の加工 */
+        video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 1;
+        }
+    
+        /* 動画の上にテキストが表示されるためのｃｓｓ */
+        .title {
+            position: relative; /*必ず必要*/
+            z-index: 2; /*必ず必要*/
+            text-align:center;
+            padding:20px;
+            margin: 0 auto;
+        }
+        /* ロゴ用のｃｓｓ */
+        .img-responsive{
+            max-width: 55%;
+            height: auto;
+            margin: auto
+        }
+    
+       /* ボタンの加工 */
+        /*.btnframe{*/
+        /*  width:180px;*/
+        /*  height:50px;*/
+        /*  border:2px solid white;*/
+        /*  border-radius: 3px;*/
+        /*  cursor:pointer;*/
+        /*  position:relative;*/
+        /*  overflow:hidden;*/
+        /*  margin: auto;*/
+        /*  display:inline-block;*/
+        /*}*/
+        /*.btnframe a{*/
+        /*  font-family:"Times New Roman";*/
+        /*  font-size:20px;*/
+        /*  color:white;*/
+        /*  text-decoration:none;*/
+        /*  line-height:50px;*/
+        /*  transition:all .3s ease;*/
+        /*  z-index:2;*/
+        /*  position:relative;*/
+        /*}*/
+        /*.btneffect{*/
+        /*  width:180px;*/
+        /*  height:50px;*/
+        /*  left:-180px;*/
+        /*  background:white;*/
+        /*  position:absolute;*/
+        /*  transition:all .3s ease;*/
+        /*  z-index:1;*/
+        /*}*/
+        /*.btnframe:hover .btneffect{*/
+        /*  left:0;*/
+        /*}*/
+        /*.btnframe:hover a{*/
+        /*  color:black;*/
+        /*}*/
+        
+        
+        
+        /* introボタンの加工 */
+        .btnframeintro{
+          width:220px;
+          height:50px;
+          border:2px solid black;
+          border-radius: 3px;
+          cursor:pointer;
+          position:relative;
+          overflow:hidden;
+          margin: auto;
+          display:inline-block;
+        }
+        .btnframeintro a{
+          font-family:"Times New Roman";
+          font-size:20px;
+          color:black;
+          text-decoration:none;
+          line-height:50px;
+          transition:all .3s ease;
+          z-index:2;
+          position:relative;
+        }
+        .btneffectintro{
+          width:220px;
+          height:50px;
+          left:-220px;
+          background:black;
+          position:absolute;
+          transition:all .3s ease;
+          z-index:1;
+        }
+        .btnframeintro:hover .btneffectintro{
+          left:0;
+        }
+        .btnframeintro:hover a{
+          color:white;
+        }
+        
+        
+        
+        
+        .scroll{
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      margin:90px 0 0;
+      font-family: "Time New Romans";
+            }
+      .scroll a{
+        position: relative;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+        padding: 0 0 35px;
+      }
+        /*矢印を作成する*/
+        .scroll a:before{
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          left: 0;
+          right: 0;
+          bottom: 25px;
+          margin: auto;
+          border-bottom: 2px solid #fff;
+          border-right: 2px solid #fff;
+          transform: rotate(45deg);
+          animation: move 2s infinite;
+        }
+        
+        
+        /*矢印をアニメーションする*/
+    @keyframes move {
+      0% {
+        transform: rotate(45deg) translate(0, 0);
+      }
+      20% {
+        transform: rotate(45deg) translate(10px, 10px);
+      }
+      40% {
+        transform: rotate(45deg) translate(0, 0);
+      }
+    }
+        
+        
+        
+        
+   
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </style>
     
     @endif
 @endsection
