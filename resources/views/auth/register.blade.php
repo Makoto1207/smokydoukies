@@ -3,7 +3,7 @@
 
 @section('content')
 
-<div class="before_login">
+<div class="before_login" style="margin:30px">
  
 
 
@@ -40,7 +40,7 @@
                                         <option value="cigarette">cigarette</option>
                                         <option value="menthol">menthol</option>
                                         <option value="iqos">iqos</option>
-                                        <option value="glow">glow</option>
+                                        <option value="glo">glo</option>
                                         <option value="ploomtech">ploomtech</option>
                                         <option value="etc">etc</option>
                                 </select>
@@ -121,12 +121,67 @@
 
 
 
-                        <div>
-                            <button type="submit" class="welcomebuttons"><span>SIGN UP</span></button>
+                        <!--<div>-->
+                        <!--    <button type="submit" class="welcomebuttons"><span>SIGN UP</span></button>-->
+                        <!--</div>-->
+                        
+                        <div class="btnframe">
+                            <span class="btneffect"></span>
+                                <button type="submit">JOIN SMOKY</button>
                         </div>
+                        
                     </form>
 
 </div>
+
+
+<style>
+            .before_login{
+              font-family: "Times New Roman";
+            }
+            
+            /* ボタンの加工 */
+            .btnframe{
+              width:150px;
+              height:60px;
+              border:2px solid white;
+              border-radius: 3px;
+              cursor:pointer;
+              position:relative;
+              overflow:hidden;
+              margin: auto;
+              display:inline-block;
+            }
+            .btnframe button{
+              font-family: "Times New Roman";
+              font-size:20px;
+              color:white;
+              text-decoration:none;
+              line-height:50px;
+              transition:all .3s ease;
+              z-index:2;
+              position:relative;
+              background-color: transparent;
+              border-color:transparent;
+            }
+            .btneffect{
+              width:150px;
+              height:60px;
+              left:-150px;
+              background:white;
+              position:absolute;
+              transition:all .3s ease;
+              z-index:1;
+            }
+            .btnframe:hover .btneffect{
+              left:0;
+            }
+            .btnframe:hover button{
+              color:black;
+            }
+    
+</style>
+
 
 @endsection
 

@@ -18,4 +18,30 @@
    
 </div>
 {!! $users->render() !!}
+
+
+
+<style>
+
+    /* 文字の色変更 */
+    .nickname {
+        text-align: center;
+    }
+    .nickname a{
+        color: black;
+        font-size:30px;
+    }
+    .nickname a:hover{
+        transform: scale(1.2);
+        text-decoration: none;
+    }
+    
+    /* チェキの様な加工 */
+    #profile_pic_flame{
+        margin-bottom: 50px;
+    }
+
+    
+</style>
+
 @endif
