@@ -28,7 +28,7 @@
                         <li class="line">{!! link_to_route('users.index', 'SMOKERS') !!}</li>
                         <li class="line"><a href="{{ route('timeline')}}">TIMELINE</a></li>
                         <li class="line"><a href="{{ route('map')}}">MAP</a></li>
-                        <li class="line"><a href="{{ route('store')}}">STORE</a></li>
+                        <li class="line"><a href="{{ route('store')}}">STORES</a></li>
                         <li class="logoutbtn"><a href="{{ route('logout') }}"onclick="event.preventDefault();document.getElementById('logout-form').submit();" class="glyphicon glyphicon-log-out"></a><form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">{{ csrf_field() }}</form></li>
                     </ul>
                 </div>
