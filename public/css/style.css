@@ -437,12 +437,14 @@
     
     #store_all{
         color: white;
+        font-size: large;
         font-family: "Times New Roman";
     }
     
     #search_message{
         color: white;
         font-size: large;
+     font-family: "Times New Roman";
     }
     
     #search_message2{
