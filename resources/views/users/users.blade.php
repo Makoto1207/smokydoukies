@@ -1,4 +1,5 @@
 @if (count($users) > 0)
+{!! $users->render() !!}
 <div class="container" style="margin-top: 70px;">
     
         <div class="col-10 col-offset-1">

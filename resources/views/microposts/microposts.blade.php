@@ -1,3 +1,5 @@
+{!! $microposts->render() !!}
+
 <ul class="media-list">
 @foreach ($microposts as $micropost)
     <?php $user = $micropost->user; ?>
@@ -47,5 +49,63 @@
         border:solid 2px;
         border-color: #800000;
     }
+    
+    ul.pagination{
+        margin:0;
+        font-size:15px;
+        background-color: black;
+    }
+    
+    
+    /*現在のページのタブ*/
+    .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+        z-index: 3;
+        color: darkred;
+        cursor: default;
+        font-size: 20px;
+        font-family: "Times New Roman";
+        text-align: center;
+        width:30px;
+        height:35px;
+        padding: 6px;
+        text-decoration: none;
+        background-color:black;
+        border-color: #337A7A;
+    }
+    
+    /*その他のページのタブ*/
+    .pagination>li>a, .pagination>li>span {
+        position: relative;
+        font-size: 20px;
+        font-family: "Times New Roman";
+        text-align: center;
+        width:30px;
+        height:35px;
+        padding: 6px;
+        margin:0px;
+        color:#FFCC99;
+        text-decoration: none;
+        border: 1px solid #ddd;
+    }
+    
+    .pagination>.disabled>a, .pagination>.disabled>a:focus, .pagination>.disabled>a:hover, .pagination>.disabled>span, .pagination>.disabled>span:focus, .pagination>.disabled>span:hover {
+        color:#FFCC99;
+        cursor: not-allowed;
+        background-color: black;
+        border-color: #FFCC99;
+    }
+    
+    .pagination li a{
+        background-color:black;
+    }
+    
+    .pagination li spa{
+        background-color:black;
+    }
+        
+
+    
+    
+    
 
 </style>
