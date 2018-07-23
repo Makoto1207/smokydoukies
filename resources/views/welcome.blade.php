@@ -279,7 +279,7 @@ TODO LIST
     <!-- サービス名表示 -->
         <div class="title">
             <div >
-                <img src="images/rogo.png"  class='img-responsive'>
+                <img src="images/logo.png"  class='img-responsive'>
             </div>
             
             <!-- ログイン・サインボタン-->

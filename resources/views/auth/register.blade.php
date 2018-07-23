@@ -40,7 +40,7 @@
                                         <option value="cigarette">cigarette</option>
                                         <option value="menthol">menthol</option>
                                         <option value="iqos">iqos</option>
-                                        <option value="glow">glow</option>
+                                        <option value="glo">glo</option>
                                         <option value="ploomtech">ploomtech</option>
                                         <option value="etc">etc</option>
                                 </select>
