@@ -30,39 +30,52 @@
             <area shape="poly" coords="491,445,445,565,507,629,478,661,434,663,433,710,512,711,512,664,484,662,511,635,554,675,599,645,607,654,689,593,687,580,700,563,678,542,582,502,506,437" href="#imageD" alt="map_d">
         </map>
     </div>
-
+        
+    
         <div class="mapdetail">
             
             
             <div class="sectiontitle">
-                <h2 id=imageA>A</h2>
+                <h2 style="white-space: nowrap;"id=imageA>Area A</h2>
                 <div class="maplarge">
                     <img src="img/mapAedit.jpg" width="550" height="550" class='img-responsive' style="margin: auto;">
                 </div>
-                    <a href="{{ route('store')}}?name=(A)" class="storebuttons">Stores</a>
+                    <a href="{{ route('store')}}?name=(A)" class="storebuttons">Click here to see stores in area A</a>
+                    <div class="line"><p>___________________________________________________________</p></div>
             </div>    
             
             
-            <div class="sectiontitle"><h2 id=imageB>B</h2></div>
+            <div class="sectiontitle">
+                
+                <h2 style="white-space: nowrap;" id=imageB>Area B</h2>
                 <div class="maplarge">
                     <img src="img/mapBedit.jpg" width="550" height="550" class='img-responsive' style="margin: auto;">
                 </div>
-                    <a href="{{ route('store')}}?name=(B)" class="storebuttons">Stores</a>
+                    <a href="{{ route('store')}}?name=(B)" class="storebuttons">Click here to see stores in area B</a>
+                    <div class="line"><p>___________________________________________________________</p></div>
+            </div>
+            
                 
             
-            
-            <h2 id=imageC>C</h2>
+            <div class="sectiontitle">
+                <h2 style="white-space: nowrap;"id=imageC>Area C</h2>
                 <div class="maplarge">
                     <img src="img/mapCedit.jpg" width="550" height="550" class='img-responsive' style="margin: auto;">
                 </div>
-                    <a href="{{ route('store')}}?name=(C)" class="storebuttons">Stores</a>
-
+                    <a href="{{ route('store')}}?name=(C)" class="storebuttons">Click here to see stores in area C</a>
+                    <div class="line"><p>___________________________________________________________</p></div>
+            </div>
             
-            <h2 id=imageD>D</h2>
+
+            <div class="sectiontitle">
+                <h2 style="white-space: nowrap;"id=imageD>Area D</h2>
                 <div class="maplarge">
                     <img src="img/mapDedit.jpg" width="550" height="550" class='img-responsive' style="margin: auto;">
                 </div>
-                    <a href="{{ route('store')}}?name=(D)" class="storebuttons">Stores</a>
+                    <a href="{{ route('store')}}?name=(D)" class="storebuttons">Click here to see stores in area D</a>
+            </div>        
+                    
+                    
         </div>      
     </div>
 </div>
