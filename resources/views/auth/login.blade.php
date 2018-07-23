@@ -4,23 +4,17 @@
 
 
 <div class="before_login">
-    
-    
-    
-
-           
                 <h1 class="signup">Login</h1>
-
-               
+                
+    
+    <div>
+        <div class="col-md-6 col-md-offset-3">
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
-
                         <div class="form-group{{ $errors->has('nickname') ? ' has-error' : '' }}">
                             <label for="nickname">Nickname</label>
-
                             <div class="box">
                                 <input  class="input_box" id="nickname" type="text" class="form-control" name="nickname" value="{{ old('nickname') }}" required autofocus>
-
                                 @if ($errors->has('nickname'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('nickname') }}</strong>
@@ -28,13 +22,10 @@
                                 @endif
                             </div>
                         </div>
-
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label for="password">Password</label>
-
                             <div class="box">
                                 <input  class="input_box" id="password" type="password" class="form-control" name="password" required>
-
                                 @if ($errors->has('password'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('password') }}</strong>
@@ -42,11 +33,8 @@
                                 @endif
                             </div>
                         </div>
-
                         <div class="form-group">
-                            
                                 <div class="checkbox">
-                               
                             </div>
                         </div>
 
@@ -55,9 +43,9 @@
                             <span class="btneffect"></span>
                                 <button type="submit">ENTER</button>
                         </div>
-
                     </form>
-
+        </div>
+    </div>
 </div>
 
 
@@ -66,7 +54,8 @@
 
             .before_login{
                 font-family: "Times New Roman";
-                margin: 200px;
+                margin-top: 150px;
+                
             }
             
             
