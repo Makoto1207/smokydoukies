@@ -133,7 +133,7 @@ TODO LIST
                 font-size: 77%;
             }
             #page-top a {
-                background:gray;
+                background:	#333333;
                 text-decoration: none;
                 color: #fff;
                 width: 40px;

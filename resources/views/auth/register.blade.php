@@ -132,6 +132,9 @@
                         
                     </form>
 
+               <p id="page-top"><a href="{{ route('welcome') }}" class="glyphicon glyphicon-home"></a></p>
+
+                
 </div>
 
 
@@ -185,8 +188,32 @@
             .btnframe:hover button{
               color:black;
             }
+            
+                        /* top page buttn css */
+            #page-top {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                font-size: 77%;
+            }
+            #page-top a {
+                background:	#333333;
+                text-decoration: none;
+                color: #fff;
+                width: 40px;
+                padding: 10px 0;
+                text-align: center;
+                display: block;
+                border-radius: 5px;
+            }
+            #page-top a:hover {
+                text-decoration: none;
+                background: #999;
+            }
     
-</style>
+        </style>
+
+
 
 
 @endsection

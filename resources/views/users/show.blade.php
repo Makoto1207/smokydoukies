@@ -5,8 +5,6 @@
 <div class="container" style="margin-top: 75px;">
     
         <div class="col-md-10 col-md-offset-1">
-
-      
         <div class="col-12 col-md-6"> 
         
             <!--写真と名前-->

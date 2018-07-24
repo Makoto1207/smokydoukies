@@ -47,6 +47,12 @@
 
 
 <style>
+
+    #all h2{
+        font-family: "Time New Romans";
+        color: gray;
+    }
+
     .post_box{
         background-color:black;
         color:white;
