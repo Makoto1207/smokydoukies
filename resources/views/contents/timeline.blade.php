@@ -10,6 +10,7 @@
         <div class="col-md-10 col-md-offset-1" id="all">
             <h2>Timeline</h2>
             
+
               <div class="row">
                 <div class="col-md-6">
                     
@@ -38,6 +39,7 @@
                 </div>
         </div>     
     </div>
+
 </div>
 
 
