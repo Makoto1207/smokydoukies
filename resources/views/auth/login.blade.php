@@ -51,7 +51,15 @@
 
 <!--　ページにかけるｃｓｓ　-->
 <style>
-
+            
+            input:focus{
+                outline-color:#FFCC99;
+            }
+            
+            
+            
+            
+            
             .before_login{
                 font-family: "Times New Roman";
                 margin-top: 150px;
@@ -82,7 +90,14 @@
               position:relative;
               background-color: transparent;
               border-color:transparent;
+              width:150px;
             }
+            
+            .btnframe button:active{
+                border-color:transparent;
+            }
+            
+            
             .btneffect{
               width:150px;
               height:60px;

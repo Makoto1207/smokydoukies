@@ -140,6 +140,11 @@
               font-family: "Times New Roman";
             }
             
+            input, select:focus{
+                outline-color:#FFCC99;
+            }
+            
+            
             /* ボタンの加工 */
             .btnframe{
               width:150px;
@@ -163,6 +168,7 @@
               position:relative;
               background-color: transparent;
               border-color:transparent;
+              width:150px;
             }
             .btneffect{
               width:150px;
