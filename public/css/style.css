@@ -243,7 +243,6 @@
         margin-top: 50px;
         margin-bottom: 60px;
         background-color: none;
-<<<<<<< HEAD
     }
     
     
@@ -256,20 +255,6 @@
     }
     
     
-=======
-    }
-    
-    
-    .storebuttons:hover {
-        border: solid 8px #FFCC99;
-        border-radius: 3px;
-        background: none;
-        color: #FFCC99;
-        text-decoration:none;
-    }
-    
-    
->>>>>>> master
     .store{
         margin-bottom: 60px;
         color: white;
@@ -387,11 +372,7 @@
 /*画面のサイズによってサイズを変えたいとき*/
 
     @media (min-width: 768px) {
-<<<<<<< HEAD
-    .post_box {width: 400px;}
-=======
     
->>>>>>> master
     .input_box{width: 400px;}
     }
     
@@ -399,9 +380,6 @@
     
     .input_box{width: 250px;}
     }
-<<<<<<< HEAD
-    
-=======
     
     .search_box{
         background-color:black;
@@ -422,4 +400,3 @@
         padding: 2px 10px;
         margin-bottom:30px;     
      }
->>>>>>> master
