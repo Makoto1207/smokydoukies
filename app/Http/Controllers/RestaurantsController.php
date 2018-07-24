@@ -16,7 +16,7 @@ class RestaurantsController extends Controller
 {
      public function index(Request $request)
     {
-        $num=0;
+      
         if($request->name=='')
         {
         $restaurants = \App\Restaurants::all();
