@@ -43,7 +43,7 @@
 
 
 
-@endsections
+@endsection
 
 
 <style>

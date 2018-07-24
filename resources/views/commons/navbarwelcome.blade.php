@@ -131,7 +131,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="line">{!! link_to_route('register', 'SING UP') !!}</li>
+                        <li class="line">{!! link_to_route('register', 'SIGN UP') !!}</li>
                         <li class="line">{!! link_to_route('login', 'LOGIN') !!}</li>
                     </ul>
                 </div>
