@@ -48,11 +48,11 @@
                 </div>
            
                            
-                {!! Form::submit('Post',['class'=>'post_button'] )!!}
+                    {!! Form::submit('Post',['class'=>'post_button'] )!!}
+                              
                           
-                      
-                  {!! Form::close() !!}
-            @endif
+                    {!! Form::close() !!}
+                @endif
             <div class='tweet1'>
                 <div class="col-12">         
                     @if (count($microposts) > 0)

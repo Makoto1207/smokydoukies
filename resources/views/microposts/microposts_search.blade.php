@@ -3,7 +3,7 @@
 
 <ul class="media-list">
 @foreach ($microposts as $micropost)
-    <?php $user = $micropost->user; ?>
+    <?php $user = \App\User::find($micropost->user_id); ?>
     <li class="media">
         <div class="media-left">
             <img id="tweet_pic" class="media-object img-rounded" src="{{secure_asset('/images/cigs/'. $user->brand. '.jpg')}}" style="margin-top: 10px;">
