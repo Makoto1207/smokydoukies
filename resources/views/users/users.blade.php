@@ -23,7 +23,19 @@
 
 
 <style>
-
+    
+    h2{
+        font-family:"Time New Romans";
+        color: gray;
+    }
+    p{
+        margin:10px;
+    }
+    p a{
+        font-family: "Monotype Corsiva";
+    }
+    
+    
     /* 文字の色変更 */
     .nickname {
         text-align: center;
