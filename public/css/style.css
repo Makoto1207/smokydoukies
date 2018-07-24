@@ -205,9 +205,10 @@
     
     
     /*二子玉全体地図をクリックしたとき*/
-    area:active, 
-    area:link{
-        outline:blue;
+    area:hover,
+    area:visited, 
+    area:active{
+        outline:none;
     }
     
     area:hover{
@@ -257,7 +258,7 @@
     
   
     /* ストアにつなげるボタン*/
-    .storebuttons{
+    a.storebuttons{
         display: inline-block;
         padding: 0.1em 1em;
         text-decoration: none;
@@ -274,7 +275,7 @@
     }
     
     
-    .storebuttons:hover {
+    a.storebuttons:hover {
         border: solid 8px #FFCC99;
         border-radius: 3px;
         background: none;
@@ -282,6 +283,11 @@
         text-decoration:none;
     }
     
+    a.storebuttons:link,
+    a.storebuttons:visited,
+    a.storebuttons:active{
+        text-decoration:none;
+    }
     
     .store{
         margin-bottom: 60px;

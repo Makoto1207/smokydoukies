@@ -113,16 +113,10 @@
     }
     
     
-     /*ページネーションの設定*/
-    #render{
-        text-align:center;
-        margin:20px;
-    }
-    
     /*現在のページのタブ*/
-    .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    .pagination>.active>span, .pagination>.active>span:focus {
         z-index: 3;
-        color: darkred;
+        color: black;
         cursor: default;
         font-size: 20px;
         font-family: "Times New Roman";
@@ -131,9 +125,8 @@
         height:35px;
         padding: 6px;
         text-decoration: none;
-        background-color:black;
+        background-color:#FFCC99;
         border: 1px solid #FFCC99;
-       
     }
     
     /*その他のページのタブ*/
@@ -152,6 +145,16 @@
         border: 1px solid #FFCC99;
     }
     
+    /*カーソルを乗せたときの変化*/
+    .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+        z-index: 2;
+        color: #FFCC99;
+        background-color: black;
+        border: 2px solid #FFCC99;
+        font-weight: bold;
+    }
+    
+    /*選択できないタブの上にカーソルを乗せたときの変化*/
     .pagination>.disabled>a, .pagination>.disabled>a:focus, .pagination>.disabled>a:hover, .pagination>.disabled>span, .pagination>.disabled>span:focus, .pagination>.disabled>span:hover {
         color:#FFCC99;
         cursor: not-allowed;
@@ -159,8 +162,9 @@
         border-color: #FFCC99;
     }
     
+    
     /*端っこ二つのタブ(《》のタブ)*/
-    .pagination>li:first-child>span {
+    .pagination>li:first-child>a, .pagination>li:first-child>span{
         margin-left: 0;
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
@@ -168,6 +172,7 @@
     .pagination>li:last-child>a, .pagination>li:last-child>span {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
-    }
+    }s
    
 </style>
+@endsection
