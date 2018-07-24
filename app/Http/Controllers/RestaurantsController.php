@@ -14,9 +14,15 @@ use App\Http\Requests;
 
 class RestaurantsController extends Controller
 {
-     public function index(Request $request)
+     public function index()
     {
-        $num=0;
+        return view('contents.store', [
+            'restaurants' => $restaurants,
+        ]);
+    }
+        
+     public function search(Request $request)
+    {
         if($request->name=='')
         {
         $restaurants = \App\Restaurants::all();
@@ -38,5 +44,4 @@ class RestaurantsController extends Controller
         ]);   
         }
     }
-   
 }
