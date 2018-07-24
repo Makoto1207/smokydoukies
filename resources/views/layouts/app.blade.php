@@ -75,7 +75,7 @@
         <div>
             <div id="loader-bg">
                 <div id="loader">
-                        <img src="images/img-loading.gif" width="80" height="80" alt="Now Loading..." />
+                        <img src="images/img-loading.gif" width="200" height="200" alt="Now Loading..." />
                     <p>Now Loading...</p>
                 </div>
             </div>
