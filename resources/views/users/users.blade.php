@@ -1,5 +1,4 @@
 @if (count($users) > 0)
-{!! $users->render() !!}
 <div class="container" style="margin-top: 70px;">
     
         <div class="col-10 col-offset-1">
@@ -15,9 +14,13 @@
     </div>
 
 @endforeach
-        </div>    
+        </div> 
    
-</div>
+                <div class="footer_copyright_white">
+                    ©2018 SMOKY DOUKIES by Seista Co.
+                </div>
+                
+                
 {!! $users->render() !!}
 
 

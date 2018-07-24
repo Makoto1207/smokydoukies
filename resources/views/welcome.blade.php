@@ -372,7 +372,7 @@ TODO LIST
                 
             </section>
                 
-                <div class="footer_copyright">
+                <div class="footer_copyright_black">
                     ©2018 SMOKY DOUKIES by Seista Co.
                 </div>
 

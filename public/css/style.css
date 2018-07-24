@@ -384,6 +384,11 @@
     
 
     /*footer*/
-    .footer_copyright{
+    .footer_copyright_black{
         text-align: center;
+        bottom:0;
+        margin-left: auto;
+        margin-right: auto;
     }
+    
+   
