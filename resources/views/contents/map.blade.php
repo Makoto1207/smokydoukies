@@ -1,12 +1,10 @@
 <!--
-
     o navbarを表示させる
     o navbarからmap.blade.phpに遷移するようにする
     o 全体の地図画像を表示する
     o 詳細地図画像｛A,B,C,D｝を配置する
     o 地図画像をクリックすると、上記のAからDにスクロールする
     o store.blade.phpへのリンクを設定する
-
 -->
 @extends('layouts.app')
 
