@@ -1,112 +1,11 @@
 @charset "utf-8";
 
 
-
-/* 
-    TODO list 
-    
-    x welcome bladeのボタン修正
-    x welcome bladeのボタン加工
-    
-    x Profileの名前の修正
-    x Smokersのview profileの修正
-    x Mapのボタン修正
-
-
-
-*/
-    /* 前ページの背景色　black */
-    
+    /* 全ページの背景色　black */
     body {
         background-color: black;
     }
-
-
-
-
-
-/* 
-   welcome.blade用のｃｓｓです。 
-*/
-
-    /*background colour統一*/
-    .bg{
-        color:#000000;
-    }
-
-    /* 背景動画用の加工 */
-    video {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: 1;
-    }
-    
-    /* 動画の上にテキストが表示されるためのｃｓｓ */
-    .title {
-    position: relative; /*必ず必要*/
-    z-index: 2; /*必ず必要*/
-    text-align:center;
-    padding:20px;
-    margin: 0 auto;
-    color: white;
-    margin-top: 40px;
-    }
-    
-    
-    /*smoky doukiesの文字編集 */
-    h1{
-        font-weight:bolder;
-        font-size: 20vw;
-        margin-bottom: 00px;
-        font-family: Monotype Corsiva;
-        text-align: center;
-       
-    }
-    
-    
-
-    
-    /*ボタンのｃｓｓ　*/
-    
-    #buttons{
-        margin-top: 40px;
-    }
-    
-    .welcomebuttons {
-        width:8em;
-        font-size:20px;
-        font-weight:bold;
-        padding: 0.4em;
-        text-decoration: none;
-        color: #AA0000;
-        border: solid 2px #AA0000;
-        background-color: #000;
-        border-radius: 3px;
-        transition: .4s;
-        font-family: "Times New Roman";
-
-    }
-    
-    .welcomebuttons span{
-      display:inline-block;
-      position: relative;
-      transition: .5s;
-      color: white;
-    }
-    
-    .welcomebuttons:hover span{
-      -webkit-transform: rotateX(360deg);
-      -ms-transform: rotateX(360deg);
-      transform: rotateX(360deg);
-      text-decoration: none;
-    }
-
-/* 終わり */
+    /* 終わり */
 
     /* register.bladeについて */
     
@@ -125,24 +24,6 @@
         color: white;
         text-align: center;
     }
-    
-    
-    
-
-
-    /*navbar用のcss*/
-   
-    /*nav ul{*/
-    /*    list-style:none;*/
-    /*    overflow: hidden;*/
-    /*    margin-top: 15px;*/
-    /*}*/
-    
-    /*nav ul li{*/
-    /*    display: inline-block;*/
-    /*    float:right;*/
-    /*    padding-right: 60px;*/
-    /*}*/
     
     a.dropdown-toggle{
         margin-right: 10px;
@@ -207,48 +88,11 @@
     }
     　/*ここまで　*/
     
-    
-    
-    
-
-    
-
-    
-   
-   
-   
-
 
 
 
     /* index用��ｃｓｓ　*/
 
-
-
-    
-    
-    /* navleftの文字のフォントやサイズ変更 */
-    
-    #link1, #link2, #link3, #link4, #link5{
-        text-decoration: none;
-        
-    }
-
-    
-    .lefttext{
-        font-family: Microsoft JhengHei UI Light;
-        font-size: 20px;
-        margin-left: -15px;
-        
-        
-        text-decoration: none;
-        color: white;
-    }
-    
-    .lefttext:hover{ 
-        color: black;
-    }
-    
     /*各コンテンツの題名のフォント*/
     h2{
         color: #686868;
@@ -259,26 +103,8 @@
     
 /* Profile用のCSSです */
 
-/*smokers用のcss*/
-    .nickname{
-        font-size: 50px;
-        text-align: center;
-        color:  black;
-        font-family: "Lobster", serif;
-      
-        
-    }
     
-    #profile_pic_flame{
-        margin-bottom: 50px;
-       
-    }
 
-    
-    .nickname:hover{
-        transform: scale(1.2);
-        text-decoration: none;
-    }
     
 /*timeline用のcss*/
     .timeline{
@@ -287,6 +113,17 @@
         
         
   
+
+
+/* TWEETに関するｃｓｓ */
+    #tweet_pic{
+        width: 80px;
+    }
+    
+     #tweet{
+         color: white;
+     }
+
 
 
 /* map.blade.php用のCSSです */
@@ -308,13 +145,13 @@
         margin: auto;
         color: gray;
         margin-top: 60px;
-        font-size: 60px;
+        font-size: 54px;
         font-family:  "Lobster", serif;
     }
     
     .sub-titleformap{
         font-weight:bolder;
-        font-size: 30px;
+        font-size: 33px;
         margin-top: 0px;
         text-align:center;
         color: gray;
@@ -353,33 +190,34 @@
     /*セクションごと(AからD)アルファベット表示*/
     .sectiontitle{
         font-size: 40px;
-        font-family: Microsoft JhengHei UI Light;
+        font-family: "Lobster", serif;;
         margin-top: 100px;
         color: gray;
     }
     
     /*それぞれの画像AからD*/
     #imageA{
-      padding: 35px;
+      padding: 30px;
       width:3px;
       height: 3px;
     }
     
     #imageB{
-      padding: 35px;
+      padding: 30px;
       top: 0;
       width: 3px;
       height: 3px;
+      margin-bottom:10px;
     }
     
     #imageC{
-      padding: 35px;
+      padding: 30px;
       width: 3px;
       height: 3px;
     }
     
     #imageD{
-      padding: 35px;
+      padding: 3px;
       bottom: 0;
       width: 3px;
       height: 10px;
@@ -396,21 +234,30 @@
         padding: 0.1em 1em;
         text-decoration: none;
         color: gray;
-        border: white;
+        border: solid 5px gray;
         border-radius: 3px;
         transition: .4s;
         text-align: center;
-        font-size: 70px;
+        font-size: 45px;
         font-family: "Lobster", serif;
-        
+        margin-top: 50px;
         margin-bottom: 60px;
-        
+        background-color: none;
     }
     
-    .storebuttons:hover{
-        background-color: #333333;
+    
+    .storebuttons:hover {
+        border: solid 8px #FFCC99;
+        border-radius: 3px;
+        background: none;
+        color: #FFCC99;
+        text-decoration:none;
+    }
+    
+    
+    .store{
+        margin-bottom: 60px;
         color: white;
-        text-decoration: none;
     }
     
     .mapdetail{
@@ -454,6 +301,25 @@
 
         color:white;
     }
+
+    /*画像を区切る線*/
+    .line{
+        text-align: center;
+    }
+    
+/* ここまで */
+/*profile post */
+    
+    .post_box{
+        background-color:black;
+        color:white;
+        padding: 0.5em 1em;
+        margin:  0;
+        border: solid 3px #000000;
+        border-color: white;
+    }
+
+
     .store{
         margin-bottom: 60px;
         color: white;
@@ -463,10 +329,41 @@
         color:white; 
     }
     
-/* ここまで */
-/*profile post */
+      #profile_pic_flame{
+          align-items:center;
+      }
     
+     /*写真の下のニックネームのデザイン*/
+     #pro_nickname{
+         color:gray;
+         font-size: 60px;
+         text-align :center;
+         margin-right: 100px;
+         font-family: Monotype Corsiva;
+     }
+     
+     .tweet1{
+         color:white;
+     }
+     
+     .post_button{
+         color: #baab8f;
+         background-color: black;
+         border:solid 1px opacity;
+         border-color: #baab8f;
+         margin-bottom: 40px;
+     }
     
+    #answer{
+        font-family: Monotype Corsiva;
+        color:#baab8f ;
+        font-size: 25px;
+    }
+    #question{
+        font-family: Monotype Corsiva;
+        color:white;
+        font-size: 22px;
+    }
     
 
 
@@ -475,7 +372,7 @@
 /*画面のサイズによってサイズを変えたいとき*/
 
     @media (min-width: 768px) {
-    .post_box {width: 346px;}
+    .post_box {width: 400px;}
     .input_box{width: 400px;}
     }
     
