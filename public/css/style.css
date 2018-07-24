@@ -381,3 +381,8 @@
     .input_box{width: 250px;}
     }
     
+
+    /*footer*/
+    .footer_copyright{
+        text-align: center;
+    }
