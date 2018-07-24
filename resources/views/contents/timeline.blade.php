@@ -106,7 +106,7 @@
     }
     
     @media (max-width: 768px) {
-    .post_box {width: 300px;}
+    .post_box {width: 260px;}
     }
     
     
