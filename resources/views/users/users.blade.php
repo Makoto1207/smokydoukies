@@ -109,11 +109,22 @@
         border: 1px solid #FFCC99;
     }
     
+    
+    /*カーソルを乗せたときの変化*/
+    .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+        z-index: 2;
+        color: #FFCC99;
+        background-color: black;
+        border: 2px solid #FFCC99;
+        font-weight: bold;
+    }
+    
+    /*選択できないタブの上にカーソルを乗せたときの変化*/
     .pagination>.disabled>a, .pagination>.disabled>a:focus, .pagination>.disabled>a:hover, .pagination>.disabled>span, .pagination>.disabled>span:focus, .pagination>.disabled>span:hover {
         color:#FFCC99;
         cursor: not-allowed;
         background-color: black;
-        border-color: #FFCC99;
+        border: 1px solid #FFCC99;
     }
     
     /*端っこ二つのタブ(《》のタブ)*/
