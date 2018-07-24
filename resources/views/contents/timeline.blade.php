@@ -7,12 +7,13 @@
     
 
 <div class="container" style="margin-top: 70px;">
-        <div class="col-md-10 col-md-offset-1" id="all">
+    <div class="col-md-10 col-md-offset-1" id="all">
             <h2>Timeline</h2>
             
 
-              <div class="row">
-                <div class="col-md-6">
+        <div class="row">
+
+            <div class="col-md-6">
                     
                     　{!! Form::open(['method' => 'GET']) !!}
                     　{!! Form::text('name', null,['class'=>'search_box','placeholder'=>'Search content!!!']) !!}
@@ -31,21 +32,31 @@
                         {!! Form::submit('Post',['class'=>'post_button'] )!!}
                         {!! Form::close() !!}
                     </div>
+            </div>
+
+            <div class="col-md-6">
+                    
+                <div class="row" id="render">
+                    {!! $microposts->render() !!}
                 </div>
-                <div class="col-md-6">
-                @if (count($microposts) > 0)
-                    @include('microposts.microposts', ['microposts' => $microposts])
-                @endif
+                
+                    @if (count($microposts) > 0)
+                        @include('microposts.microposts', ['microposts' => $microposts])
+                    @endif
+                    
+                <div class="row" id="render">
+                    {!! $microposts->render() !!}
                 </div>
+                
+            </div>
+            
         </div>     
+
     </div>
 
 </div>
 
 
-
-
-@endsections
 
 
 <style>
@@ -95,8 +106,65 @@
     }
     
     @media (max-width: 768px) {
-    .post_box {width: 300px;}
+    .post_box {width: 260px;}
     }
     
+    
+     /*ページネーションの設定*/
+    #render{
+        text-align:center;
+        margin:20px;
+    }
+    
+    /*現在のページのタブ*/
+    .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+        z-index: 3;
+        color: darkred;
+        cursor: default;
+        font-size: 20px;
+        font-family: "Times New Roman";
+        text-align: center;
+        width:30px;
+        height:35px;
+        padding: 6px;
+        text-decoration: none;
+        background-color:black;
+        border: 1px solid #FFCC99;
+       
+    }
+    
+    /*その他のページのタブ*/
+    .pagination>li>a, .pagination>li>span {
+        position: relative;
+        font-size: 20px;
+        font-family: "Times New Roman";
+        text-align: center;
+        width:30px;
+        height:35px;
+        padding: 6px;
+        margin:0px;
+        color:#FFCC99;
+        text-decoration: none;
+        background-color:black;
+        border: 1px solid #FFCC99;
+    }
+    
+    .pagination>.disabled>a, .pagination>.disabled>a:focus, .pagination>.disabled>a:hover, .pagination>.disabled>span, .pagination>.disabled>span:focus, .pagination>.disabled>span:hover {
+        color:#FFCC99;
+        cursor: not-allowed;
+        background-color: black;
+        border-color: #FFCC99;
+    }
+    
+    /*端っこ二つのタブ(《》のタブ)*/
+    .pagination>li:first-child>span {
+        margin-left: 0;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .pagination>li:last-child>a, .pagination>li:last-child>span {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
    
 </style>

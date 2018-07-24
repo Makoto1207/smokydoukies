@@ -1,0 +1,184 @@
+[33m0cbd513[m[33m ([m[1;36mHEAD -> [m[1;32mkana_henshu[m[33m)[m [completed]english
+[33mfd81502[m[33m ([m[1;32mmaster[m[33m)[m Merge pull request #35 from Makoto1207/kana_henshu
+[33m56d6968[m[33m ([m[1;31morigin/kana_henshu[m[33m)[m [fixed]map.css
+[33m24d19a8[m Merge pull request #34 from Makoto1207/tsubasa_welcomeintroduction
+[33m5e6196a[m[33m ([m[1;31morigin/tsubasa_welcomeintroduction[m[33m)[m [edit] welcome log thx ninomiiiiii xoxo
+[33m61ac3f6[m Merge branch 'master' into tsubasa_welcomeintroduction
+[33mc1fa422[m [edit] welcome after
+[33m12b7d53[m [edit] h1 size and scroll me
+[33m39f13ec[m Merge pull request #33 from Makoto1207/yuna_map
+[33m30e8bd9[m[33m ([m[1;31morigin/yuna_map[m[33m)[m Merge branch 'master' into yuna_map
+[33m768e69b[m [edit] map
+[33md9ce5f2[m Merge branch 'master' into tsubasa_welcomeintroduction
+[33m836a1a4[m Merge pull request #32 from Makoto1207/store_kaizen
+[33m47c09a7[m [edit]regis loging phone arrange finish
+[33mc9e4eeb[m [edit] register and login layout center
+[33mf9e06c7[m[33m ([m[1;31morigin/store_kaizen[m[33m)[m [add] search button on store.blade.php
+[33m3923699[m [add] intro in welcomem finish
+[33mbdf7e0e[m [add] search button
+[33m13c4973[m Merge branch 'master' into tsubasa_welcomeintroduction
+[33maec1f06[m[33m ([m[1;32mkana_new1[m[33m)[m Merge pull request #30 from Makoto1207/yuko_design
+[33mc89811c[m [editing] welcome
+[33mee0efea[m [add] intro in weolcome
+[33mb7752be[m [edit] users css
+[33m21fe742[m [edit] users name font
+[33mbf0b897[m [edi] change the font and fixed the useless css
+[33m0303d3e[m Merge branch 'master' into tsubasa_logo1
+[33m750c8d1[m [delete] img that are not used
+[33m8539df2[m [edit] login sign btn
+[33m2660192[m [edit] home btn white black
+[33ma29999a[m[33m ([m[1;31morigin/yuko_design[m[33m)[m Merge branch 'master' into yuko_design
+[33m8354ffb[m [edit] timeline no narabijyun
+[33m37abfae[m Merge branch 'master' of https://github.com/Makoto1207/smokydoukies
+[33m8c1a0ae[m Merge pull request #29 from Makoto1207/kana_new1
+[33mc8012aa[m[33m ([m[1;31morigin/kana_new1[m[33m)[m [final fix]map.blade conflict
+[33m7f9131c[m [fixed]map.blade conflict
+[33m3b7c551[m [final]map
+[33m47721c6[m Merge pull request #28 from Makoto1207/pgsql_gaku
+[33m4269878[m [change] search word
+[33m732afc7[m [edit] home btn select whole
+[33mcadc892[m Merge branch 'master' of https://github.com/Makoto1207/smokydoukies
+[33m8859791[m Merge branch 'master' into tsubasa_logo1
+[33m60a9034[m [fix] btn effect
+[33m4ea7688[m Merge branch 'master' into kana_new1
+[33m59d8110[m [edit] not completed
+[33m2e7f28b[m Merge pull request #27 from Makoto1207/yuna_pull
+[33m3481593[m[33m ([m[1;31morigin/yuna_pull[m[33m)[m [edit] background picture
+[33m3054932[m Merge branch 'master' of https://github.com/Makoto1207/smokydoukies
+[33m7c38c79[m Merge pull request #26 from Makoto1207/kana_new1
+[33me722037[m [delete] >>>>HEAD in welcome.blade
+[33m32f6f0f[m Merge branch 'master' into kana_new1
+[33med87f0f[m [fixed] users photo
+[33m3e5c2d0[m Merge pull request #24 from Makoto1207/yuna_pull
+[33mdc06964[m [edit] background picture
+[33mc44500c[m[33m ([m[1;32mkana_yuna[m[33m)[m Merge pull request #23 from Makoto1207/yuko_design
+[33macebe4b[m Merge branch 'master' into yuko_design
+[33m982ac36[m Merge branch 'master' of https://github.com/Makoto1207/smokydoukies
+[33m16f5d82[m [edit] put logo on welcome.blade
+[33mf45e78b[m Merge pull request #22 from Makoto1207/yuna_pull
+[33mef5a413[m Merge branch 'master' into yuna_pull
+[33m7f26bf7[m [add] smoking icon
+[33m744cbf8[m [edit] welome,login,register
+[33mb8fee4b[m Merge pull request #21 from Makoto1207/add_column
+[33m0912684[m[33m ([m[1;31morigin/add_column[m[33m)[m [fix] design of store.blade.php v2
+[33m54b8426[m [fix] Conflict
+[33m20d0a87[m Merge pull request #20 from Makoto1207/kana_yuna
+[33m17a4260[m [fixed] design of store.blade
+[33macdb2e0[m[33m ([m[1;31morigin/kana_yuna[m[33m)[m [fixed]map conflict
+[33mbf4ab17[m [completed] mappage
+[33mac3ee18[m ignore
+[33m430a973[m [fix] conflict
+[33mf9460a5[m [fix] mergin
+[33m954c238[m profile
+[33me7d6f1e[m [fix] changed color of letters and table
+[33m1de31df[m Merge pull request #19 from Makoto1207/tsubasa_welcome
+[33me61e4f5[m[33m ([m[1;31morigin/tsubasa_welcome[m[33m)[m [fix} conflict
+[33m2df8eef[m Merge branch 'master' of https://github.com/Makoto1207/smokydoukies
+[33md481e4f[m [fix] indent etc
+[33m9b0e6dc[m [add] jquery command in nav
+[33m0c8c656[m [edit] navbar and side bar
+[33m06027cb[m Merge pull request #18 from Makoto1207/kana_yuna
+[33mc0a91f3[m [connected]map/store
+[33mb47227b[m Merge branch 'master' into kana_yuna
+[33mf498d35[m [finished] map
+[33m8799b37[m Merge pull request #17 from Makoto1207/add_column
+[33mb1acaaf[m [add] URL column in store.blade
+[33meba50e2[m ignore
+[33me113fbc[m [fixed]conflict css
+[33mb2c78d0[m Procfile
+[33mcfa7f99[m [edit] background img whole
+[33m6eda358[m Merge pull request #16 from Makoto1207/tsubasa_navbar2
+[33m4724b64[m[33m ([m[1;31morigin/tsubasa_navbar2[m[33m)[m [fix] gaku mistakes
+[33m85dd91e[m [fix] conflict in store
+[33m9e262ee[m [edit] page padding
+[33m8be872a[m [edit]font change in weoclome and singlogin
+[33mb9bcd90[m [add] navbar text only
+[33mee5eff5[m Merge pull request #15 from Makoto1207/search_gaku2
+[33m13581bd[m[33m ([m[1;31morigin/search_gaku2[m[33m)[m [edit] store.blade.php done with functions of searching
+[33mb2b32e2[m [edit] navbar
+[33m27738b0[m Merge branch 'master' into search_gaku2
+[33mb117770[m [fixed] conflict
+[33m0200358[m nothing to be changed
+[33m3ea7e14[m Merge branch 'master' into tsubasa_navbar2
+[33m438732e[m [edit] css in login and signup
+[33m00b86ff[m Merge pull request #14 from Makoto1207/yuko_timeline
+[33m3a5895d[m[33m ([m[1;31morigin/yuko_timeline[m[33m)[m [edit] profile title
+[33ma18639f[m [edit] timeline
+[33m50b6c64[m [edit] 調整(Arrange) after merge
+[33m351e3e1[m [fixed] conflict
+[33m4f4ec15[m [edit picture]map
+[33mba8da92[m Merge pull request #13 from Makoto1207/yuko_profile
+[33m74114fa[m[33m ([m[1;31morigin/yuko_profile[m[33m)[m [edit] design
+[33ma1fe427[m [add]store.blade.php function|search
+[33m3fb90c5[m [edit] tweet no gazou no
+[33m903ade7[m [fix] conflict
+[33m9fa0283[m [edit] change the input box in register.blade
+[33me67d1a8[m Merge pull request #12 from Makoto1207/tsubasa_profilepic
+[33m656d398[m[33m ([m[1;31morigin/tsubasa_profilepic[m[33m)[m Merge branch 'master' into tsubasa_profilepic
+[33m10c8d0f[m [edit] brand name with pictures [problem]couldn't manage the size of pic
+[33m0961372[m [fix] change the design of smoker page
+[33m55af8ad[m[33m ([m[1;32mkana_pull[m[33m)[m Merge branch 'master' into kana_pull
+[33m7c24c5c[m Merge pull request #11 from Makoto1207/yuna_pull
+[33m420ce15[m Merge branch 'master' into yuna_pull
+[33m18f254f[m [edit] map
+[33me885d2c[m Merge pull request #10 from Makoto1207/tsubasa_fix
+[33m58fabe6[m[33m ([m[1;31morigin/tsubasa_fix[m[33m)[m [edit] css
+[33m4d3d4d8[m [fix] conflict in maps
+[33m671fab7[m [edit] css in welcome(auth) and maps
+[33m63e6228[m Merge pull request #9 from Makoto1207/yuko_fix
+[33mfa72a6c[m[33m ([m[1;31morigin/yuko_fix[m[33m)[m [fix] store DB
+[33m9b340f0[m [edit] css in welcome blade
+[33m5a92fc1[m [fix] Timeline button in show.blade.php
+[33m8c2c60b[m [fix] signin & login page
+[33md3c031d[m [fixed] conflict
+[33ma814543[m Merge pull request #8 from Makoto1207/yuko_store
+[33mc4412bb[m[33m ([m[1;31morigin/yuko_store[m[33m)[m [link] link img & store page
+[33m8af2a1c[m [add] profile in user/users.blade
+[33m8f0115f[m [fixed] conflict
+[33m60fd6f2[m new branch
+[33m74de548[m [ignore]plz ignore this
+[33m5f5abf6[m Merge pull request #7 from Makoto1207/tsubasa_timeline
+[33mce4f823[m[33m ([m[1;31morigin/tsubasa_timeline[m[33m)[m [edit] css [add]link in welcome and nav
+[33md52662a[m [fix] conflict in welcome
+[33m7a96a51[m [improve] comment mutes
+[33m61c8cac[m [edit] Micropost Controller [add]timeline [finish] success
+[33m2caff59[m Merge pull request #6 from Makoto1207/yuna_navbar
+[33m46b0215[m [add] store.blade.php
+[33m0880617[m[33m ([m[1;31morigin/yuna_navbar[m[33m)[m [edit] link
+[33m02a7a19[m [finish] link
+[33m31a231d[m [add] DB,model,controller
+[33mf34fee0[m [edit] link
+[33me1072e3[m [edit] profile.blade navbar
+[33mf010b61[m [fix] conflict
+[33m1678678[m [add] navbar color
+[33m3f2e591[m Merge pull request #5 from Makoto1207/mako_micropost
+[33me634bfd[m[33m ([m[1;31morigin/mako_micropost[m[33m)[m [fix] conflict gaku_map
+[33m0ae1c17[m [add] navbar profile,smokers
+[33m9794ef1[m Merge pull request #4 from Makoto1207/gaku_map
+[33mf8a25e8[m[33m ([m[1;31morigin/gaku_map[m[33m)[m [add] detail A,B,C,D and Store Link
+[33m00d4674[m [add] navbar
+[33m925ed12[m [add]map.blade.php images and link {A,B,C,D}
+[33ma29f362[m [fix] conflict
+[33m8c8ebcc[m [editting] index.blade
+[33m1121ff7[m [fix]conflict
+[33m76828be[m[33m ([m[1;32mkana_test[m[33m)[m Merge pull request #3 from Makoto1207/tsubasa_nav
+[33m617aaa5[m tweet
+[33m98ca597[m tweet
+[33m0a63f53[m pull
+[33m1d66fce[m[33m ([m[1;31morigin/tsubasa_nav[m[33m)[m [add] navbar [done] nabvar setting
+[33ma90363d[m profileimg
+[33me6ee821[m Merge branch 'master' into yuna_navbar
+[33m77d505d[m index
+[33m59aa2f7[m [fix] conflict
+[33mb8f7916[m Merge pull request #2 from Makoto1207/tsubasa_welcomeblade
+[33mf2804c4[m navbar
+[33m328b57c[m[33m ([m[1;31morigin/tsubasa_welcomeblade[m[33m)[m [fix]way to logout [done]welcome blade
+[33m17d6f85[m [fix]Layout success connection
+[33m6b36e27[m [fix] conflict in app.blade
+[33mcc1ff16[m [add] background video [edit] welcomeblade. COMPLETE
+[33me98482b[m Merge pull request #1 from Makoto1207/mako_auth
+[33m14bf9f7[m[33m ([m[1;31morigin/mako_auth[m[33m)[m loginrigister
+[33mba6f213[m auth
+[33m9abaf66[m [add] layout, css, picture, [edit] background-img
+[33mb773ee2[m set timezone
+[33m315be10[m init
