@@ -68,7 +68,7 @@
     /*現在のページのタブ*/
     .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
         z-index: 3;
-        color: darkred;
+        color: black;
         cursor: default;
         font-size: 20px;
         font-family: "Times New Roman";
@@ -77,7 +77,7 @@
         height:35px;
         padding: 6px;
         text-decoration: none;
-        background-color:black;
+        background-color:#FFCC99;
         border: 1px solid #FFCC99;
        
     }
