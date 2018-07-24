@@ -15,20 +15,16 @@
 
             <div class="col-md-6">
                     
+                    <div class="col-12">
                     　{!! Form::open(['method' => 'GET']) !!}
                     　{!! Form::text('name', null,['class'=>'search_box','placeholder'=>'Search content!!!']) !!}
                     
                     　{!! Form::submit('Search',['class'=>'search_button']) !!}
                     　{!! Form::close() !!}
-                    
 
-                    <!--投稿フォーム-->
-                    <div class="col-12">
                       {!! Form::open(['route' => 'microposts.store']) !!}
                       {!! Form::textarea('content', old('content'),['class'=>'post_box', 'placeholder'=>'Comment me!!!'])!!}
-                    </div>
-                    <!--投稿ボタン-->
-                    <div class="col-12">
+
                         {!! Form::submit('Post',['class'=>'post_button'] )!!}
                         {!! Form::close() !!}
                     </div>

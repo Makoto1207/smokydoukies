@@ -72,17 +72,57 @@
 
 
     <body>
-        <!-- navbar のブレード -->
-        @include('commons.navbar')
-        
         <div>
-            @yield('content')    
+            <div id="loader-bg">
+                <div id="loader">
+                        <img src="images/img-loading.gif" width="80" height="80" alt="Now Loading..." />
+                    <p>Now Loading...</p>
+                </div>
+            </div>
         </div>
         
-
-    
-    
+        <div id="wrap">
+            <!-- navbar のブレード -->
+            @include('commons.navbar')
+        
+            <div>
+                @yield('content')    
+            </div>
+        </div>
     </body>
 </div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+                  
+        //loading effect
+        $(function() {
+          var h = $(window).height();
+         
+          $('#wrap').css('display','none');
+          $('#loader-bg ,#loader').height(h).css('display','block');
+        });
+         
+        $(window).load(function () { //全ての読み込みが完了したら実行
+          $('#loader-bg').delay(900).fadeOut(800);
+          $('#loader').delay(600).fadeOut(300);
+          $('#wrap').css('display', 'block');
+        });
+         
+        //10秒たったら強制的にロード画面を非表示
+        $(function(){
+          setTimeout('stopload()',10000);
+        });
+         
+        function stopload(){
+          $('#wrap').css('display','block');
+          $('#loader-bg').delay(900).fadeOut(800);
+          $('#loader').delay(600).fadeOut(300);
+        }
+          
+    </script>s
+
+
+
 </html>
 

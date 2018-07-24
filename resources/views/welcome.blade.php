@@ -13,6 +13,10 @@ TODO LIST
         <head>
         </head>
         <body>
+            
+
+            
+            
         <div class="container">
             <div class="row">
                 <div>
@@ -120,6 +124,7 @@ TODO LIST
     
     <!-- ログイン後のｃｓｓ  -->
     <style>
+
     
             body{
                 margin: 0;
@@ -384,12 +389,34 @@ TODO LIST
                     return false;
                 });
             });
+                     
+                     
+
+</script>
+                     
+                     
+                     
+                     
+                     
                         
         </script>
         <!-- all done -->
 
     <!-- ログイン後 -->
     @else
+    
+    <!-- loading  -->
+    <!--<div>-->
+    <!--    <div id="loader-bg">-->
+    <!--        <div id="loader">-->
+    <!--                <img src="images/img-loading.gif" width="80" height="80" alt="Now Loading..." />-->
+    <!--            <p>Now Loading...</p>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
+    
+    
+    
     <div class="container" style="margin-top: 70px;">
     <!-- サービス名表示 -->
         <div class="title">
@@ -694,19 +721,11 @@ TODO LIST
     }
         
         
-        
-        
-   
-        
-        
-        
-        
-        
-        
-        
-        
+
         
     </style>
+
+
     
     @endif
 @endsection
