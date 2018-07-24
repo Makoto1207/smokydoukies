@@ -370,25 +370,7 @@ TODO LIST
             </section>
 
         </div>
-<<<<<<< HEAD
-            
 
-        <!-- ログイン・サインボタン-->
-           <div class="row">
-               <div class="col-md-offset-2 col-md-8">
-                
-                  <div class="col-12 col-md-6" id="buttons">
-                      <a href= "{{ route('register') }}" class="welcomebuttons"><span>SIGN UP</span></a>
-                  </div>
-                  <div class="col-12 col-md-6" id="buttons">
-                      <a href= "{{ route('login') }}" class="welcomebuttons"><span>LOGIN</span></a>
-                  </div>
-              
-            </div>
-            
-           
-=======
->>>>>>> 24d19a8f8a8e3b33e6e35b51f024340073697491
         
     </div>
 
