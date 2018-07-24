@@ -4,11 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+
 use App\Http\Controllers\Controller;
 
 
 // ツイートを表示するため追加
 use App\Micropost;
+// Add these for Searching
+use App\Http\Requests;
+
 
 class MicropostsController extends Controller
 {
@@ -72,14 +76,55 @@ class MicropostsController extends Controller
     
     //タイムラインにツイートを表示するコントローラー
     
-    
-        public function timeline()
-    {
-        $microposts = Micropost::orderBy('created_at', 'desc')->paginate(10);
+    /*
+    public function timeline(){
         
-        return view('contents.timeline', [
+        if($request->name==''){
+            
+            $microposts = Micropost::orderBy('created_at', 'desc')->paginate(10);
+        
+            return view('contents.timeline', [
+            'microposts' => $microposts,
+        ]);
+        }else{
+             $microposts = \App\Micropost::where('content','LIKE','%'.$request->name.'%')->get();
+            //  ->orwhere('name','LIKE','%'.$request->content.'%')
+             
+             return view('contents.timeline', [
             'microposts' => $microposts,
         ]);
         }
+    }*/
+    
+    public function timeline(){
+        
+            
+            $microposts = Micropost::orderBy('created_at', 'desc')->paginate(10);
+        
+            return view('contents.timeline', [
+            'microposts' => $microposts,
+        ]);
+            
+        }
+        
+    
+    public function search(Request $request){
+        
+        if($request->name==''){
+            
+            $microposts = Micropost::all();
+        
+            return view('contents.timeline', [
+            'microposts' => $microposts,
+        ]);
+        }else{
+             $microposts = \App\Micropost::where('content','LIKE','%'.$request->name.'%')->get();
+            //  ->orwhere('name','LIKE','%'.$request->content.'%')
+             
+             return view('contents.timeline', [
+            'microposts' => $microposts,
+        ]);
+        }
+    }
     
 }

@@ -96,31 +96,7 @@
         border-color: #FFCC99;
     }
     
-    /* ページネーションの色 */
-.pagination > li > a,
-.pagination > li >span {
-      color:DarkSlateGray;
-      background-color:#fff;
-      border:1px solid #ddd;
-}
-.pagination > li > a:focus,
-.pagination > li > a:hover,
-.pagination > li > span:focus,
-.pagination > li > span:hover {
-      color:DarkSlateGray;
-      background-color:#eee;
-      border-color:#ddd;
-}
-.pagination > .active > a,
-.pagination > .active > a:focus,
-.pagination > .active > a:hover,
-.pagination > .active > span,
-.pagination > .active > span:focus,
-.pagination > .active > span:hover {
-      color:#fff;
-      background-color:DarkSlateGray;
-      border-color:DarkSlateGray;
-}
+    
         
 
     
