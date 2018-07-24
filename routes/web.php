@@ -40,3 +40,4 @@ Route::get('/restaurants', 'RestaurantsController@search')->name('store');
 
 //timeline用
 Route::get('/timeline', 'MicropostsController@timeline')->name('timeline');
+// Route::get('/timeline', 'MicropostsController@search')->name('search');

@@ -372,12 +372,12 @@
 /*画面のサイズによってサイズを変えたいとき*/
 
     @media (min-width: 768px) {
-    .post_box {width: 400px;}
+    
     .input_box{width: 400px;}
     }
     
     @media (max-width: 768px) {
-    .post_box {width: 300px;}
+    
     .input_box{width: 250px;}
     }
     

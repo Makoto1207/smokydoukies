@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 
 
 use App\Http\Controllers\Controller;
@@ -98,33 +100,53 @@ class MicropostsController extends Controller
     
     public function timeline(){
         
+        if(request()->name==''){
             
             $microposts = Micropost::orderBy('created_at', 'desc')->paginate(10);
         
             return view('contents.timeline', [
             'microposts' => $microposts,
         ]);
-            
-        }
-        
-    
-    public function search(Request $request){
-        
-        if($request->name==''){
-            
-            $microposts = Micropost::all();
-        
-            return view('contents.timeline', [
-            'microposts' => $microposts,
-        ]);
         }else{
-             $microposts = \App\Micropost::where('content','LIKE','%'.$request->name.'%')->get();
+             $microposts = DB::table('microposts')->where('content','LIKE','%'.request()->name.'%')->paginate(10);
             //  ->orwhere('name','LIKE','%'.$request->content.'%')
              
-             return view('contents.timeline', [
+             return view('contents.timeline_search', [
             'microposts' => $microposts,
         ]);
+            
         }
     }
+    
+    // public function timeline(){
+        
+            
+    //         $microposts = Micropost::orderBy('created_at', 'desc')->paginate(10);
+        
+    //         return view('contents.timeline', [
+    //         'microposts' => $microposts,
+    //     ]);
+            
+    //     }
+        
+    
+    // public function search(Request $requests){
+        
+    //     if($request->name==''){
+            
+    //         $microposts = Micropost::all();
+        
+    //         return view('contents.timeline', [
+    //         'microposts' => $microposts,
+    //     ]);
+    //     }else{
+    //          $microposts = \App\Micropost::where('content','LIKE','%'.$request->name.'%')->get();
+    //         //  ->orwhere('name','LIKE','%'.$request->content.'%')
+             
+    //          return view('contents.timeline', [
+    //         'microposts' => $microposts,
+    //     ]);
+    //     }
+    // }
     
 }
