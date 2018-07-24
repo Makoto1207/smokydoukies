@@ -10,7 +10,12 @@
     <div class="col-md-10 col-md-offset-1" id="all">
             <h2>Timeline</h2>
             
+<<<<<<< HEAD
         <div class="row">
+=======
+
+              <div class="row">
+>>>>>>> master
                 <div class="col-md-6">
                     
                     　{!! Form::open(['method' => 'GET']) !!}
@@ -40,9 +45,7 @@
         </div>   
         
     </div>
-    
-    
-              
+
 </div>
 
 
