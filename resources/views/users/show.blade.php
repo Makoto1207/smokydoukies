@@ -20,13 +20,13 @@
             <!--基本情報-->  
             <div class="infomation">
                 
-                            <p id='question'>smoking area</p>
+                            <p id='question'>Smoking area</p>
                             <p id='answer'>{{ $user->place }}</p> 
                         
-                            <p id='question'>Sigarets/a day</p>
+                            <p id='question'>Cigarettes /a day</p>
                             <p id='answer'>{{ $user->tabaco }}</p>
     
-                            <p id='question'>sigaret brand</p>
+                            <p id='question'>Cigarette brand</p>
                             <p id='answer'>{{ $user->brand }}</p>
                        
             </div>
@@ -66,13 +66,19 @@
 
 
 <style>
+    @media (min-width: 768px) {
+    .post_box {width: 346px;}
+    }
+    
+    @media (max-width: 768px) {
+    .post_box {width: 260px;}
+    }
     
     .post_box{
         background-color:black;
         color:white;
         font-size:18px;
         height: 200px;
-       
         margin:  0;
         border: solid 3px #000000;
         border-color: white;
@@ -133,7 +139,7 @@
         margin-bottom:0px;
     }
     
-    ::-webkit-input-placeholder { /* Chrome */
+    :-webkit-input-placeholder { /* Chrome */
       color: gray;
     }
     
