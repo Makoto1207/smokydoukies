@@ -7,11 +7,13 @@
     
 
 <div class="container" style="margin-top: 70px;">
-        <div class="col-md-10 col-md-offset-1" id="all">
+    <div class="col-md-10 col-md-offset-1" id="all">
             <h2>Timeline</h2>
             
-              <div class="row">
-                <div class="col-md-6">
+
+        <div class="row">
+
+            <div class="col-md-6">
                     
                     　{!! Form::open(['method' => 'GET']) !!}
                     　{!! Form::text('name', null,['class'=>'search_box','placeholder'=>'Search content!!!']) !!}
@@ -30,7 +32,8 @@
                         {!! Form::submit('Post',['class'=>'post_button'] )!!}
                         {!! Form::close() !!}
                     </div>
-                </div>
+            </div>
+
             <div class="col-md-6">
                     
                 <div class="row" id="render">
@@ -48,13 +51,12 @@
             </div>
             
         </div>     
+
     </div>
+
 </div>
 
 
-
-
-@endsections
 
 
 <style>

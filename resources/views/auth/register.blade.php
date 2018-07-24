@@ -131,9 +131,14 @@
                         </div>
                         
                     </form>
+                    
+                    
 
 </div>
 
+                    <div class="footer_copyright">
+                        ©2018 SMOKY DOUKIES by Seista Co.
+                    </div>
 
 <style>
             .before_login{

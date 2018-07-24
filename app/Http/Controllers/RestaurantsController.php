@@ -14,7 +14,14 @@ use App\Http\Requests;
 
 class RestaurantsController extends Controller
 {
-     public function index(Request $request)
+     public function index()
+    {
+        return view('contents.store', [
+            'restaurants' => $restaurants,
+        ]);
+    }
+        
+     public function search(Request $request)
     {
       
         if($request->name=='')
@@ -38,5 +45,4 @@ class RestaurantsController extends Controller
         ]);   
         }
     }
-   
 }
