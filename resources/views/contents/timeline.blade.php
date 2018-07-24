@@ -7,9 +7,10 @@
     
 
 <div class="container" style="margin-top: 70px;">
-        <div class="col-md-10 col-md-offset-1" id="all">
+    <div class="col-md-10 col-md-offset-1" id="all">
             <h2>Timeline</h2>
             
+
               <div class="row">
                 <div class="col-md-6">
                     
@@ -31,16 +32,17 @@
                         {!! Form::close() !!}
                     </div>
                 </div>
+                
                 <div class="col-md-6">
                 @if (count($microposts) > 0)
                     @include('microposts.microposts', ['microposts' => $microposts])
                 @endif
                 </div>
-        </div>     
+        </div>   
+        
     </div>
+
 </div>
-
-
 
 
 @endsection

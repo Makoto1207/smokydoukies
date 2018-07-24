@@ -49,8 +49,12 @@
                <p id="page-top"><a href="{{ route('welcome') }}" class="glyphicon glyphicon-home"></a></p>
 
     </div>
+    
 </div>
 
+            
+
+                
 
 <!--　ページにかけるｃｓｓ　-->
 <style>

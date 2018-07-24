@@ -22,6 +22,8 @@
                     {!! Form::close() !!}
                 @endif
             </div>
+        
+                
         </div>
     </li>
 @endforeach

@@ -12,15 +12,18 @@
             <h2>Timeline</h2>
             
                 
+                <div class="row">
                 <div class="col-md-6">
-                    <div class="col-12">
+                    
                     　{!! Form::open(['method' => 'GET']) !!}
-                    　{!! Form::text('name', null) !!}
-                    　{!! Form::submit('Search') !!}
+                    　{!! Form::text('name', null,['class'=>'search_box','placeholder'=>'Search content!!!']) !!}
+                    
+                    　{!! Form::submit('Search',['class'=>'search_button']) !!}
                     　{!! Form::close() !!}
-                    </div>
+                    
 
                     <!--投稿フォーム-->
+                    
                     <div class="col-12">
                       {!! Form::open(['route' => 'microposts.store']) !!}
                       {!! Form::textarea('content', old('content'),['class'=>'post_box', 'placeholder'=>'Comment me!!!'])!!}
@@ -50,7 +53,6 @@
         color:white;
         font-size:18px;
         height: 200px;
-        width:300px;
         margin:  0;
         border: solid 3px #000000;
         border-color: white;
@@ -66,4 +68,32 @@
         margin-bottom:30px;
          
      }
+     
+      .search_box{
+        background-color:black;
+        color:white;
+        font-size:18px;
+        height: 50px;
+        margin:  0px;
+        border: solid 3px #000000;
+        border-color: white;
+    }
+    
+    .search_button{
+        color: #baab8f;
+        font-size: 15px;
+        background-color: black;
+        border:solid 1px opacity;
+        border-color: #baab8f;
+        padding: 2px 10px;
+        margin-bottom:30px;     
+     }
+     
+    @media (min-width: 768px) {
+    .post_box {width: 346px;}
+    }
+    
+    @media (max-width: 768px) {
+    .post_box {width: 300px;}
+    }
 </style>

@@ -131,13 +131,13 @@
                         </div>
                         
                     </form>
+                    
+                    
 
                <p id="page-top"><a href="{{ route('welcome') }}" class="glyphicon glyphicon-home"></a></p>
 
                 
 </div>
-
-
 <style>
             .before_login{
               font-family: "Times New Roman";

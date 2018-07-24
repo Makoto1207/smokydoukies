@@ -111,7 +111,8 @@ TODO LIST
                 </div>
                 
             </div>
-                                    <p id="page-top"><a href="#wrap" class="glyphicon glyphicon-home"></a></p>
+            
+            <p id="page-top"><a href="#wrap" class="glyphicon glyphicon-home"></a></p>
 
             <!-- done -->
         </body>
@@ -437,11 +438,11 @@ TODO LIST
             <section class="feautures">
                 <div class="container">
                     <div class="row" style="margin:0 0 70px;">
-                        <h2>OUR SERVICES</h2>
+                        <h2>OUR SERVICE</h2>
                             <div class="titledesc">
-                                <p>Platform where all people gathers for peace.</p> 
-                                <p>We brighten our future, we thrive for love.</p>
-                                <p>Get ready to join smoky doukies.</p>
+                                <p>This is a platform where smokers gather for peace.</p> 
+                                <p>We provide support to help you smoke with the right manners.</p>
+                                <p>Get ready to join smoky doukies!</p>
                             </div>
                     </div>
                     <div class="row">
@@ -449,27 +450,27 @@ TODO LIST
                             <div class="col-sm-6 col-md-4 col-lg-2 col-lg-offset-1">
                                 <p class="glyphicon glyphicon-user" style="font-size: 30px;"></p>
                                 <h3>Profile</h3>
-                                <p>Your informations are open to all the users. Also, you could state your feelings on board.</p>
+                                <p>Your information is open to all users and you can share your feelings with them on board.</p>
                             </div>
                             <div class="col-sm-6 col-md-4 col-lg-2">
                                 <p class="glyphicon glyphicon-heart" style="font-size: 30px;"></p>
                                 <h3>Smokers</h3>
-                                <p>You can view other Smokers detail. Thefore, you can find buddies.</p>
+                                <p>You can view the other smokers' information to find your smoking buddies.</p>
                             </div>
                             <div class="col-sm-6 col-md-4 col-lg-2">
                                 <p class="glyphicon glyphicon-comment" style="font-size: 30px;"></p>
-                                <h3>Timelines</h3>
-                                <p>All the conversation are showed in this page. You are able to know each others.</p>
+                                <h3>Timeline</h3>
+                                <p>Conversations are showed on this page. You can find out what the other smokers are up to.</p>
                             </div>
                             <div class="col-sm-6 col-md-4 col-lg-2">
                                 <p class="glyphicon glyphicon-flag" style="font-size: 30px;"></p>
                                 <h3>Map</h3>
-                                <p>Every details of restoran locations are shown. You could discover where to go</p>
+                                <p>The locations and the details of restaurants are shown. You can use it to discover where to go.</p>
                             </div>
                             <div class="col-sm-6 col-md-4 col-lg-2">
                                 <p class="glyphicon glyphicon-glass" style="font-size: 30px;"></p>
-                                <h3>Restaurant</h3>
-                                <p>About 250 restaurant information are stored. You could find the perfect place to enjoy.</p>
+                                <h3>Restaurants</h3>
+                                <p>Over 250 restaurants' information is stored. You can find the perfect place to enjoy your meal.</p>
                             </div>
                         </div>
                     </div>
@@ -480,13 +481,22 @@ TODO LIST
                         </div>
                     </div>
                 </div>
+                
+                
 
+                
             </section>
+                
+                <div class="footer_copyright_black">
+                    ©2018 SMOKY DOUKIES by Seista Co.
+                </div>
 
         </div>
 
         
+        
     </div>
+
 
 
     
@@ -494,6 +504,15 @@ TODO LIST
     
     
     <style>
+    
+    /*footer*/
+    .footer_copyright_black{
+
+    }
+    
+        
+        
+    
         #intro1{
             margin-top: 430px;
             height: 100vh;
