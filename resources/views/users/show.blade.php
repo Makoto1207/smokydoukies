@@ -3,10 +3,10 @@
 @section('content')
 
 <div class="container" style="margin-top: 75px;">
-    
-        <div class="col-md-10 col-md-offset-1">
+    <div class="col-md-10 col-md-offset-1">
 
       
+        <!--左側のコンテンツ-->
         <div class="col-12 col-md-6"> 
         
             <!--写真と名前-->
@@ -14,54 +14,54 @@
                 <img  id="profile_pic" src="{{secure_asset('/images/cigs/'. $user->brand. '.jpg')}}"  class="img-responsive">
                 <p id="pro_nickname">   {{ $user->nickname }} </p>
             </div>
-           
-                    
-                   
+  
             <!--基本情報-->  
             <div class="infomation">
+                <p id='question'>Smoking area</p>
+                <p id='answer'>{{ $user->place }}</p> 
                 
-                            <p id='question'>Smoking area</p>
-                            <p id='answer'>{{ $user->place }}</p> 
-                        
-                            <p id='question'>Cigarettes /a day</p>
-                            <p id='answer'>{{ $user->tabaco }}</p>
+                <p id='question'>Cigarettes /a day</p>
+                <p id='answer'>{{ $user->tabaco }}</p>
     
-                            <p id='question'>Cigarette brand</p>
-                            <p id='answer'>{{ $user->brand }}</p>
-                       
+                <p id='question'>Cigarette brand</p>
+                <p id='answer'>{{ $user->brand }}</p>       
             </div>
+            
         </div>     
             
             
             
             
-            <!--↓右側-->
-       
-       
-      <div class="col-12 col-md-6" style="margin-top: 0px;">
+        <!--右側のコンテンツ-->
+        <div class="col-12 col-md-6" style="margin-top: 0px;">
             
-            
+            @if (Auth::id() == $user->id)
                 <div class="col-12">
-                 @if (Auth::id() == $user->id)
                   {!! Form::open(['route' => 'microposts.store']) !!}
-                          {!! Form::textarea('content', old('content'),['class'=>'post_box', 'placeholder'=>'Comment me!!!'])!!}
+                　{!! Form::textarea('content', old('content'),['class'=>'post_box', 'placeholder'=>'Comment me!!!'])!!}
                 </div>
-           
-                           
-                    {!! Form::submit('Post',['class'=>'post_button'] )!!}
-                              
-                          
-                    {!! Form::close() !!}
-                @endif
+                      
+                {!! Form::submit('Post',['class'=>'post_button'] )!!}
+                {!! Form::close() !!}
+            @endif
+            
             <div class='tweet1'>
                 <div class="col-12">         
                     @if (count($microposts) > 0)
                         @include('microposts.microposts', ['microposts' => $microposts])
                     @endif
-          
                 </div>
             </div>
-  </div>          
+            
+        </div>    
+            
+  　</div>
+  　
+  　<div class="footer_copyright_black">
+        ©2018 SMOKY DOUKIES by Seista Co.
+    </div>
+  
+  
 </div>
 
 
@@ -141,6 +141,12 @@
     
     :-webkit-input-placeholder { /* Chrome */
       color: gray;
+    }
+    
+    .footer_copyright_black{
+        height:15px;
+        background-color: black;
+        color:darkgray;
     }
     
 </style>

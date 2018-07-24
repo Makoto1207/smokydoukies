@@ -110,8 +110,14 @@
     }
     
     
+    /*ページネーションの設定*/
+    #render{
+        text-align:center;
+        margin:20px;
+    }
+    
     /*現在のページのタブ*/
-    .pagination>.active>span, .pagination>.active>span:focus {
+    .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
         z-index: 3;
         color: black;
         cursor: default;
@@ -124,6 +130,7 @@
         text-decoration: none;
         background-color:#FFCC99;
         border: 1px solid #FFCC99;
+       
     }
     
     /*その他のページのタブ*/
@@ -142,6 +149,7 @@
         border: 1px solid #FFCC99;
     }
     
+    
     /*カーソルを乗せたときの変化*/
     .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
         z-index: 2;
@@ -156,7 +164,7 @@
         color:#FFCC99;
         cursor: not-allowed;
         background-color: black;
-        border-color: #FFCC99;
+        border: 1px solid #FFCC99;
     }
     
     
@@ -169,7 +177,7 @@
     .pagination>li:last-child>a, .pagination>li:last-child>span {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
-    }s
+    }
    
 </style>
 @endsection

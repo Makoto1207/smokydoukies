@@ -80,14 +80,17 @@ TODO LIST
             
             <div id="box5">
                 <h1 class="toptext" style="font-size:80px;">SEARCH</h1>
-                
                 <div class="btnframe">
                     <div class="btneffect"></div>
-                        <a href= "{{ route('store')}}"><span>STORES</span></a>
+                    <a href= "{{ route('store')}}"><span>STORES</span></a>
                 </div>
-                
             </div>
             <!-- done -->
+            
+            <div class="footer_copyright_black">
+                ©2018 SMOKY DOUKIES by Seista Co.
+            </div>
+            
         </body>
     </html>
     
@@ -264,13 +267,21 @@ TODO LIST
       40% {
         transform: rotate(45deg) translate(0, 0);
       }
+    }  
+    
+    .footer_copyright_black{
+        height:15px;
+        background-color: black;
+        color:darkgray;
     }
+        
+    
         
             
             
             
             
-        </style>
+    </style>
         <!-- all done -->
 
     <!-- ログイン後 -->
