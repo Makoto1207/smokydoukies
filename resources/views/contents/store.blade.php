@@ -5,8 +5,8 @@
     @if (count($restaurants) > 0)
         <div id="hoge" style="margin-top: 70px;">
         
-        <div class="col-md-10 col-md-offset-2" >
-        <h2 id="titlename">Restaurant List</h2>
+        <div class="col-md-8 col-md-offset-2">
+        <h2 class="titleforStores">Restaurant</h2>
         </div>
         <div class="col-md-8 col-md-offset-2">
         <div class="introduction">
@@ -62,11 +62,16 @@
         </div>
     @endif
     
+<style>
+    .titleforStores{
+        color: #C0C0C0;
+        margin-top: 15px;
+        font-size: 28px;
+        font-family:  "Lobster", serif;
+    }
     
-    <style>
-      
-      #titlename{
-        font-family: "Time New Romans";
+    #titlename{
+        
         color: gray;
       }
       
