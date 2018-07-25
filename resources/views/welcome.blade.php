@@ -36,12 +36,30 @@ TODO LIST
             <!-- background img & texts -->
             
             
+            <!-- Timeline page -->
+            <div id="box3">
+                <!-- Top Comments -->
+                <h1 class="toptext">SHARE</h1>
+                <h1>THOUGHTS</h1>
+                <!-- button -->
+                <div class="btnframe">
+                    <div class="btneffect"></div>
+                        <a href= "{{route('timeline')}}"><span>TIMELINE</span></a>
+                </div>
+                <!-- scroll button -->
+                <p class="scroll js-scroll"><a href="#box1">SCROLL DOWN</a></p>                        
+            </div>
             
+            <!-- Profile page -->
             <div id="box1">
+                <!-- scroll btn -->
+                <p class="scrollup js-scroll"><a href="#box3">SCROLL UP</a></p>                        
+                <!-- Top comments -->
                 <div class="onepic">
                     <h1 class="toptext">SMOKE</h1>
                     <h1>YOURSELF</h1>
                 </div>
+                <!-- button -->
                 <div class="btnframe">
                     <div class="btneffect"></div>
                         <a href= "{{route('users.show', Auth::id())}}"><span>PROFILE</span></a>
@@ -51,71 +69,52 @@ TODO LIST
             </div>
             
 
-            
+            <!-- Smokers page  -->
             <div id="box2">
                 <!-- scroll button -->
-                <p class="scrollup js-scroll"><a href="#box1">SCROLL UP</a></p>                        
+                <p class="scrollup js-scroll"><a href="#box1">SCROLL UP</a></p> 
+                <!-- Top comments -->
                 <h1 class="toptext">MEET</h1>
                 <h1>DOUKIES</h1>
+                <!-- button -->
                 <div class="btnframe">
                     <div class="btneffect"></div>
                         <a href= "{{route('users.index')}}"><span>SMOKERS</span></a>
                 </div>
                 <!-- scroll button -->
-                <p class="scroll js-scroll"><a href="#box3">SCROLL DOWN</a></p>                        
-            </div>
-            
-            <div id="box3">
-                <!--  -->
-                <p class="scrollup js-scroll"><a href="#box2">SCROLL UP</a></p>                        
-
-                
-                <h1 class="toptext">SHARE</h1>
-                <h1>THOUGHTS</h1>
-
-                
-                <div class="btnframe">
-                    <div class="btneffect"></div>
-                        <a href= "{{route('timeline')}}"><span>TIMELINE</span></a>
-                </div>
-                
                 <p class="scroll js-scroll"><a href="#box4">SCROLL DOWN</a></p>                        
-                
             </div>
             
+
+            <!-- Map page -->
             <div id="box4">
-                
-                <p class="scrollup js-scroll"><a href="#box3">SCROLL UP</a></p>                        
-
-                
-                
+                <!-- scroll btn -->
+                <p class="scrollup js-scroll"><a href="#box2">SCROLL UP</a></p>                        
+                <!-- Top comments -->
                 <h1 class="toptext" style="font-size:80px;">DISCOVER</h1>
-
+                <!-- button -->
                 <div class="btnframe">
                     <div class="btneffect"></div>
                         <a href= "{{ route('map')}}"><span>MAP</span></a>
                 </div>
-
+                <!-- scroll btn-->
                 <p class="scroll js-scroll" style="margin:190px 0 0;"><a href="#box5">SCROLL DOWN</a></p>                        
-
-                
             </div>
             
+            <!-- Restaurants page -->
             <div id="box5">
-                
+                <!-- scroll btn -->
                 <p class="scrollup js-scroll"><a href="#box4">SCROLL UP</a></p>                        
-
-                
-                
+                <!-- Top comments -->
                 <h1 class="toptext" style="font-size:80px;">SEARCH</h1>
-                
+                <!-- button -->
                 <div class="btnframe">
                     <div class="btneffect"></div>
-                        <a href= "{{ route('store')}}"><span>STORES</span></a>
+                        <a href= "{{ route('store')}}"><span>RESTAURANTS</span></a>
                 </div>
-                
             </div>
             
+            <!-- top page button -->
             <p id="page-top"><a href="#wrap" class="glyphicon glyphicon-home"></a></p>
 
             <!-- done -->
@@ -220,8 +219,8 @@ TODO LIST
            
            /* ボタンの加工 */
             .btnframe{
-              width:150px;
-              height:50px;
+              width:180px;
+              /*height:50px;*/
               border:2px solid #FFCC99;
               border-radius: 3px;
               cursor:pointer;
@@ -240,9 +239,9 @@ TODO LIST
               position:relative;
             }
             .btneffect{
-              width:150px;
+              width:180px;
               height:50px;
-              left:-150px;
+              left:-180px;
               background:#FFCC99;
               position:absolute;
               transition:all .3s ease;
