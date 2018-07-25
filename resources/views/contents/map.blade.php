@@ -10,8 +10,7 @@
 
 @section('content')
 
-
-    <div class="titleformap">Smoking areas in Futakotamagawa</div>
+<div class="titleformap">Smoking areas in Futakotamagawa</div>
 
 <div class="container" style="margin-top: 10px;">
     <div class ="sub-titleformap">Click on map for more details ☟</div>
@@ -31,8 +30,7 @@
         
     
         <div class="mapdetail">
-            
-            
+ 
             <div class="sectiontitle">
                 <h2 style="white-space: nowrap;"id=imageA>Area A</h2>
                 <div class="maplarge">
@@ -77,10 +75,15 @@
         </div>      
     </div>
     
+    <div class="row">
+        <div class="footer_copyright_black">
+            ©2018 SMOKY DOUKIES by Seista Co.
+        </div>
+    </div>
+    
+    
 </div>
-
-
-
+</div>
 @endsection
 
 
@@ -101,7 +104,12 @@
         text-align:center;
     }
     
-    
-    
-    
+
+    .footer_copyright_black{
+        height:15px;
+        background-color: black;
+        color:darkgray;
+        margin-top: 20px;
+    }
 </style>
+
