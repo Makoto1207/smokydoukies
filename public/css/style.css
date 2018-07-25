@@ -217,12 +217,28 @@
     }
 
     
+    /*click on map for more detailsの表示*/
+    .sub-titleformap{
+        padding: 0.1em 1em;
+        text-decoration: none;
+        color: gray;
+        border: solid 5px gray;
+        border-radius: 3px;
+        text-align:center;
+        display:inline-block;
+    }
+    
+    
     /*セクションごと(AからD)アルファベット表示*/
     .sectiontitle{
         font-size: 40px;
         font-family: "Lobster", serif;;
         margin-top: 100px;
         color: gray;
+    }
+    
+    .container{
+        text-align:center;
     }
     
     /*それぞれの画像AからD*/
@@ -315,7 +331,7 @@
     #search_message{
         color: white;
         font-size: large;
-     font-family: "Times New Roman";
+        font-family: "Times New Roman";
     }
     
     #search_message2{
