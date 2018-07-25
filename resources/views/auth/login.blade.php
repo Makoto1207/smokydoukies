@@ -45,6 +45,9 @@
                         </div>
                     </form>
         </div>
+        
+               <p id="page-top"><a href="{{ route('welcome') }}" class="glyphicon glyphicon-home"></a></p>
+
     </div>
     
 </div>
@@ -55,7 +58,15 @@
 
 <!--　ページにかけるｃｓｓ　-->
 <style>
-
+            
+            input:focus{
+                outline-color:#FFCC99;
+            }
+            
+            
+            
+            
+            
             .before_login{
                 font-family: "Times New Roman";
                 margin-top: 150px;
@@ -86,7 +97,14 @@
               position:relative;
               background-color: transparent;
               border-color:transparent;
+              width:150px;
             }
+            
+            .btnframe button:active{
+                border-color:transparent;
+            }
+            
+            
             .btneffect{
               width:150px;
               height:60px;
@@ -102,6 +120,32 @@
             .btnframe:hover button{
               color:black;
             }
-    
-</style>
+            
+            
+                          /* top page buttn css */
+            #page-top {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                font-size: 77%;
+            }
+            #page-top a {
+                background:	#333333;
+                text-decoration: none;
+                color: #fff;
+                width: 40px;
+                padding: 10px 0;
+                text-align: center;
+                display: block;
+                border-radius: 5px;
+            }
+            #page-top a:hover {
+                text-decoration: none;
+                background: #999;
+            }
+            
+            
+
+        </style>
+
 @endsection
