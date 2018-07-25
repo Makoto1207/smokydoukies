@@ -12,23 +12,6 @@
 
 <div class="titleformap">Smoking areas in Futakotamagawa</div>
 
-    <div class="container" style="margin-top: 10px;">
-        <div class ="sub-titleformap">Click on map for more details!</div>
-
-<<<<<<< HEAD
-        <div class="col-10 col-offset-1">
-            
-            <div class="introduction">
-                <img src="{{secure_asset('/img/mapFULLedit2.jpg')}}" alt="sample" usemap="#sample" class='img-responsive' style="margin: auto;">
-            
-                <map name="sample">
-                    <area shape="poly" coords="256,17,257,60,292,62,278,97,100,21,66,175,90,203,170,233,193,234,261,258,281,275,347,304,371,264,392,212,403,153,283,102,298,63,340,61,338,16" href="#imageA" alt="map_a">
-                    <area shape="poly" coords="102,466,186,468,186,419,142,420,167,404,205,417,238,359,256,262,187,239,168,238,92,208,57,231,33,331,101,417" href="#imageB" alt="map_b">
-                    <area shape="poly" coords="414,584,414,539,393,539,730,720,400,518,423,491,425,475,451,413,459,388,391,342,336,307,302,295,285,295,276,301,256,344,259,358,245,382,234,410,288,431,309,503,385,538,328,538,328,583" href="#imageC" alt="map_c">
-                    <area shape="poly" coords="491,445,445,565,507,629,478,661,434,663,433,710,512,711,512,664,484,662,511,635,554,675,599,645,607,654,689,593,687,580,700,563,678,542,582,502,506,437" href="#imageD" alt="map_d">
-                </map>
-            </div>
-=======
 <div class="container" style="margin-top: 10px;">
     <div class ="sub-titleformap">Click on map for more details ☟</div>
 
@@ -44,7 +27,6 @@
             <area shape="poly" coords="491,445,445,565,507,629,478,661,434,663,433,710,512,711,512,664,484,662,511,635,554,675,599,645,607,654,689,593,687,580,700,563,678,542,582,502,506,437" href="#imageD" alt="map_d">
         </map>
     </div>
->>>>>>> master
         
     
         <div class="mapdetail">
@@ -102,10 +84,9 @@
     
 </div>
 </div>
-@endsection
 
 
-<<<<<<< HEAD
+
  <p id="page-top"><a href="#wrap" class="glyphicon glyphicon-arrow-up"></a></p>
 
 <style>
@@ -162,8 +143,7 @@
 
 </script>
 
-@endsection
-=======
+
 <style>
     .footer_copyright_black{
         height:15px;
@@ -172,4 +152,5 @@
         margin-top: 20px;
     }
 </style>
->>>>>>> master
+
+@endsection
