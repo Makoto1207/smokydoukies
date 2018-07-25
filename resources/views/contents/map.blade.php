@@ -14,7 +14,7 @@
     <div class="titleformap">Smoking areas in Futakotamagawa</div>
 
 <div class="container" style="margin-top: 10px;">
-    <div class ="sub-titleformap">Click on map for more details!</div>
+    <div class ="sub-titleformap">Click on map for more details ☟</div>
 
 
     <div class="col-10 col-offset-1">
@@ -76,8 +76,6 @@
                     
         </div>      
     </div>
-    
-    
     
 </div>
 
