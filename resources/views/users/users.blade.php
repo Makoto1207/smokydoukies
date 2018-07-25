@@ -3,7 +3,7 @@
 <div class="container" style="margin-top: 70px;">
     
     <div class="col-10 col-offset-1">
-        <h2>Smokers</h2>
+        <h2 class="titleforSmokers">Smokers</h2>
             
             <div class="row" id="render">
             {!! $users->render() !!}
@@ -136,6 +136,15 @@
     .pagination>li:last-child>a, .pagination>li:last-child>span {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
+    }
+    
+     
+    .titleforSmokers{
+        color: #C0C0C0;
+        margin-top: 15px;
+        margin-left: 8px;
+        font-size: 28px;
+        font-family:  "Lobster", serif;
     }
 
     

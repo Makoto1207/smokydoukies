@@ -44,7 +44,7 @@
                 <div class="col-12">
                  @if (Auth::id() == $user->id)
                   {!! Form::open(['route' => 'microposts.store']) !!}
-                          {!! Form::textarea('content', old('content'),['class'=>'post_box', 'placeholder'=>'Comment me!!!'])!!}
+                          {!! Form::textarea('content', old('content'),['class'=>'post_box', 'placeholder'=>'Post to timeline.'])!!}
                 </div>
            
                            
