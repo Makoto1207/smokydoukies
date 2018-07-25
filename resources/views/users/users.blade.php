@@ -1,18 +1,16 @@
 @if (count($users) > 0)
 
 <div class="container" style="margin-top: 70px;">
-    
     <div class="col-10 col-offset-1">
         <h2 class="titleforSmokers">Smokers</h2>
             
             <div class="row" id="render">
-            {!! $users->render() !!}
+                {!! $users->render() !!}
             </div>
             
         <div class="row">    
-        @foreach ($users as $user)
-           
-        
+          @foreach ($users as $user)
+      
             <div class="col-12 col-md-4">
                 <div class="img-thumbnail" id="profile_pic_flame">
                     <img  src="{{secure_asset('/images/cigs/'. $user->brand. '.jpg')}}"  class='img-responsive'>
@@ -20,15 +18,26 @@
                 </div>
             </div>
         
-        @endforeach
+          @endforeach
         </div>
          
         <div class="row" id="render">
         {!! $users->render() !!}
         </div>
-        
-    </div>  
+
+    </div>
+    
+    <div class="row">
+        <div class="footer_copyright_black">
+            ©2018 SMOKY DOUKIES by Seista Co.
+        </div>
+    </div>
+    
 </div>
+        
+ 
+
+
 
 @endif
 
@@ -80,7 +89,7 @@
     /*現在のページのタブ*/
     .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
         z-index: 3;
-        color: darkred;
+        color: black;
         cursor: default;
         font-size: 20px;
         font-family: "Times New Roman";
@@ -89,7 +98,7 @@
         height:35px;
         padding: 6px;
         text-decoration: none;
-        background-color:black;
+        background-color:#FFCC99;
         border: 1px solid #FFCC99;
        
     }
@@ -110,8 +119,7 @@
         border: 1px solid #FFCC99;
     }
     
-    
-    /*カーソルを乗せたときの変化*/
+   /*カーソルを乗せたときの変化*/
     .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
         z-index: 2;
         color: #FFCC99;
@@ -128,6 +136,7 @@
         border: 1px solid #FFCC99;
     }
     
+    
     /*端っこ二つのタブ(《》のタブ)*/
     .pagination>li:first-child>a, .pagination>li:first-child>span{
         margin-left: 0;
@@ -138,12 +147,17 @@
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
-
-     
-    .titleforSmokers{
+    
+    
+    .footer_copyright_black{
+        height:15px;
+        background-color: black;
+        color:darkgray;
+        margin-top: 20px;
+    }
+    .titleforTimeline{
         color: #C0C0C0;
         margin-top: 15px;
-        margin-left: 8px;
         font-size: 28px;
         font-family:  "Lobster", serif;
     }

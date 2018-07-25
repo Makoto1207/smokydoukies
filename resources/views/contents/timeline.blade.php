@@ -1,8 +1,6 @@
 @extends('layouts.app')
 
 
-
-
 @section('content')
     
 
@@ -30,20 +28,30 @@
                         {!! Form::close() !!}
                     </div>
                 </div>
-                
-                <div class="col-md-6">
-                @if (count($microposts) > 0)
-                    @include('microposts.microposts_search', ['microposts' => $microposts])
-                @endif
-                
-                
-            </div>
-            
-        </div>     
+   
 
+                <div class="col-md-6">
+                        
+                   
+                    <div class="col-12">
+                    @if (count($microposts) > 0)
+                        @include('microposts.microposts_search', ['microposts' => $microposts])
+                    @endif
+                    </div>
+                </div> 
+         </div>
+        
+        <div class="row">
+            <div class="footer_copyright_black">
+                ©2018 SMOKY DOUKIES by Seista Co.
+            </div>
+        </div>
+        
     </div>
 
 </div>
+
+
 
 
 
@@ -167,6 +175,14 @@
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
+    
+    
+    .footer_copyright_black{
+        height:15px;
+        background-color: black;
+        color:darkgray;
+        margin-top: 20px;
+    }
     .titleforTimeline{
         color: #C0C0C0;
         margin-top: 15px;
@@ -176,4 +192,6 @@
 
    
 </style>
+
+
 @endsection

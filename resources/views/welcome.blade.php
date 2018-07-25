@@ -107,10 +107,16 @@ TODO LIST
                 <p class="scrollup js-scroll"><a href="#box4">SCROLL UP</a></p>                        
                 <!-- Top comments -->
                 <h1 class="toptext" style="font-size:80px;">SEARCH</h1>
+<<<<<<< HEAD
+                <div class="btnframe">
+                    <div class="btneffect"></div>
+                    <a href= "{{ route('store')}}"><span>STORES</span></a>
+=======
                 <!-- button -->
                 <div class="btnframe">
                     <div class="btneffect"></div>
                         <a href= "{{ route('store')}}"><span>RESTAURANTS</span></a>
+>>>>>>> 47a985361c0d2a9c54b03b4ae8ad35de357e67c9
                 </div>
             </div>
             
@@ -118,6 +124,11 @@ TODO LIST
             <p id="page-top"><a href="#wrap" class="glyphicon glyphicon-home"></a></p>
 
             <!-- done -->
+            
+            <div class="footer_copyright_black">
+                ©2018 SMOKY DOUKIES by Seista Co.
+            </div>
+            
         </body>
     </html>
     
@@ -343,6 +354,33 @@ TODO LIST
         
         
         /*矢印をアニメーションする*/
+<<<<<<< HEAD
+    @keyframes move {
+      0% {
+        transform: rotate(45deg) translate(0, 0);
+      }
+      20% {
+        transform: rotate(45deg) translate(10px, 10px);
+      }
+      40% {
+        transform: rotate(45deg) translate(0, 0);
+      }
+    }  
+    
+    .footer_copyright_black{
+        height:15px;
+        background-color: black;
+        color:darkgray;
+    }
+        
+    
+        
+            
+            
+            
+            
+    </style>
+=======
         @keyframes move {
           0% {
             transform: rotate(45deg) translate(0, 0);
@@ -399,6 +437,7 @@ TODO LIST
                      
                         
         </script>
+>>>>>>> 47a985361c0d2a9c54b03b4ae8ad35de357e67c9
         <!-- all done -->
 
     <!-- ログイン後 -->

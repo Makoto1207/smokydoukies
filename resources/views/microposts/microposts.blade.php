@@ -1,6 +1,4 @@
 
-
-
 <ul class="media-list">
 @foreach ($microposts as $micropost)
     <?php $user = $micropost->user; ?>
@@ -9,19 +7,23 @@
             <img id="tweet_pic" class="media-object img-rounded" src="{{secure_asset('/images/cigs/'. $user->brand. '.jpg')}}" style="margin-top: 10px;">
         </div>
         <div class="media-body"  id="tweet">
-            <div class="profilename">
+            
+            <div >
                 {!! link_to_route('users.show', $user->nickname, ['id' => $user->id]) !!} <span class="text-muted">posted at {{ $micropost->created_at }}</span>
             </div>
             <div>
                 <p>{!! nl2br(e($micropost->content)) !!}</p>
             </div>
-            <div>
-                @if (Auth::id() == $micropost->user_id)
-                    {!! Form::open(['route' => ['microposts.destroy', $micropost->id], 'method' => 'delete']) !!}
-                        {!! Form::submit('Delete', ['class' => 'delete_button']) !!}
-                    {!! Form::close() !!}
-                @endif
-            </div>
+            
+          
+                <div class="col-md-4">
+                    @include('button.favorite_button', ['microposts' => $microposts])
+                </div>
+                <div class="col-md-3">
+                   @include('button.delete_button', ['microposts' => $microposts])
+                    
+                </div>
+            
         
                 
         </div>
@@ -33,14 +35,7 @@
 
 
 
-
 <style>
-    
-    /* name decoration none */
-    .profilename a:hover{
-        text-decoration: none;
-        color:white;
-    }
     
     /* TWEETに関するｃｓｓ */
     #tweet_pic{
@@ -51,13 +46,9 @@
          color: white;
      }
      
-     
-    .delete_button{
-        color: #800000;
-        background-color: black;
-        font-weight: bold;
-        border:solid 2px;
-        border-color: #800000;
+    form {
+    display: inline;
+    margin-top: 0em;
     }
     
   
