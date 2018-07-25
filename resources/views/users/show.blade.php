@@ -55,15 +55,15 @@
             
         </div> 
         
-        <div class="row">
-            <div class="footer_copyright_black">
-                ©2018 SMOKY DOUKIES by Seista Co.
-            </div>
-        </div>
+
             
   　</div>
 
+
 </div>
+            <div class="footer_copyright_black">
+                ©2018 SMOKY DOUKIES by Seista Co.
+            </div>
 
 
 <style>
@@ -148,7 +148,7 @@
         height:15px;
         background-color: black;
         color:darkgray;
-        margin-top: 20px;
+        margin-top: 60px;
     }
     
     
