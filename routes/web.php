@@ -27,6 +27,14 @@ Route::get('/map', function () {
 
 Route::group(['middleware' => ['auth']], function () {
     Route::resource('users', 'UsersController', ['only' => ['index', 'show']]);
+    Route::group(['prefix' => 'users/{id}'], function () {
+        
+        //.favorite
+        Route::post('favorite', 'FavoriteController@store')->name('user.favorite');
+        Route::delete('unfavorite', 'FavoriteController@destroy')->name('user.unfavorite');
+        Route::get('favoritings', 'UsersController@favoritings')->name('users.favoritings');
+    });
+
     Route::resource('microposts', 'MicropostsController', ['only' => ['store', 'destroy']]);
 });
 
