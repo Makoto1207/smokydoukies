@@ -17,26 +17,13 @@ TODO LIST
 
             
             
-        <div class="container">
-            <div class="row">
-                <div>
-                    
-                </div>
-            </div>
-        </div>
-            <!--　左のスクロールバー　-->
-            <!--<ul id="menu" style="margin: 30px 0;">-->
-            <!--    <a href="#box1"><li><p  class="glyphicon glyphicon-user"></p></li></a>-->
-            <!--    <a href="#box2"><li><p class="glyphicon glyphicon-heart"></p></li></a>-->
-            <!--    <a href="#box3"><li><p class="glyphicon glyphicon-comment"></p></li></a>-->
-            <!--    <a href="#box4"><li><p class="glyphicon glyphicon-flag"></p></li></a>-->
-            <!--    <a href="#box5"><li><p class="glyphicon glyphicon-glass"></p></li></a>-->
-            <!--</ul>-->
-            <!-- done　-->
-            <!-- background img & texts -->
-            
-            
-            <!-- Timeline page -->
+        <!--<div class="container">-->
+        <!--    <div class="row">-->
+        <!--    </div>-->
+        <!--</div>-->
+        
+        <div>
+             <!-- Timeline page -->
             <div id="box3">
                 <!-- Top Comments -->
                 <h1 class="toptext">SHARE</h1>
@@ -114,6 +101,11 @@ TODO LIST
                 </div>
             </div>
             
+            <!-- top page button -->
+            <p id="page-top"><a href="#wrap" class="glyphicon glyphicon-home"></a></p>
+    
+        </div>
+
             <!-- top page button -->
             <p id="page-top"><a href="#wrap" class="glyphicon glyphicon-home"></a></p>
 
@@ -366,7 +358,9 @@ TODO LIST
             transform: rotate(45deg) translate(0, 0);
           }
         }
+
         </style>
+        
         <script>
             //top page button script 
             $(function() {
@@ -389,33 +383,15 @@ TODO LIST
                 });
             });
                      
-                     
 
-</script>
-                     
-                     
-                     
-                     
-                     
-                        
         </script>
-        <!-- all done -->
+    <!-- all done -->
+
+
+
 
     <!-- ログイン後 -->
     @else
-    
-    <!-- loading  -->
-    <!--<div>-->
-    <!--    <div id="loader-bg">-->
-    <!--        <div id="loader">-->
-    <!--                <img src="images/img-loading.gif" width="80" height="80" alt="Now Loading..." />-->
-    <!--            <p>Now Loading...</p>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</div>-->
-    
-    
-    
     <div class="container" style="margin-top: 70px;">
     <!-- サービス名表示 -->
         <div class="title">
@@ -423,33 +399,10 @@ TODO LIST
                 <img src="images/logo.png"  class='img-responsive'>
             </div>
             
-            <!-- ログイン・サインボタン-->
-                    <div class="row">
-                        <!-- SingUPボタン加工ようのdiv別け -->
-                        <!--<div class="btnframe" class="col-12 col-md-6" style="margin:30px">-->
-                        <!--    <span class="btneffect"></span>-->
-                        <!--        <a href= "{{ route('register') }}"><span>SIGN UP</span></a>-->
-                        <!--</div>  -->
-                        <!-- Loginボタン加工ようのdiv別け -->                  
-                        <!--<div class="btnframe" class="col-12 col-md-6" style="margin:30px">-->
-                        <!--    <span class="btneffect"></span>-->
-                        <!--        <a href= "{{ route('login') }}"><span>LOGIN</span></a>-->
-                        <!--</div>-->
-                        
-                        
-                        <!--<div class="btnframe" class="col-12 col-md-6" style="margin:30px">-->
-                        <!--    <span class="btneffect"></span>-->
-                        <!--        <a href= "#intro1"><span>LEARN MORE</span></a>-->
-                        <!--</div>-->
-                        
-                        <!-- scroll down ボタン -->
-                        <p class="scroll js-scroll"><a href="#serviceexp">CLICK</a></p>                        
-                            
-                        
-                        
-                        
-                    </div>
-                        
+            <div class="row">
+                <!-- scroll down ボタン -->
+                <p class="scroll js-scroll"><a href="#serviceexp">CLICK</a></p>                        
+            </div>
         </div>
     </div>
 
