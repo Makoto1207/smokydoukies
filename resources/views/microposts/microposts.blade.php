@@ -1,6 +1,4 @@
 
-
-
 <ul class="media-list">
 @foreach ($microposts as $micropost)
     <?php $user = $micropost->user; ?>
@@ -9,7 +7,8 @@
             <img id="tweet_pic" class="media-object img-rounded" src="{{secure_asset('/images/cigs/'. $user->brand. '.jpg')}}" style="margin-top: 10px;">
         </div>
         <div class="media-body"  id="tweet">
-            <div class="profilename">
+            
+            <div >
                 {!! link_to_route('users.show', $user->nickname, ['id' => $user->id]) !!} <span class="text-muted">posted at {{ $micropost->created_at }}</span>
             </div>
             <div>
@@ -36,14 +35,7 @@
 
 
 
-
 <style>
-    
-    /* name decoration none */
-    .profilename a:hover{
-        text-decoration: none;
-        color:white;
-    }
     
     /* TWEETに関するｃｓｓ */
     #tweet_pic{

@@ -35,10 +35,17 @@
                 </div>
                 
                 <div class="col-md-6">
-                @if (count($microposts) > 0)
-                    @include('microposts.microposts_search', ['microposts' => $microposts])
-                @endif
-                </div>
+                        
+                    <div class="row" id="render">
+                        {!! $microposts->render() !!}
+                    </div>
+                    
+                    <div class="col-12">
+                    @if (count($microposts) > 0)
+                        @include('microposts.microposts_search', ['microposts' => $microposts])
+                    @endif
+                    </div>
+                </div> 
         </div>
         
         <div class="row">
@@ -103,13 +110,7 @@
     
     @media (max-width: 768px) {
     .post_box {width: 260px;}
-<<<<<<< HEAD
-    }
-    
-    
-    
-   
-=======
+  
     }
     
     
@@ -187,6 +188,5 @@
         font-size: 28px;
         font-family:  "Lobster", serif;
     }
->>>>>>> master
 </style>
 @endsection

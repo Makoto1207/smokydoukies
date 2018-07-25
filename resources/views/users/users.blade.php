@@ -89,7 +89,7 @@
     /*現在のページのタブ*/
     .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
         z-index: 3;
-        color: darkred;
+        color: black;
         cursor: default;
         font-size: 20px;
         font-family: "Times New Roman";
@@ -98,7 +98,7 @@
         height:35px;
         padding: 6px;
         text-decoration: none;
-        background-color:black;
+        background-color:#FFCC99;
         border: 1px solid #FFCC99;
        
     }
@@ -119,8 +119,7 @@
         border: 1px solid #FFCC99;
     }
     
-    
-    /*カーソルを乗せたときの変化*/
+   /*カーソルを乗せたときの変化*/
     .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
         z-index: 2;
         color: #FFCC99;
@@ -136,6 +135,7 @@
         background-color: black;
         border: 1px solid #FFCC99;
     }
+    
     
     /*端っこ二つのタブ(《》のタブ)*/
     .pagination>li:first-child>a, .pagination>li:first-child>span{
@@ -155,12 +155,9 @@
         color:darkgray;
         margin-top: 20px;
     }
-
-     
-    .titleforSmokers{
+    .titleforTimeline{
         color: #C0C0C0;
         margin-top: 15px;
-        margin-left: 8px;
         font-size: 28px;
         font-family:  "Lobster", serif;
     }

@@ -11,7 +11,7 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
     
-      public function counts($user,$micropost) {
+      public function counts($user) {
         $count_microposts = $user->microposts()->count();
         $count_favorites = $user->favoritings()->count();
         // $count_fav_micro = $micropost->favoritings()->count();

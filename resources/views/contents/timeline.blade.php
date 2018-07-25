@@ -1,8 +1,6 @@
 @extends('layouts.app')
 
 
-
-
 @section('content')
     
 
@@ -34,11 +32,8 @@
 
                 <div class="col-md-6">
                         
-                    <div class="row" id="render">
-                        {!! $microposts->render() !!}
-                    </div>
-                    
-                    <div class="col-md-6">
+                   
+                    <div class="col-12">
                     @if (count($microposts) > 0)
                         @include('microposts.microposts_search', ['microposts' => $microposts])
                     @endif
@@ -180,7 +175,6 @@
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
-<<<<<<< HEAD
     
     
     .footer_copyright_black{
@@ -189,9 +183,6 @@
         color:darkgray;
         margin-top: 20px;
     }
-=======
-<<<<<<< HEAD
-=======
     .titleforTimeline{
         color: #C0C0C0;
         margin-top: 15px;
@@ -199,8 +190,8 @@
         font-family:  "Lobster", serif;
     }
 
->>>>>>> 47a985361c0d2a9c54b03b4ae8ad35de357e67c9
->>>>>>> master
    
 </style>
+
+
 @endsection
