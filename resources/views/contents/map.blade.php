@@ -80,5 +80,60 @@
 </div>
 
 
+ <p id="page-top"><a href="#wrap" class="glyphicon glyphicon-arrow-up"></a></p>
+
+<style>
+     /* top page buttn css */
+            #page-top {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                font-size: 77%;
+            }
+            #page-top a {
+                background:	#333333;
+                text-decoration: none;
+                color: #fff;
+                width: 40px;
+                padding: 10px 0;
+                text-align: center;
+                display: block;
+                border-radius: 5px;
+            }
+            #page-top a:hover {
+                text-decoration: none;
+                background: #999;
+            }
+            
+
+</style>
+
+
+
+        <script>
+            //top page button script 
+            $(function() {
+                var topBtn = $('#page-top');    
+                topBtn.hide();
+                //スクロールが100に達したらボタン表示
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 150) {
+                        topBtn.fadeIn();
+                    } else {
+                        topBtn.fadeOut();
+                    }
+                });
+                //スクロールしてトップ
+                topBtn.click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 500);
+                    return false;
+                });
+            });
+                     
+                     
+
+</script>
 
 @endsection
