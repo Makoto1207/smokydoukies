@@ -17,6 +17,7 @@
             </div>
             <div>
                 @include('favorite.favorite_button', ['microposts' => $microposts])
+                <span class="badge">{{$count_fav_micro}}</span>
             </div>
             <div>
                 @if (Auth::id() == $micropost->user_id)
