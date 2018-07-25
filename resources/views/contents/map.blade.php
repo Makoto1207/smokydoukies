@@ -36,7 +36,7 @@
                 <div class="maplarge">
                     <img src="img/mapAedit.jpg" width="550" height="550" class='img-responsive' style="margin: auto;">
                 </div>
-                    <a href="{{ route('store')}}?name=(A)" class="storebuttons">Click here to see restaurants in area A</a>
+                    <a href="{{ route('store')}}?name=(A)" class="storebuttonsA">Click here to see restaurants in area A</a>
                     <div class="line"><p>___________________________________________________________</p></div>
             </div>    
             
@@ -47,7 +47,7 @@
                 <div class="maplarge">
                     <img src="img/mapBedit.jpg" width="550" height="550" class='img-responsive' style="margin: auto;">
                 </div>
-                    <a href="{{ route('store')}}?name=(B)" class="storebuttons">Click here to see restaurants in area B</a>
+                    <a href="{{ route('store')}}?name=(B)" class="storebuttonsB">Click here to see restaurants in area B</a>
                     <div class="line"><p>___________________________________________________________</p></div>
             </div>
             
@@ -58,7 +58,7 @@
                 <div class="maplarge">
                     <img src="img/mapCedit.jpg" width="550" height="550" class='img-responsive' style="margin: auto;">
                 </div>
-                    <a href="{{ route('store')}}?name=(C)" class="storebuttons">Click here to see restaurants in area C</a>
+                    <a href="{{ route('store')}}?name=(C)" class="storebuttonsC">Click here to see restaurants in area C</a>
                     <div class="line"><p>___________________________________________________________</p></div>
             </div>
             
@@ -68,7 +68,7 @@
                 <div class="maplarge">
                     <img src="img/mapDedit.jpg" width="550" height="550" class='img-responsive' style="margin: auto;">
                 </div>
-                    <a href="{{ route('store')}}?name=(D)" class="storebuttons">Click here to see restaunrants in area D</a>
+                    <a href="{{ route('store')}}?name=(D)" class="storebuttonsD">Click here to see restaunrants in area D</a>
             </div>        
                     
                     
@@ -144,7 +144,24 @@
 </script>
 
 
+
 <style>
+    /*click on map for more detailsの表示*/
+    .sub-titleformap{
+        padding: 0.1em 1em;
+        text-decoration: none;
+        color: gray;
+        border: solid 5px gray;
+        border-radius: 3px;
+        text-align:center;
+        display:inline-block;
+    }
+    
+    .container{
+        text-align:center;
+    }
+    
+
     .footer_copyright_black{
         height:15px;
         background-color: black;

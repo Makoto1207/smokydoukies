@@ -17,26 +17,13 @@ TODO LIST
 
             
             
-        <div class="container">
-            <div class="row">
-                <div>
-                    
-                </div>
-            </div>
-        </div>
-            <!--　左のスクロールバー　-->
-            <!--<ul id="menu" style="margin: 30px 0;">-->
-            <!--    <a href="#box1"><li><p  class="glyphicon glyphicon-user"></p></li></a>-->
-            <!--    <a href="#box2"><li><p class="glyphicon glyphicon-heart"></p></li></a>-->
-            <!--    <a href="#box3"><li><p class="glyphicon glyphicon-comment"></p></li></a>-->
-            <!--    <a href="#box4"><li><p class="glyphicon glyphicon-flag"></p></li></a>-->
-            <!--    <a href="#box5"><li><p class="glyphicon glyphicon-glass"></p></li></a>-->
-            <!--</ul>-->
-            <!-- done　-->
-            <!-- background img & texts -->
-            
-            
-            <!-- Timeline page -->
+        <!--<div class="container">-->
+        <!--    <div class="row">-->
+        <!--    </div>-->
+        <!--</div>-->
+        
+        <div>
+             <!-- Timeline page -->
             <div id="box3">
                 <!-- Top Comments -->
                 <h1 class="toptext">SHARE</h1>
@@ -107,28 +94,22 @@ TODO LIST
                 <p class="scrollup js-scroll"><a href="#box4">SCROLL UP</a></p>                        
                 <!-- Top comments -->
                 <h1 class="toptext" style="font-size:80px;">SEARCH</h1>
-<<<<<<< HEAD
-                <div class="btnframe">
-                    <div class="btneffect"></div>
-                    <a href= "{{ route('store')}}"><span>STORES</span></a>
-=======
                 <!-- button -->
                 <div class="btnframe">
                     <div class="btneffect"></div>
                         <a href= "{{ route('store')}}"><span>RESTAURANTS</span></a>
->>>>>>> 47a985361c0d2a9c54b03b4ae8ad35de357e67c9
                 </div>
             </div>
             
             <!-- top page button -->
             <p id="page-top"><a href="#wrap" class="glyphicon glyphicon-home"></a></p>
+    
+        </div>
+
+            <!-- top page button -->
+            <p id="page-top"><a href="#wrap" class="glyphicon glyphicon-home"></a></p>
 
             <!-- done -->
-            
-            <div class="footer_copyright_black">
-                ©2018 SMOKY DOUKIES by Seista Co.
-            </div>
-            
         </body>
     </html>
     
@@ -354,33 +335,6 @@ TODO LIST
         
         
         /*矢印をアニメーションする*/
-<<<<<<< HEAD
-    @keyframes move {
-      0% {
-        transform: rotate(45deg) translate(0, 0);
-      }
-      20% {
-        transform: rotate(45deg) translate(10px, 10px);
-      }
-      40% {
-        transform: rotate(45deg) translate(0, 0);
-      }
-    }  
-    
-    .footer_copyright_black{
-        height:15px;
-        background-color: black;
-        color:darkgray;
-    }
-        
-    
-        
-            
-            
-            
-            
-    </style>
-=======
         @keyframes move {
           0% {
             transform: rotate(45deg) translate(0, 0);
@@ -404,7 +358,9 @@ TODO LIST
             transform: rotate(45deg) translate(0, 0);
           }
         }
+
         </style>
+        
         <script>
             //top page button script 
             $(function() {
@@ -427,34 +383,15 @@ TODO LIST
                 });
             });
                      
-                     
 
-</script>
-                     
-                     
-                     
-                     
-                     
-                        
         </script>
->>>>>>> 47a985361c0d2a9c54b03b4ae8ad35de357e67c9
-        <!-- all done -->
+    <!-- all done -->
+
+
+
 
     <!-- ログイン後 -->
     @else
-    
-    <!-- loading  -->
-    <!--<div>-->
-    <!--    <div id="loader-bg">-->
-    <!--        <div id="loader">-->
-    <!--                <img src="images/img-loading.gif" width="80" height="80" alt="Now Loading..." />-->
-    <!--            <p>Now Loading...</p>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</div>-->
-    
-    
-    
     <div class="container" style="margin-top: 70px;">
     <!-- サービス名表示 -->
         <div class="title">
@@ -462,39 +399,38 @@ TODO LIST
                 <img src="images/logo.png"  class='img-responsive'>
             </div>
             
-            <!-- ログイン・サインボタン-->
-                    <div class="row">
-                        <!-- SingUPボタン加工ようのdiv別け -->
-                        <!--<div class="btnframe" class="col-12 col-md-6" style="margin:30px">-->
-                        <!--    <span class="btneffect"></span>-->
-                        <!--        <a href= "{{ route('register') }}"><span>SIGN UP</span></a>-->
-                        <!--</div>  -->
-                        <!-- Loginボタン加工ようのdiv別け -->                  
-                        <!--<div class="btnframe" class="col-12 col-md-6" style="margin:30px">-->
-                        <!--    <span class="btneffect"></span>-->
-                        <!--        <a href= "{{ route('login') }}"><span>LOGIN</span></a>-->
-                        <!--</div>-->
-                        
-                        
-                        <!--<div class="btnframe" class="col-12 col-md-6" style="margin:30px">-->
-                        <!--    <span class="btneffect"></span>-->
-                        <!--        <a href= "#intro1"><span>LEARN MORE</span></a>-->
-                        <!--</div>-->
-                        
-                        <!-- scroll down ボタン -->
-                        <p class="scroll js-scroll"><a href="#intro1">CLICK</a></p>                        
-                            
-                        
-                        
-                        
-                    </div>
-                        
+            <div class="row">
+                <!-- scroll down ボタン -->
+                <p class="scroll js-scroll"><a href="#serviceexp">CLICK</a></p>                        
+            </div>
         </div>
     </div>
 
     <!-- 背景動画 -->
-    <video src="video/smoke.mp4" muted autoplay loop></video>
+    <video src="video/smoke.mp4"muted autoplay loop></video>
     
+    
+    <div>
+        <div id="serviceexp">
+            <section class="firstintro">
+                <div class="container">
+                    <div class="row">
+                        <div class="exptext">
+                            <h2>THE POSSIBILITIES OF SMOKY DOUKIES</h2>
+                            <div class="fade-in">
+                                <h4><p>Smoky Doukies will provide a special experience to smokers.</p>
+                                    <p>We will help improve your life in Futako-tamagawa.</p>
+                                    <p>We offer you a once-in-a-lifetime opportunity through this service.</p> 
+                                    <p>We hope you will enjoy your smoky lifestyle.</p>
+                                    <p>With the right people and with the right manners.</p>
+                                </h4> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
     
     
     <!-- イントロページ -->
@@ -502,7 +438,7 @@ TODO LIST
         <div id="intro1">
             <section class="feautures">
                 <div class="container">
-                    <div class="row" style="margin:0 0 70px;">
+                    <div class="row" style="margin:0 0 50px;">
                         <h2>OUR SERVICE</h2>
                             <div class="titledesc">
                                 <p>This is a platform where smokers gather for peace.</p> 
@@ -510,7 +446,7 @@ TODO LIST
                                 <p>Get ready to join smoky doukies!</p>
                             </div>
                     </div>
-                    <div class="row">
+                    <div class="row fade-up">
                         <div class="intropages">
                             <div class="col-sm-6 col-md-4 col-lg-2 col-lg-offset-1">
                                 <p class="glyphicon glyphicon-user" style="font-size: 30px;"></p>
@@ -539,47 +475,95 @@ TODO LIST
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                            <div class="btnframeintro" class="col-12 col-md-6" style="margin-top:30px;">
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <div>
+        <div id="endpg">
+            <section>
+                <div class="container">
+                    <div class="row fade-in">
+                        <!-- title -->
+                        <h1 class="endtitle">Let's get Smoky</h1>
+                        <!-- sign up btn -->
+                        <div class="row">
+                            <div class="btnframeintro" class="col-12 col-md-6" style="margin-top:10px;">
                             <span class="btneffectintro"></span>
                                 <a href= "{{ route('register') }}"><span>SIGN UP NOW</span></a>
                         </div>
                     </div>
                 </div>
-                
-                
-
-                
             </section>
-                
-                <div class="footer_copyright_black">
-                    ©2018 SMOKY DOUKIES by Seista Co.
-                </div>
-
         </div>
-
-        
-        
     </div>
 
 
 
+
     
-    
+                <!--    <div class="footer_copyright_black">-->
+                <!--    ©2018 SMOKY DOUKIES by Seista Co.-->
+                <!--</div>-->
+
     
     
     <style>
     
-    /*footer*/
-    .footer_copyright_black{
+        .fade-in {
+          transition: opacity 3s;
+          -moz-transition: opacity 3s;
+          -webkit-transition: opacity 3s;
+          -o-transition: opacity 3s;
+        }
+        
+        .fade-up{
+          transition: opacity 3s;
+          -moz-transition: opacity 3s;
+          -webkit-transition: opacity 3s;
+          -o-transition: opacity 3s;
+          transition: transform 3s;
+          -moz-transition: transform 3s;
+          -webkit-transition: transform 3s;
+          -o-transition: transform 3s;
+        }
 
-    }
+        
+        
     
+        #serviceexp{
+            margin-top:430px;
+            background-image: url("/images/siestacolor.jpg");
+            background-size: cover;
+            height:70vh;
+            width:100%;
+            z-index: 3;
+            position:relative;
+            text-align:right;
+            padding:100px  0;
+        }
+        
+        .exptext h2{
+            font-size:40px;
+            font-weight:bold;
+            color:white;
+        }
+        
+        .exptext h3{
+            font-weight:bold;
+            font-size:30px;
+            color:white;
+        }
+        
+        .exptext h4{
+            font-size:25px;
+            color:white;
+        }
         
         
     
         #intro1{
-            margin-top: 430px;
             height: 100vh;
             width: 100%;
             z-index: 3;
@@ -591,16 +575,35 @@ TODO LIST
             padding: 70px 0;
             text-align:center;
             letter-spacing: 4px;
-            background-color:white;
+            background-color:black;
+            
         }
+
         
-        .container h2{
-            font-family: "Times New Roman";
+        #intro1 p, #intro1 h2, #intro1 h3{
+            color:white;
         }
         
         .intropages div{
             margin-bottom: 30px;
-        }        
+        }
+        
+        #endpg{
+            background-image: url("/images/laugh.jpg");
+            background-size: cover;
+            height:100vh;
+            width:100%;
+            z-index: 3;
+            position:relative;
+            padding:100px 0;
+            text-align:center;
+        }
+        .endtitle{
+            font-family:"Time New Romans";
+            font-size: 80px;
+            margin:200px 0 0;
+            color:white;
+        }
 
     
     
@@ -615,7 +618,6 @@ TODO LIST
             height: auto;
             z-index: 1;
         }
-    
         /* 動画の上にテキストが表示されるためのｃｓｓ */
         .title {
             position: relative; /*必ず必要*/
@@ -624,58 +626,22 @@ TODO LIST
             padding:20px;
             margin: 0 auto;
         }
+        
         /* ロゴ用のｃｓｓ */
         .img-responsive{
-            max-width: 55%;
+            max-width: 65%;
             height: auto;
             margin: auto
         }
-    
-       /* ボタンの加工 */
-        /*.btnframe{*/
-        /*  width:180px;*/
-        /*  height:50px;*/
-        /*  border:2px solid white;*/
-        /*  border-radius: 3px;*/
-        /*  cursor:pointer;*/
-        /*  position:relative;*/
-        /*  overflow:hidden;*/
-        /*  margin: auto;*/
-        /*  display:inline-block;*/
-        /*}*/
-        /*.btnframe a{*/
-        /*  font-family:"Times New Roman";*/
-        /*  font-size:20px;*/
-        /*  color:white;*/
-        /*  text-decoration:none;*/
-        /*  line-height:50px;*/
-        /*  transition:all .3s ease;*/
-        /*  z-index:2;*/
-        /*  position:relative;*/
-        /*}*/
-        /*.btneffect{*/
-        /*  width:180px;*/
-        /*  height:50px;*/
-        /*  left:-180px;*/
-        /*  background:white;*/
-        /*  position:absolute;*/
-        /*  transition:all .3s ease;*/
-        /*  z-index:1;*/
-        /*}*/
-        /*.btnframe:hover .btneffect{*/
-        /*  left:0;*/
-        /*}*/
-        /*.btnframe:hover a{*/
-        /*  color:black;*/
-        /*}*/
+
         
         
         
-        /* introボタンの加工 */
+        /* sign up nowタンの加工 */
         .btnframeintro{
           width:220px;
           height:50px;
-          border:2px solid black;
+          border:2px solid white;
           border-radius: 3px;
           cursor:pointer;
           position:relative;
@@ -685,8 +651,8 @@ TODO LIST
         }
         .btnframeintro a{
           font-family:"Times New Roman";
-          font-size:20px;
-          color:black;
+          font-size:25px;
+          color:white;
           text-decoration:none;
           line-height:50px;
           transition:all .3s ease;
@@ -697,7 +663,7 @@ TODO LIST
           width:220px;
           height:50px;
           left:-220px;
-          background:black;
+          background:white;
           position:absolute;
           transition:all .3s ease;
           z-index:1;
@@ -706,28 +672,29 @@ TODO LIST
           left:0;
         }
         .btnframeintro:hover a{
-          color:white;
+          color:black;
         }
         
         
         
-        
+        /* scrool btn */
         .scroll{
-      position: absolute;
-      width: 100%;
-      text-align: center;
-      margin:90px 0 0;
-      font-family: "Time New Romans";
+          position: absolute;
+          width: 100%;
+          text-align: center;
+          margin:70px 0 0;
+          font-family: "Time New Romans";
             }
-      .scroll a{
-        position: relative;
-        display: inline-block;
-        font-size: 20px;
-        font-weight: bold;
-        color: #fff;
-        text-decoration: none;
-        padding: 0 0 35px;
-      }
+        .scroll a{
+            position: relative;
+            display: inline-block;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            padding: 0 0 35px;
+          }
+        
         /*矢印を作成する*/
         .scroll a:before{
           content: "";
@@ -746,22 +713,73 @@ TODO LIST
         
         
         /*矢印をアニメーションする*/
-    @keyframes move {
-      0% {
-        transform: rotate(45deg) translate(0, 0);
-      }
-      20% {
-        transform: rotate(45deg) translate(10px, 10px);
-      }
-      40% {
-        transform: rotate(45deg) translate(0, 0);
-      }
-    }
-        
-        
-
-        
+        @keyframes move {
+          0% {
+            transform: rotate(45deg) translate(0, 0);
+          }
+          20% {
+            transform: rotate(45deg) translate(10px, 10px);
+          }
+          40% {
+            transform: rotate(45deg) translate(0, 0);
+          }
+        }
     </style>
+
+
+    <script>
+        
+        
+        $(window).on('load',function(){
+        
+        	// fade-in
+            $(window).scroll(function (){
+                $('.fade-in').each(function(){
+                    var POS = $(this).offset().top;  //fade-inがついている要素の位置
+                    var scroll = $(window).scrollTop();  //スクロール一
+                    var windowHeight = $(window).height();  //ウィンドウの高さ
+        
+                    if (scroll > POS - windowHeight + windowHeight/5){
+                        $(this).css("opacity","1" );
+                    } else {
+                        $(this).css("opacity","0" );
+                    }
+                });
+            });
+        });
+              
+              
+        $(window).on('load',function(){
+	
+    	// fade-up
+            $(window).scroll(function (){
+                $('.fade-up').each(function(){
+                    var POS = $(this).offset().top;
+                    var scroll = $(window).scrollTop();
+                    var windowHeight = $(window).height();
+        
+                    if (scroll > POS - windowHeight){
+                        $(this).css({
+                                'opacity':'1',
+                                'transform':'translateY(0)',
+                                '-webkit-transform':'translateY(0)',
+                                '-moz-transform':'translateY(0)',
+                                '-ms-transform':'translateY(0)'
+                        });
+                    } else {
+                        $(this).css({
+                                'opacity':'0',
+                                'transform':'translateY(70px)',
+                                '-webkit-transform':'translateY(70px)',
+                                '-moz-transform':'translateY(70px)',
+                                '-ms-transform':'translateY(70px)'
+                        });
+                    }
+                });
+            });
+        });  
+        
+    </script>
 
 
     
