@@ -5,8 +5,6 @@
 <div class="container" style="margin-top: 75px;">
     
         <div class="col-md-10 col-md-offset-1">
-
-      
         <div class="col-12 col-md-6"> 
         
             <!--写真と名前-->
@@ -44,7 +42,7 @@
                 <div class="col-12">
                  @if (Auth::id() == $user->id)
                   {!! Form::open(['route' => 'microposts.store']) !!}
-                          {!! Form::textarea('content', old('content'),['class'=>'post_box', 'placeholder'=>'Comment me!!!'])!!}
+                          {!! Form::textarea('content', old('content'),['class'=>'post_box', 'placeholder'=>'Post to timeline.'])!!}
                 </div>
            
                            
@@ -144,6 +142,7 @@
     }
     
 </style>
+
     
     
 @endsection

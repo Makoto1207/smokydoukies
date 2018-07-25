@@ -14,7 +14,7 @@
     <div class="titleformap">Smoking areas in Futakotamagawa</div>
 
 <div class="container" style="margin-top: 10px;">
-    <div class ="sub-titleformap">Click on map for more details!</div>
+    <div class ="sub-titleformap">Click on map for more details ☟</div>
 
 
     <div class="col-10 col-offset-1">
@@ -38,7 +38,7 @@
                 <div class="maplarge">
                     <img src="img/mapAedit.jpg" width="550" height="550" class='img-responsive' style="margin: auto;">
                 </div>
-                    <a href="{{ route('store')}}?name=(A)" class="storebuttons">Click here to see stores in area A</a>
+                    <a href="{{ route('store')}}?name=(A)" class="storebuttons">Click here to see restaurants in area A</a>
                     <div class="line"><p>___________________________________________________________</p></div>
             </div>    
             
@@ -49,7 +49,7 @@
                 <div class="maplarge">
                     <img src="img/mapBedit.jpg" width="550" height="550" class='img-responsive' style="margin: auto;">
                 </div>
-                    <a href="{{ route('store')}}?name=(B)" class="storebuttons">Click here to see stores in area B</a>
+                    <a href="{{ route('store')}}?name=(B)" class="storebuttons">Click here to see restaurants in area B</a>
                     <div class="line"><p>___________________________________________________________</p></div>
             </div>
             
@@ -60,7 +60,7 @@
                 <div class="maplarge">
                     <img src="img/mapCedit.jpg" width="550" height="550" class='img-responsive' style="margin: auto;">
                 </div>
-                    <a href="{{ route('store')}}?name=(C)" class="storebuttons">Click here to see stores in area C</a>
+                    <a href="{{ route('store')}}?name=(C)" class="storebuttons">Click here to see restaurants in area C</a>
                     <div class="line"><p>___________________________________________________________</p></div>
             </div>
             
@@ -70,14 +70,15 @@
                 <div class="maplarge">
                     <img src="img/mapDedit.jpg" width="550" height="550" class='img-responsive' style="margin: auto;">
                 </div>
-                    <a href="{{ route('store')}}?name=(D)" class="storebuttons">Click here to see stores in area D</a>
+                    <a href="{{ route('store')}}?name=(D)" class="storebuttons">Click here to see restaunrants in area D</a>
             </div>        
                     
                     
         </div>      
     </div>
     
-    
-    
 </div>
+
+
+
 @endsection

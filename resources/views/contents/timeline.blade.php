@@ -8,45 +8,34 @@
 
 <div class="container" style="margin-top: 70px;">
     <div class="col-md-10 col-md-offset-1" id="all">
-            <h2>Timeline</h2>
+            <h2 class="titleforTimeline">Timeline</h2>
             
 
-        <div class="row">
-
-            <div class="col-md-6">
-                    
+         <div class="row">
+                <div class="col-md-6">
                     　{!! Form::open(['method' => 'GET']) !!}
-                    　{!! Form::text('name', null,['class'=>'search_box','placeholder'=>'Search content!!!']) !!}
-                    
+                    　{!! Form::text('name', null,['class'=>'search_box','placeholder'=>'Search word (ex.喫煙所)']) !!}
                     　{!! Form::submit('Search',['class'=>'search_button']) !!}
                     　{!! Form::close() !!}
-                    
 
                     <!--投稿フォーム-->
+                    
                     <div class="col-12">
                       {!! Form::open(['route' => 'microposts.store']) !!}
-                      {!! Form::textarea('content', old('content'),['class'=>'post_box', 'placeholder'=>'Comment me!!!'])!!}
+                      {!! Form::textarea('content', old('content'),['class'=>'post_box', 'placeholder'=>'Post to timeline.'])!!}
                     </div>
                     <!--投稿ボタン-->
                     <div class="col-12">
                         {!! Form::submit('Post',['class'=>'post_button'] )!!}
                         {!! Form::close() !!}
                     </div>
-            </div>
-
-            <div class="col-md-6">
-                    
-                <div class="row" id="render">
-                    {!! $microposts->render() !!}
                 </div>
                 
-                    @if (count($microposts) > 0)
-                        @include('microposts.microposts', ['microposts' => $microposts])
-                    @endif
-                    
-                <div class="row" id="render">
-                    {!! $microposts->render() !!}
-                </div>
+                <div class="col-md-6">
+                @if (count($microposts) > 0)
+                    @include('microposts.microposts_search', ['microposts' => $microposts])
+                @endif
+                
                 
             </div>
             
@@ -63,7 +52,7 @@
     .post_box{
         background-color:black;
         color:white;
-        font-size:18px;
+        font-size:20px;
         height: 200px;
         
         margin:  0;
@@ -84,8 +73,9 @@
     .search_box{
         background-color:black;
         color:white;
-        font-size:18px;
+        font-size:20px;
         height: 50px;
+        width: 225px;
         margin:  0px;
         border: solid 3px #000000;
         border-color: white;
@@ -110,8 +100,14 @@
     }
     
     
+    /*ページネーションの設定*/
+    #render{
+        text-align:center;
+        margin:20px;
+    }
+    
     /*現在のページのタブ*/
-    .pagination>.active>span, .pagination>.active>span:focus {
+    .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
         z-index: 3;
         color: black;
         cursor: default;
@@ -124,6 +120,7 @@
         text-decoration: none;
         background-color:#FFCC99;
         border: 1px solid #FFCC99;
+       
     }
     
     /*その他のページのタブ*/
@@ -142,7 +139,7 @@
         border: 1px solid #FFCC99;
     }
     
-    /*カーソルを乗せたときの変化*/
+   /*カーソルを乗せたときの変化*/
     .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
         z-index: 2;
         color: #FFCC99;
@@ -156,7 +153,7 @@
         color:#FFCC99;
         cursor: not-allowed;
         background-color: black;
-        border-color: #FFCC99;
+        border: 1px solid #FFCC99;
     }
     
     
@@ -169,7 +166,14 @@
     .pagination>li:last-child>a, .pagination>li:last-child>span {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
-    }s
+    }
+    .titleforTimeline{
+        color: #C0C0C0;
+        margin-top: 15px;
+        font-size: 28px;
+        font-family:  "Lobster", serif;
+    }
+
    
 </style>
 @endsection
