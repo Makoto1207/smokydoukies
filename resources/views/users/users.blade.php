@@ -24,27 +24,28 @@
         </div>
          
         <div class="row" id="render">
-            {!! $users->render() !!}
+        {!! $users->render() !!}
         </div>
         
-        
-    </div>
+    </div>  
 </div>
-        
-        
-   
-    <div class="footer_copyright_white">
-        ©2018 SMOKY DOUKIES by Seista Co.
-    </div>
-                
-                
-
-
 
 @endif
 
 <style>
 
+    h2 {
+        font-family:"Time New Romans";
+    }
+    
+    p {
+        margin:10px;
+    }
+    
+    p a{
+        font-family: "Monotype Corsiva";
+    }
+    
     /* 文字の色変更 */
     .nickname {
         text-align: center;
@@ -79,7 +80,7 @@
     /*現在のページのタブ*/
     .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
         z-index: 3;
-        color: black;
+        color: darkred;
         cursor: default;
         font-size: 20px;
         font-family: "Times New Roman";
@@ -88,7 +89,7 @@
         height:35px;
         padding: 6px;
         text-decoration: none;
-        background-color:#FFCC99;
+        background-color:black;
         border: 1px solid #FFCC99;
        
     }
@@ -137,6 +138,5 @@
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
-
     
 </style>

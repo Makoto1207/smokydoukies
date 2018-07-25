@@ -5,8 +5,8 @@
     @if (count($restaurants) > 0)
         <div id="hoge" style="margin-top: 70px;">
         
-        <div class="col-md-10 col-md-offset-1">
-        <h2 id="store_all">Restaurant List</h2>
+        <div class="col-md-10 col-md-offset-2" >
+        <h2 id="titlename">Restaurant List</h2>
         </div>
         <div class="col-md-8 col-md-offset-2">
         <div class="introduction">
@@ -47,10 +47,13 @@
                 
         </table>
         
+        <div class="bottompage">
         {!! Form::open(['method' => 'GET']) !!}
         {!! Form::text('name', null) !!}
         {!! Form::submit('Search') !!}
         {!! Form::close() !!}
+        </div>
+
 
         
         </div>
@@ -58,6 +61,26 @@
         </div>   
         </div>
     @endif
+    
+    
+    <style>
+      
+      #titlename{
+        font-family: "Time New Romans";
+        color: gray;
+      }
+      
+      .bottompage{
+        margin-bottom:60px;
+      }
+      
+    </style>
+    
+    
+    
+    
+    
+    
     
 
 @endsection
