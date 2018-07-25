@@ -13,90 +13,145 @@ TODO LIST
         <head>
         </head>
         <body>
+            
+
+            
+            
+        <div class="container">
+            <div class="row">
+                <div>
+                    
+                </div>
+            </div>
+        </div>
             <!--　左のスクロールバー　-->
-            <ul id="menu" style="margin: 30px 0;">
-                <a href="#box1"><li><p  class="glyphicon glyphicon-user"></p></li></a>
-                <a href="#box2"><li><p class="glyphicon glyphicon-heart"></p></li></a>
-                <a href="#box3"><li><p class="glyphicon glyphicon-comment"></p></li></a>
-                <a href="#box4"><li><p class="glyphicon glyphicon-flag"></p></li></a>
-                <a href="#box5"><li><p class="glyphicon glyphicon-glass"></p></li></a>
-            </ul>
+            <!--<ul id="menu" style="margin: 30px 0;">-->
+            <!--    <a href="#box1"><li><p  class="glyphicon glyphicon-user"></p></li></a>-->
+            <!--    <a href="#box2"><li><p class="glyphicon glyphicon-heart"></p></li></a>-->
+            <!--    <a href="#box3"><li><p class="glyphicon glyphicon-comment"></p></li></a>-->
+            <!--    <a href="#box4"><li><p class="glyphicon glyphicon-flag"></p></li></a>-->
+            <!--    <a href="#box5"><li><p class="glyphicon glyphicon-glass"></p></li></a>-->
+            <!--</ul>-->
             <!-- done　-->
             <!-- background img & texts -->
-            <div id="box1">
-                <div class="onepic">
-                    <h1 class="toptext">SMOKE</h1>
-                    <h1>YOURSELF</h1>
-                </div>
-                
-                <div class="btnframe">
-                    <div class="btneffect"></div>
-                        <a href= "{{route('users.show', Auth::id())}}"><span>PROFILE</span></a>
-                </div>
-                
-                <p class="scroll js-scroll"><a href="#box2">SCROLL DOWN</a></p>                        
-                
-                
-                
-            </div>
             
-            <div id="box2">
-                <h1 class="toptext">MEET</h1>
-                <h1>DOUKIES</h1>
-
-                <div class="btnframe">
-                    <div class="btneffect"></div>
-                        <a href= "{{route('users.index')}}"><span>SMOKERS</span></a>
-                </div>
-                
-                
-                
-            </div>
             
+            <!-- Timeline page -->
             <div id="box3">
+                <!-- Top Comments -->
                 <h1 class="toptext">SHARE</h1>
                 <h1>THOUGHTS</h1>
-
-                
+                <!-- button -->
                 <div class="btnframe">
                     <div class="btneffect"></div>
                         <a href= "{{route('timeline')}}"><span>TIMELINE</span></a>
                 </div>
-                
-                
-                
+                <!-- scroll button -->
+                <p class="scroll js-scroll"><a href="#box1">SCROLL DOWN</a></p>                        
             </div>
             
-            <div id="box4">
-                <h1 class="toptext" style="font-size:80px;">DISCOVER</h1>
+            <!-- Profile page -->
+            <div id="box1">
+                <!-- scroll btn -->
+                <p class="scrollup js-scroll"><a href="#box3">SCROLL UP</a></p>                        
+                <!-- Top comments -->
+                <div class="onepic">
+                    <h1 class="toptext">SMOKE</h1>
+                    <h1>YOURSELF</h1>
+                </div>
+                <!-- button -->
+                <div class="btnframe">
+                    <div class="btneffect"></div>
+                        <a href= "{{route('users.show', Auth::id())}}"><span>PROFILE</span></a>
+                </div>
+                <!--　scroll button　-->
+                <p class="scroll js-scroll"><a href="#box2">SCROLL DOWN</a></p>                        
+            </div>
+            
 
+            <!-- Smokers page  -->
+            <div id="box2">
+                <!-- scroll button -->
+                <p class="scrollup js-scroll"><a href="#box1">SCROLL UP</a></p> 
+                <!-- Top comments -->
+                <h1 class="toptext">MEET</h1>
+                <h1>DOUKIES</h1>
+                <!-- button -->
+                <div class="btnframe">
+                    <div class="btneffect"></div>
+                        <a href= "{{route('users.index')}}"><span>SMOKERS</span></a>
+                </div>
+                <!-- scroll button -->
+                <p class="scroll js-scroll"><a href="#box4">SCROLL DOWN</a></p>                        
+            </div>
+            
+
+            <!-- Map page -->
+            <div id="box4">
+                <!-- scroll btn -->
+                <p class="scrollup js-scroll"><a href="#box2">SCROLL UP</a></p>                        
+                <!-- Top comments -->
+                <h1 class="toptext" style="font-size:80px;">DISCOVER</h1>
+                <!-- button -->
                 <div class="btnframe">
                     <div class="btneffect"></div>
                         <a href= "{{ route('map')}}"><span>MAP</span></a>
                 </div>
-                
-                
+                <!-- scroll btn-->
+                <p class="scroll js-scroll" style="margin:190px 0 0;"><a href="#box5">SCROLL DOWN</a></p>                        
             </div>
             
+            <!-- Restaurants page -->
             <div id="box5">
+                <!-- scroll btn -->
+                <p class="scrollup js-scroll"><a href="#box4">SCROLL UP</a></p>                        
+                <!-- Top comments -->
                 <h1 class="toptext" style="font-size:80px;">SEARCH</h1>
-                
+                <!-- button -->
                 <div class="btnframe">
                     <div class="btneffect"></div>
-                        <a href= "{{ route('store')}}"><span>STORES</span></a>
+                        <a href= "{{ route('store')}}"><span>RESTAURANTS</span></a>
                 </div>
-                
             </div>
+            
+            <!-- top page button -->
+            <p id="page-top"><a href="#wrap" class="glyphicon glyphicon-home"></a></p>
+
             <!-- done -->
         </body>
     </html>
     
     <!-- ログイン後のｃｓｓ  -->
     <style>
+
+    
             body{
                 margin: 0;
                 padding: 0;
             }    
+            
+            /* top page buttn css */
+            #page-top {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                font-size: 77%;
+            }
+            #page-top a {
+                background:	#333333;
+                text-decoration: none;
+                color: #fff;
+                width: 40px;
+                padding: 10px 0;
+                text-align: center;
+                display: block;
+                border-radius: 5px;
+            }
+            #page-top a:hover {
+                text-decoration: none;
+                background: #999;
+            }
+
             #box1{
                 height: 100vh;
                 width: 100%;
@@ -157,15 +212,15 @@ TODO LIST
                 text-align:center;
                 color: white;
                 font-size: 50px;
-                margin-top: 300px;
+                margin-top: 250px;
                 margin-bottom:0;
            }
            
            
            /* ボタンの加工 */
             .btnframe{
-              width:150px;
-              height:50px;
+              width:180px;
+              /*height:50px;*/
               border:2px solid #FFCC99;
               border-radius: 3px;
               cursor:pointer;
@@ -184,9 +239,9 @@ TODO LIST
               position:relative;
             }
             .btneffect{
-              width:150px;
+              width:180px;
               height:50px;
-              left:-150px;
+              left:-180px;
               background:#FFCC99;
               position:absolute;
               transition:all .3s ease;
@@ -227,7 +282,7 @@ TODO LIST
               margin:130px 0 0;
               font-family: "Time New Romans";
             }
-              .scroll a{
+            .scroll a{
                 position: relative;
                 display: inline-block;
                 font-size: 20px;
@@ -251,30 +306,116 @@ TODO LIST
               transform: rotate(45deg);
               animation: move 2s infinite;
             }
+            
+            /* scroll up  */
+            .scrollup{
+              position: absolute;
+              width: 100%;
+              text-align: center;
+              margin:90px 0 0;
+              font-family: "Time New Romans";
+            }
+            .scrollup a{
+                position: relative;
+                display: inline-block;
+                font-size: 20px;
+                font-weight: bold;
+                color: #fff;
+                text-decoration: none;
+                padding: 35px 0 0;
+              }
+            /*矢印を作成する*/
+            .scrollup a:before{
+              content: "";
+              position: absolute;
+              width: 10px;
+              height: 10px;
+              left: 0;
+              right: 0;
+              top:0;
+              bottom:0;
+              margin: auto;
+              border-top: 2px solid #fff;
+              border-left: 2px solid #fff;
+              transform: rotate(45deg);
+              animation: moveup 2s infinite;
+            }
         
         
         /*矢印をアニメーションする*/
-    @keyframes move {
-      0% {
-        transform: rotate(45deg) translate(0, 0);
-      }
-      20% {
-        transform: rotate(45deg) translate(10px, 10px);
-      }
-      40% {
-        transform: rotate(45deg) translate(0, 0);
-      }
-    }
-        
-            
-            
-            
-            
+        @keyframes move {
+          0% {
+            transform: rotate(45deg) translate(0, 0);
+          }
+          20% {
+            transform: rotate(45deg) translate(10px, 10px);
+          }
+          40% {
+            transform: rotate(45deg) translate(0, 0);
+          }
+        }
+    
+        @keyframes moveup {
+          0% {
+            transform: rotate(45deg) translate(0, 0);
+          }
+          20% {
+            transform: rotate(45deg) translate(-10px, -10px);
+          }
+          40% {
+            transform: rotate(45deg) translate(0, 0);
+          }
+        }
         </style>
+        <script>
+            //top page button script 
+            $(function() {
+                var topBtn = $('#page-top');    
+                topBtn.hide();
+                //スクロールが100に達したらボタン表示
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 150) {
+                        topBtn.fadeIn();
+                    } else {
+                        topBtn.fadeOut();
+                    }
+                });
+                //スクロールしてトップ
+                topBtn.click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 500);
+                    return false;
+                });
+            });
+                     
+                     
+
+</script>
+                     
+                     
+                     
+                     
+                     
+                        
+        </script>
         <!-- all done -->
 
     <!-- ログイン後 -->
     @else
+    
+    <!-- loading  -->
+    <!--<div>-->
+    <!--    <div id="loader-bg">-->
+    <!--        <div id="loader">-->
+    <!--                <img src="images/img-loading.gif" width="80" height="80" alt="Now Loading..." />-->
+    <!--            <p>Now Loading...</p>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
+    
+    
+    
     <div class="container" style="margin-top: 70px;">
     <!-- サービス名表示 -->
         <div class="title">
@@ -383,11 +524,21 @@ TODO LIST
     </div>
 
 
+
     
     
     
     
     <style>
+    
+    /*footer*/
+    .footer_copyright_black{
+
+    }
+    
+        
+        
+    
         #intro1{
             margin-top: 430px;
             height: 100vh;
@@ -569,19 +720,11 @@ TODO LIST
     }
         
         
-        
-        
-   
-        
-        
-        
-        
-        
-        
-        
-        
+
         
     </style>
+
+
     
     @endif
 @endsection

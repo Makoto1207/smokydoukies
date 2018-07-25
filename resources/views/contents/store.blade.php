@@ -47,10 +47,13 @@
                 
         </table>
         
+        <div class="bottompage">
         {!! Form::open(['method' => 'GET']) !!}
         {!! Form::text('name', null) !!}
         {!! Form::submit('Search') !!}
         {!! Form::close() !!}
+        </div>
+
 
         
         </div>
@@ -67,5 +70,22 @@
         font-family:  "Lobster", serif;
     }
     
-</style>
+    #titlename{
+        
+        color: gray;
+      }
+      
+      .bottompage{
+        margin-bottom:60px;
+      }
+      
+    </style>
+    
+    
+    
+    
+    
+    
+    
+
 @endsection

@@ -167,12 +167,13 @@
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
     }
-    
     .titleforTimeline{
         color: #C0C0C0;
         margin-top: 15px;
         font-size: 28px;
         font-family:  "Lobster", serif;
     }
+
+   
 </style>
 @endsection

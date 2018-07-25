@@ -134,16 +134,19 @@
                     
                     
 
+               <p id="page-top"><a href="{{ route('welcome') }}" class="glyphicon glyphicon-home"></a></p>
+
+                
 </div>
-
-                    <div class="footer_copyright">
-                        ©2018 SMOKY DOUKIES by Seista Co.
-                    </div>
-
 <style>
             .before_login{
               font-family: "Times New Roman";
             }
+            
+            input, select:focus{
+                outline-color:#FFCC99;
+            }
+            
             
             /* ボタンの加工 */
             .btnframe{
@@ -168,6 +171,7 @@
               position:relative;
               background-color: transparent;
               border-color:transparent;
+              width:150px;
             }
             .btneffect{
               width:150px;
@@ -184,8 +188,32 @@
             .btnframe:hover button{
               color:black;
             }
+            
+                        /* top page buttn css */
+            #page-top {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                font-size: 77%;
+            }
+            #page-top a {
+                background:	#333333;
+                text-decoration: none;
+                color: #fff;
+                width: 40px;
+                padding: 10px 0;
+                text-align: center;
+                display: block;
+                border-radius: 5px;
+            }
+            #page-top a:hover {
+                text-decoration: none;
+                background: #999;
+            }
     
-</style>
+        </style>
+
+
 
 
 @endsection
