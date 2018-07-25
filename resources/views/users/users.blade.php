@@ -1,18 +1,17 @@
 @if (count($users) > 0)
 
 <div class="container" style="margin-top: 70px;">
-    
     <div class="col-10 col-offset-1">
+        
         <h2>Smokers</h2>
             
             <div class="row" id="render">
-            {!! $users->render() !!}
+                {!! $users->render() !!}
             </div>
             
         <div class="row">    
-        @foreach ($users as $user)
-           
-        
+          @foreach ($users as $user)
+      
             <div class="col-12 col-md-4">
                 <div class="img-thumbnail" id="profile_pic_flame">
                     <img  src="{{secure_asset('/images/cigs/'. $user->brand. '.jpg')}}"  class='img-responsive'>
@@ -20,24 +19,24 @@
                 </div>
             </div>
         
-        @endforeach
+          @endforeach
         </div>
          
         <div class="row" id="render">
             {!! $users->render() !!}
         </div>
-        
-        
+
     </div>
+    
+    <div class="row">
+        <div class="footer_copyright_black">
+            ©2018 SMOKY DOUKIES by Seista Co.
+        </div>
+    </div>
+    
 </div>
         
-        
-   
-    <div class="footer_copyright_white">
-        ©2018 SMOKY DOUKIES by Seista Co.
-    </div>
-                
-                
+ 
 
 
 
@@ -136,6 +135,14 @@
     .pagination>li:last-child>a, .pagination>li:last-child>span {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
+    }
+    
+    
+    .footer_copyright_black{
+        height:15px;
+        background-color: black;
+        color:darkgray;
+        margin-top: 20px;
     }
 
     

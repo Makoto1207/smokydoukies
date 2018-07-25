@@ -53,15 +53,16 @@
                 </div>
             </div>
             
-        </div>    
+        </div> 
+        
+        <div class="row">
+            <div class="footer_copyright_black">
+                ©2018 SMOKY DOUKIES by Seista Co.
+            </div>
+        </div>
             
   　</div>
-  　
-  　<div class="footer_copyright_black">
-        ©2018 SMOKY DOUKIES by Seista Co.
-    </div>
-  
-  
+
 </div>
 
 
@@ -93,9 +94,9 @@
 
 
     
-      #profile_pic_flame{
-          align-items:center;
-      }
+    #profile_pic_flame{
+        align-items:center;
+    }
     
      /*写真の下のニックネームのデザイン*/
      #pro_nickname{
@@ -147,7 +148,9 @@
         height:15px;
         background-color: black;
         color:darkgray;
+        margin-top: 20px;
     }
+    
     
 </style>
     
