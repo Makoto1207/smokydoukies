@@ -27,13 +27,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
-        
-        
-       
-       
         <!-- CSSに必要 -->
         <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
-        
         
         
         
@@ -66,17 +61,64 @@
               return false;
             });
           });
+          
+
         </script>
         
     </head>
 
     <body>
-        <!-- navbar のブレード -->
-        @include('commons.navbarwelcome')
         
-        <div>
-            @yield('content')    
+            <!-- loading  -->
+    <div>
+        <div id="loader-bg">
+            <div id="loader">
+                    <img src="{{secure_asset('/images/img-loading.gif')}}" width="200" height="200" alt="Now Loading...">
+                <p style="font-family:Time New Romans">Now Loading...</p>
+            </div>
         </div>
+    </div>
+        
+        <div id="wrap">
+            <!-- navbar のブレード -->
+            @include('commons.navbarwelcome')
+        
+            <div>
+                @yield('content')    
+            </div>
+        </div>
+
     
     </body>
+        <!-- loading js  -->
+    <script>
+                  
+        //loading effect
+        $(function() {
+          var h = $(window).height();
+         
+          $('#wrap').css('display','none');
+          $('#loader-bg ,#loader').height(h).css('display','block');
+        });
+         
+        //永遠にロードするエラーが起きてるので最初の画面のみ無効 
+         
+        // $(window).load(function () { //全ての読み込みが完了したら実行
+        //   $('#loader-bg').delay(900).fadeOut(800);
+        //   $('#loader').delay(600).fadeOut(300);
+        //   $('#wrap').css('display', 'block');
+        // });
+         
+        //10秒たったら強制的にロード画面を非表示
+        $(function(){
+          setTimeout('stopload()',3000);
+        });
+         
+        function stopload(){
+          $('#wrap').css('display','block');
+          $('#loader-bg').delay(900).fadeOut(800);
+          $('#loader').delay(600).fadeOut(300);
+        }
+          
+    </script>
 </html>
