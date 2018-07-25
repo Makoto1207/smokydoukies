@@ -75,8 +75,8 @@
         <div>
             <div id="loader-bg">
                 <div id="loader">
-                        <img src="images/img-loading.gif" width="200" height="200" alt="Now Loading..." />
-                    <p>Now Loading...</p>
+                        <img src="{{secure_asset('/images/img-loading.gif')}}" width="200" height="200" alt="Now Loading..." />
+                    <p style="font-family:Time New Romans">Now Loading...</p>
                 </div>
             </div>
         </div>
@@ -120,7 +120,7 @@
           $('#loader').delay(600).fadeOut(300);
         }
           
-    </script>s
+    </script>
 
 
 
