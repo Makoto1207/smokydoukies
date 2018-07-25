@@ -283,7 +283,7 @@
         border: solid 8px #98FB98;
         border-radius: 3px;
         background: none;
-        color: 	#98FB98;
+        color: #98FB98;
         text-decoration:none;
     }
     
@@ -293,7 +293,70 @@
         text-decoration:none;
     }
       
-  
+    /* ストアにつなげるボタン----B----*/
+    a.storebuttonsB{
+        display: inline-block;
+        padding: 0.1em 1em;
+        text-decoration: none;
+        color: gray;
+        border: solid 5px gray;
+        border-radius: 3px;
+        transition: .4s;
+        text-align: center;
+        font-size: 45px;
+        font-family: "Lobster", serif;
+        margin-top: 50px;
+        margin-bottom: 60px;
+        background-color: none;
+    }
+    
+    
+    a.storebuttonsB:hover {
+        border: solid 8px #FFFACD;
+        border-radius: 3px;
+        background: none;
+        color: #FFFACD;
+        text-decoration:none;
+    }
+    
+    a.storebuttonsB:link,
+    a.storebuttonsB:visited,
+    a.storebuttonsB:active{
+        text-decoration:none;
+    }
+    
+    
+    /* ストアにつなげるボタン----C----*/
+    a.storebuttonsC{
+        display: inline-block;
+        padding: 0.1em 1em;
+        text-decoration: none;
+        color: gray;
+        border: solid 5px gray;
+        border-radius: 3px;
+        transition: .4s;
+        text-align: center;
+        font-size: 45px;
+        font-family: "Lobster", serif;
+        margin-top: 50px;
+        margin-bottom: 60px;
+        background-color: none;
+    }
+    
+    
+    a.storebuttonsC:hover {
+        border: solid 8px #87CEFA;
+        border-radius: 3px;
+        background: none;
+        color: #87CEFA;
+        text-decoration:none;
+    }
+    
+    a.storebuttonsC:link,
+    a.storebuttonsC:visited,
+    a.storebuttonsC:active{
+        text-decoration:none;
+    }
   
 
     /* ストアにつなげるボタン----D----*/
