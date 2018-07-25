@@ -207,8 +207,9 @@
     /*二子玉全体地図をクリックしたとき*/
     area:hover,
     area:visited, 
-    area:active{
-        outline:none;
+    area:active,
+    area:link{
+        outline:white;
     }
     
     area:hover{
