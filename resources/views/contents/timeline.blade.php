@@ -169,7 +169,7 @@
     .pagination>li:last-child>a, .pagination>li:last-child>span {
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
-    }s
+    }
    
 </style>
 @endsection
