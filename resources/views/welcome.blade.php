@@ -416,13 +416,13 @@ TODO LIST
                 <div class="container">
                     <div class="row">
                         <div class="exptext">
-                            <h2>EXCITEMENT FOR ALL SMOKY DOUKIES</h2>
+                            <h2>THE POSSIBILITIES OF SMOKY DOUKIES</h2>
                             <div class="fade-in">
-                                <h3>We provide a platform to meet doukies</h3>
-                                <h4><p>Hey I'm Katsuno Gaku. I'm a grandfather of team siesta. </p>
-                                    <p>You should definiltely join Smoky doukies to enjoy the</p>
-                                    <p>whole new experiment of excitement.</p> 
-                                    <p>Just let you know, I'm an ero-sennnin</p>
+                                <h4><p>Smoky Doukies will provide a special experience to smokers.</p>
+                                    <p>We will help improve your life in Futako-tamagawa.</p>
+                                    <p>We offer you a once-in-a-lifetime opportunity through this service.</p> 
+                                    <p>We hope you will enjoy your smoky lifestyle.</p>
+                                    <p>With the right people and with the right manners.</p>
                                 </h4> 
                             </div>
                         </div>

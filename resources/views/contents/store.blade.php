@@ -6,7 +6,8 @@
   <div id="hoge" style="margin-top: 70px;">
         
     <div class="col-md-10 col-md-offset-1">
-      <h2 id="store_all">Restaurant List</h2>
+      <h2 class="titleforRestaurants">Restaurants</h2>
+      <img src=img/mapFULLedit2_50per.jpg id="map_photo" style="padding-left:480px">
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
             <span id="search_message">Push the button to update the restaurant list　
@@ -65,8 +66,6 @@
     @endif
     
 
-@endsection
-
 
 <style>
     .footer_copyright_black{
@@ -75,10 +74,23 @@
         color:darkgray;
         margin-top: 20px;
     }
+    .titleforRestaurants{
+        color: #C0C0C0;
+        margin-top: 15px;
+        font-size: 28px;
+        margin-left:65px;
+        font-family:  "Lobster", serif;
+    }
     
     .footer_copyright_black{
       background-color:black;
       color:darkgray;
     }
+    
+    #map_photo{
+      text-align:center;
+    }
 </style>
 
+
+@endsection
